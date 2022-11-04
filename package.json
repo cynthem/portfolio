@@ -4,6 +4,8 @@
   "description": "Cindy Phelps portfolio",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack serve",
+    "build": "webpack --mode production --progress --hide-modules",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
