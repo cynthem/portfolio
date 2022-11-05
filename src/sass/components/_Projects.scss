@@ -1,0 +1,22 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+.projects {
+    background-color: $color-navy;
+    margin: 0 115px;
+    border-radius: 5px;
+    .projects-header {
+        
+        @include section-header($color-beige);
+    }
+}
+
+.projects {
+        
+        .projects-list {
+            display: flex;
+            flex-direction: column;
+            gap: 40vh;
+            margin: 0 40px;
+        }
+}
