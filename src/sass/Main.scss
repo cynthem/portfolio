@@ -1,10 +1,10 @@
-/*@import './helpers/variables';
-@import './components/Panels';
+@import './components/App';
+@import './components/LeftPanel';
 @import './components/Main';
 @import './components/About';
 @import './components/Skills';
 @import './components/Projects';
-@import './components/Contact';*/
+@import './components/Contact';
 
 * {
     margin: 0;
@@ -17,8 +17,4 @@ body {
     overscroll-behavior-y: none;
     cursor: default;
     background-color: yellow;
-}
-
-.app {
-    position: relative;
 }
