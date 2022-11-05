@@ -10,7 +10,7 @@
       "noEmit": true,    
       "sourceMap": true,
       "strict": true,
-      "noImplicitAny": false,
+      "noImplicitAny": true,
       "strictNullChecks": true,
       "moduleResolution": "node",
       "forceConsistentCasingInFileNames": true,
