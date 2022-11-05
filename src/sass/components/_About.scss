@@ -1,0 +1,84 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+.about {
+    height: 1720px;
+    position: relative;
+    .about-background {
+        height: 1680px;
+        width: 76vw;
+        position: absolute;
+        right: 0;
+        top: 40px;
+        //background-color: $color-navy;
+        background-color: #bc9540;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+}
+
+.heading {
+    .name {
+        display: flex;
+        gap: 15px;
+        position: absolute;
+        top: 40px;
+        right: 599px;
+        font-family: $font-yeseva;
+        font-size: 36px;
+        .last {
+            color: #fcfffb;
+        }
+    }
+    .selfie {
+        display: flex;
+        align-items: baseline;
+        gap: 15vw;
+        margin-top: 180px;
+        margin-left: 40px;
+        position: relative;
+        .selfie-outline {
+            height: 323px;
+            width: 300px;
+            outline: 2px solid black;
+            position: absolute;
+            top: 24px;
+            left: 24px;
+        }
+        .selfie-img {
+            position: relative;
+            //z-index: 4;
+        }
+    }
+    .job-title {
+        > p {
+            font-family: $font-forum;
+            font-size: 20px;
+        }
+        > h2 {
+            font-family: $font-bebas;
+            font-size: 50px;
+            color: #fcfffb;
+        }
+    }
+}
+
+/* .intro {
+    .about-header {
+        margin-left: 100px;
+        @include section-header($color-mint);
+    }
+    .intro-details {
+        margin: 0 100px 400px 40px;
+        .intro-text {
+            font-family: $font-forum;
+            font-size: 20px;
+            width: 50vw;
+            position: relative;
+            > p {
+                margin-top: 20px;
+                color: $color-pink;
+            }
+        }
+    }
+}*/
