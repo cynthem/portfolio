@@ -13,6 +13,7 @@
         background-color: $color-navy;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
+        z-index: -1;
     }
 }
 
@@ -21,13 +22,15 @@
     .name {
         display: flex;
         gap: 15px;
+        //margin-top: 80px;
+        //margin-left: 5vw;
         position: absolute;
         top: 40px;
         right: 599px;
         font-family: $font-yeseva;
         font-size: 36px;
         .last {
-            color: $color-navy;
+            color: $color-pink;
         }
     }
     .selfie {

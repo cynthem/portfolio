@@ -5,9 +5,10 @@ import Intro from './Intro';
 function About() {
     return (
         <div className='about'>
-            <div className='about-background'></div>
-            <Heading />
-            <Intro />
+            <div className='about-background'>
+                <Heading />
+                <Intro />
+            </div>
         </div>
     )
 }
