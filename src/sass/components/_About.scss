@@ -2,22 +2,22 @@
 @import '../helpers/mixins';
 
 .about {
-    height: 1720px;
+    height: 1320px;
     position: relative;
     .about-background {
-        height: 1680px;
+        height: 1280px;
         width: 76vw;
         position: absolute;
         right: 0;
         top: 40px;
-        //background-color: $color-navy;
-        background-color: #bc9540;
+        background-color: $color-yellow;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
     }
 }
 
 .heading {
+    margin-bottom: 30vh;
     .name {
         display: flex;
         gap: 15px;
@@ -27,7 +27,7 @@
         font-family: $font-yeseva;
         font-size: 36px;
         .last {
-            color: #fcfffb;
+            color: $color-white;
         }
     }
     .selfie {
@@ -58,27 +58,22 @@
         > h2 {
             font-family: $font-bebas;
             font-size: 50px;
-            color: #fcfffb;
+            color: $color-white;
         }
     }
 }
 
-/* .intro {
+.intro {
     .about-header {
         margin-left: 100px;
-        @include section-header($color-mint);
+        @include section-header($color-white);
     }
     .intro-details {
-        margin: 0 100px 400px 40px;
-        .intro-text {
-            font-family: $font-forum;
-            font-size: 20px;
-            width: 50vw;
-            position: relative;
-            > p {
-                margin-top: 20px;
-                color: $color-pink;
-            }
-        }
+        margin-top: 30px;
+        font-family: $font-forum;
+        font-size: 20px;
+        background-color: $color-navy;
+        color: $color-white;
+        width: 700px;
     }
-}*/
+}
