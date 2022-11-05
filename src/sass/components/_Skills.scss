@@ -10,19 +10,21 @@
     .skills-boxes {
         background-color: $color-orange;
         margin: 0 180px;
-        display: grid;
-        grid-template: repeat(3, fit-content(300px)) / repeat(6, fit-content(100px));
-        .skill {
-            background-color: $color-navy;
-            color: $color-beige;
-            width: fit-content;
+        padding: 30px;
+        .skills-row {
             display: flex;
-            flex-direction: column;
-            gap: 8px;
-            align-items: center;
-            padding: 8px;
-            font-family: $font-bebas;
-            font-size: 22px;
+            .skill {
+                background-color: $color-navy;
+                color: $color-beige;
+                width: fit-content;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                align-items: center;
+                padding: 8px;
+                font-family: $font-bebas;
+                font-size: 22px;
+            }
         }
     }
 }

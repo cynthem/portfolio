@@ -9,7 +9,7 @@ function Skills() {
                 <h2>Skills</h2>
             </div>
             <div className='skills-boxes'>
-                <div className='skills-row'>
+                <div className='skills-row-1'>
                     <div className='skill'>
                         <img alt="HTML5" src={skillIcons[6]} />
                         <p>HTML5</p>
@@ -35,7 +35,7 @@ function Skills() {
                         <p>React</p>
                     </div>
                 </div>
-                <div className='skills-row'>
+                <div className='skills-row-2'>
                     <div className='skill'>
                         <img alt="Redux" src={skillIcons[13]} />
                         <p>Redux</p>
@@ -61,7 +61,7 @@ function Skills() {
                         <p>Jest</p>
                     </div>
                 </div>
-                <div className='skills-row'>
+                <div className='skills-row-3'>
                     <div className='skill'>
                         <img alt="Framer Motion" src={skillIcons[3]} />
                         <p>Framer Motion</p>
