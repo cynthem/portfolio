@@ -30,6 +30,7 @@
     "@types/react-dom": "^18.0.8",
     "babel-loader": "^9.1.0",
     "core-js": "^3.26.0",
+    "node-sass": "^7.0.3",
     "regenerator-runtime": "^0.13.10",
     "typescript": "^4.8.4",
     "webpack": "^5.74.0",
