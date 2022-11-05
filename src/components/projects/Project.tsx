@@ -1,7 +1,7 @@
 import React from 'react';
-import arrowIcon from '../../assets/images/icon_arrow.png';
+import arrowIcon from '../../assets/images/arrow_icon.png';
 
-function Project({ project }) {
+function Project({ project }: { project: any }) {
     return (
         <div className='project-container'>
             <img 
