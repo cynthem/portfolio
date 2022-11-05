@@ -2,7 +2,6 @@
 @import '../helpers/mixins';
 
 .skills {
-    height: 500px;
     .skills-header {
         margin-left: 260px;
         margin-bottom: 30px;
@@ -11,6 +10,8 @@
     .skills-boxes {
         background-color: $color-orange;
         margin: 0 180px;
+        display: grid;
+        grid-template: repeat(3, fit-content(300px)) / repeat(6, fit-content(100px));
         .skill {
             background-color: $color-navy;
             color: $color-beige;
