@@ -1,5 +1,9 @@
+@import '../helpers/variables';
+
 .app {
     position: relative;
+    background-color: $color-beige;
+    z-index: -2;
     .footer {
         background-color: yellow;
         height: 60px;
