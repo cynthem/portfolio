@@ -1,5 +1,6 @@
 import React from 'react';
 import Project from './Project';
+import MoreProjects from './MoreProjects';
 import projectPreviews from '../../util/projectPreviews';
 import uniqid from 'uniqid';
 
@@ -20,6 +21,7 @@ function Projects() {
                     )
                 })}
             </div>
+            <MoreProjects />
         </div>
     )
 }
