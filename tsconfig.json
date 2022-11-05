@@ -9,11 +9,9 @@
       "jsx": "react",
       "noEmit": true,    
       "sourceMap": true,
-      /* Strict Type-Checking Options */
       "strict": true,
-      "noImplicitAny": true,
+      "noImplicitAny": false,
       "strictNullChecks": true,
-      /* Module Resolution Options */
       "moduleResolution": "node",
       "forceConsistentCasingInFileNames": true,
       "esModuleInterop": true

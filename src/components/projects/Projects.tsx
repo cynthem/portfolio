@@ -1,4 +1,6 @@
 import React from 'react';
+import Project from './Project';
+import projectPreviews from '../../util/projectPreviews';
 import uniqid from 'uniqid';
 
 function Projects() {
@@ -11,7 +13,7 @@ function Projects() {
             <div className='projects-list'>
                 {projectPreviews.map((project) => {
                     return (
-                        <ProjectContainer 
+                        <Project 
                             key={uniqid()} 
                             project={project}
                         />
