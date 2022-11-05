@@ -4,7 +4,6 @@
 .skills {
     .skills-header {
         margin-left: 260px;
-        margin-bottom: 30px;
         @include section-header($color-navy);
     }
     .skills-boxes {

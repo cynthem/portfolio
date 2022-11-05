@@ -71,7 +71,6 @@
 .intro {
     margin-left: 80px;
     .about-header {
-        margin-bottom: 30px;
         @include section-header($color-beige);
     }
     .intro-details {

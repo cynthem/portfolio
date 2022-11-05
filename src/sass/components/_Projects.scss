@@ -6,17 +6,83 @@
     margin: 0 115px;
     border-radius: 5px;
     .projects-header {
-        
+        margin-top: 40px;
+        margin-left: 60px;
         @include section-header($color-beige);
+    }
+    .projects-list {
+        display: flex;
+        flex-direction: column;
+        gap: 40vh;
+        margin: 100px 40px 0px;
     }
 }
 
-.projects {
-        
-        .projects-list {
+.project-container {
+    display: flex;
+    align-items: center;
+    > img {
+        box-shadow: 
+            22px 24px 0px 0px $color-navy,
+            24px 22px 0px 0px $color-beige,
+            24px 26px 0px 0px $color-beige,
+            20px 26px 0px 0px $color-beige;
+    }
+}
+/*.project-container {
+    .project-card {
+        margin-left: 80px;
+        > h3 {
+            font-family: $font-bebas;
+            font-size: 26px;
+            padding: 8px 0px;
+            margin-left: 15px;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+            text-align: center;
+            border: 1px solid $color-mint;
+            color: $color-mint;
+            width: 180px;
+        }
+        .card-container {
+            background-color: $color-pink;
+            margin-top: -2px;
+            height: 260px;
+            width: 480px;
+            border-radius: 2px;
+            color: $color-navy;
             display: flex;
             flex-direction: column;
-            gap: 40vh;
-            margin: 0 40px;
+            justify-content: space-between;
+            padding: 15px;
+            .card-description {
+                font-family: $font-forum;
+                font-size: 20px;
+                height: 50%;
+            }
+            .break {
+                border-bottom: 1px solid black;
+                margin: 0 20px;
+            }
+            .card-tools {
+                font-family: $font-migra-italic;
+                font-size: 18px;
+                letter-spacing: 0.02em;
+            }
+            .card-links {
+                align-self: flex-end;
+                > a {
+                    color: black;
+                    text-decoration: none;
+                    margin: 0 20px;
+                    font-family: $font-forum;
+                    font-size: 20px;
+                    > img {
+                        width: 12px;
+                        margin-left: 5px;
+                    }
+                }
+            }
         }
-}
+    }
+}*/
