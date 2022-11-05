@@ -52,6 +52,9 @@
         }
     }
     .job-title {
+        position: absolute;
+        left: 460px;
+        top: 460px;
         > p {
             font-family: $font-forum;
             font-size: 20px;
@@ -66,17 +69,18 @@
 }
 
 .intro {
+    margin-left: 80px;
     .about-header {
-        margin-left: 80px;
         margin-bottom: 30px;
-        @include section-header($color-white);
+        @include section-header($color-beige);
     }
     .intro-details {
         font-family: $font-forum;
         font-size: 20px;
-        background-color: $color-navy;
-        color: $color-white;
-        width: 700px;
-        margin: 0 80px;
+        color: $color-beige;
+        width: 800px;
+        height: 400px;
+        border: 2px solid $color-orange;
+        padding: 10px;
     }
 }
