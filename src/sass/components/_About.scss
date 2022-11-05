@@ -10,7 +10,7 @@
         position: absolute;
         right: 0;
         top: 40px;
-        background-color: $color-yellow;
+        background-color: $color-orange;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
     }
@@ -27,7 +27,7 @@
         font-family: $font-yeseva;
         font-size: 36px;
         .last {
-            color: $color-white;
+            color: $color-navy;
         }
     }
     .selfie {
@@ -40,7 +40,7 @@
         .selfie-outline {
             height: 323px;
             width: 300px;
-            outline: 2px solid black;
+            outline: 2px solid $color-beige;
             position: absolute;
             top: 24px;
             left: 24px;
@@ -58,22 +58,23 @@
         > h2 {
             font-family: $font-bebas;
             font-size: 50px;
-            color: $color-white;
+            color: $color-navy;
         }
     }
 }
 
 .intro {
     .about-header {
-        margin-left: 100px;
+        margin-left: 80px;
+        margin-bottom: 30px;
         @include section-header($color-white);
     }
     .intro-details {
-        margin-top: 30px;
         font-family: $font-forum;
         font-size: 20px;
         background-color: $color-navy;
         color: $color-white;
         width: 700px;
+        margin: 0 80px;
     }
 }

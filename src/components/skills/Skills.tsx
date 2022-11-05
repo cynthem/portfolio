@@ -1,6 +1,6 @@
 import React from 'react';
 import SkillsLeft from './SkillsLeft';
-import SkillsRight from './SkillsRight';
+//import SkillsRight from './SkillsRight';
 
 function Skills() {
     return (
@@ -11,7 +11,7 @@ function Skills() {
             </div>
             <div className='skills-boxes'>
                 <SkillsLeft />
-                <SkillsRight />
+                
             </div>
         </div>
     );
