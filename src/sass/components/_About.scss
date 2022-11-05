@@ -22,46 +22,48 @@
     .name {
         display: flex;
         gap: 15px;
-        //margin-top: 80px;
-        //margin-left: 5vw;
         position: absolute;
         top: 40px;
-        right: 599px;
+        left: -213px;
         font-family: $font-yeseva;
         font-size: 36px;
         .last {
             color: $color-pink;
         }
     }
-    .selfie {
+    .heading-container {
         display: flex;
-        align-items: baseline;
-        gap: 15vw;
-        margin-top: 180px;
-        margin-left: 40px;
-        position: relative;
-        .selfie-outline {
-            height: 323px;
-            width: 300px;
-            outline: 2px solid $color-beige;
-            position: absolute;
-            top: 24px;
-            left: 24px;
-        }
-        .selfie-img {
+        .selfie {
+            display: flex;
+            align-items: baseline;
+            gap: 15vw;
+            margin-top: 180px;
+            margin-left: 40px;
             position: relative;
-            //z-index: 4;
+            .selfie-outline {
+                height: 323px;
+                width: 300px;
+                outline: 2px solid $color-beige;
+                position: absolute;
+                top: 24px;
+                left: 24px;
+            }
+            .selfie-img {
+                position: relative;
+                //z-index: 4;
+            }
         }
-    }
-    .job-title {
-        > p {
-            font-family: $font-forum;
-            font-size: 20px;
-        }
-        > h2 {
-            font-family: $font-bebas;
-            font-size: 50px;
-            color: $color-navy;
+        .job-title {
+            > p {
+                font-family: $font-forum;
+                font-size: 20px;
+                color: $color-beige;
+            }
+            > h2 {
+                font-family: $font-bebas;
+                font-size: 50px;
+                color: $color-orange;
+            }
         }
     }
 }
