@@ -4,35 +4,25 @@
 .contact {
     background-color: $color-orange;
     .contact-header {
-        margin-left: 20vw;
+        margin-left: 260px;
         padding-top: 40px;
         @include section-header($color-navy);
     }
-    
+    .contact-details {
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+        margin: 100px 120px 60px;
+    }
 }
 
-/*
-.contact-details {
-        margin-top: 12vh;
-        margin-bottom: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 15vh;
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 15vw;
-        }
-    }
-    
-.info {
+.details {
     > p {
         font-family: $font-forum;
         color: $color-navy;
         font-size: 20px;
         > a {
-            font-family: $font-migra-bold;
+            font-family: $font-yeseva;
             text-decoration: none;
             font-size: 18px;
         }
@@ -81,4 +71,4 @@
             margin-left: 5px;
         }
     }
-}*/
+}
