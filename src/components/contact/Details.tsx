@@ -9,10 +9,18 @@ function Details() {
         <div className='details'>
             <p>Info details and resume link <a href='placeholder'>resume</a>.</p>
             <div className='details-links'>
-                <img alt="GitHub" src={gitHubIcon} />
-                <img alt="LinkedIn" src={linkedInIcon} />
-                <img alt="Email" src={emailIcon} />
-                <img alt="Resume" src={resumeIcon} />
+                <a href="#">
+                    <img alt="GitHub" src={gitHubIcon} />
+                </a>
+                <a href="#">
+                    <img alt="LinkedIn" src={linkedInIcon} />
+                </a>
+                <a href="#">
+                    <img alt="Email" src={emailIcon} />
+                </a>
+                <a href="#">
+                    <img alt="Resume" src={resumeIcon} />
+                </a>    
             </div>
         </div>
     )
