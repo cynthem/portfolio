@@ -1,0 +1,622 @@
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.woff2") format("woff2"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.woff") format("woff"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.ttf") format("truetype"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.svg#BebasNeue") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/forum/forum-v16-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/forum/forum-v16-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/forum/forum-v16-latin-regular.woff2") format("woff2"), url(".././assets/fonts/forum/forum-v16-latin-regular.woff") format("woff"), url(".././assets/fonts/forum/forum-v16-latin-regular.ttf") format("truetype"), url(".././assets/fonts/forum/forum-v16-latin-regular.svg#Forum") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.woff2") format("woff2"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.woff") format("woff"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.ttf") format("truetype"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.svg#YesevaOne") format("svg"); /* Legacy iOS */
+}
+.app {
+  position: relative;
+  background-color: #f7efd4;
+  z-index: -2;
+}
+.app .footer {
+  z-index: 1;
+  background-color: #ffa500;
+  height: 50px;
+  text-align: center;
+  color: #163D57;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.woff2") format("woff2"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.woff") format("woff"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.ttf") format("truetype"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.svg#BebasNeue") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/forum/forum-v16-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/forum/forum-v16-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/forum/forum-v16-latin-regular.woff2") format("woff2"), url(".././assets/fonts/forum/forum-v16-latin-regular.woff") format("woff"), url(".././assets/fonts/forum/forum-v16-latin-regular.ttf") format("truetype"), url(".././assets/fonts/forum/forum-v16-latin-regular.svg#Forum") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.woff2") format("woff2"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.woff") format("woff"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.ttf") format("truetype"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.svg#YesevaOne") format("svg"); /* Legacy iOS */
+}
+.left-panel {
+  background: transparent;
+  height: 100vh;
+  width: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+.left-panel .link-list {
+  padding-left: 30px;
+}
+.left-panel .link-list > li {
+  margin-bottom: 15px;
+}
+.left-panel .link-list > li > a {
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  padding-left: 8px;
+  color: black;
+  cursor: pointer;
+}
+.left-panel .link-list > li::marker {
+  content: "o";
+  font-size: 18px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 40vh;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.woff2") format("woff2"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.woff") format("woff"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.ttf") format("truetype"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.svg#BebasNeue") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/forum/forum-v16-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/forum/forum-v16-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/forum/forum-v16-latin-regular.woff2") format("woff2"), url(".././assets/fonts/forum/forum-v16-latin-regular.woff") format("woff"), url(".././assets/fonts/forum/forum-v16-latin-regular.ttf") format("truetype"), url(".././assets/fonts/forum/forum-v16-latin-regular.svg#Forum") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.woff2") format("woff2"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.woff") format("woff"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.ttf") format("truetype"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.svg#YesevaOne") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.woff2") format("woff2"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.woff") format("woff"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.ttf") format("truetype"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.svg#BebasNeue") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/forum/forum-v16-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/forum/forum-v16-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/forum/forum-v16-latin-regular.woff2") format("woff2"), url(".././assets/fonts/forum/forum-v16-latin-regular.woff") format("woff"), url(".././assets/fonts/forum/forum-v16-latin-regular.ttf") format("truetype"), url(".././assets/fonts/forum/forum-v16-latin-regular.svg#Forum") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.woff2") format("woff2"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.woff") format("woff"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.ttf") format("truetype"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.svg#YesevaOne") format("svg"); /* Legacy iOS */
+}
+.about {
+  height: 1320px;
+  position: relative;
+}
+.about .about-background {
+  height: 1280px;
+  width: 76vw;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background-color: #163D57;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  z-index: -1;
+}
+
+.heading {
+  margin-bottom: 30vh;
+}
+.heading .name {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  top: 40px;
+  left: -213px;
+  font-family: "Yeseva One", serif;
+  font-size: 36px;
+}
+.heading .name .last {
+  color: #f7efd4;
+}
+.heading .selfie {
+  display: flex;
+  align-items: baseline;
+  gap: 15vw;
+  margin-top: 180px;
+  margin-left: 40px;
+  position: relative;
+}
+.heading .selfie .selfie-outline {
+  height: 323px;
+  width: 300px;
+  outline: 2px solid #f7efd4;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+.heading .selfie .selfie-img {
+  position: relative;
+}
+.heading .job-title {
+  position: absolute;
+  left: 460px;
+  top: 460px;
+}
+.heading .job-title > p {
+  font-family: "Forum", sans-serif;
+  font-size: 20px;
+  color: #f7efd4;
+}
+.heading .job-title > h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 50px;
+  color: #ffa500;
+}
+
+.intro {
+  margin-left: 80px;
+}
+.intro .about-header {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 30px;
+  color: #f7efd4;
+}
+.intro .about-header > p {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+}
+.intro .about-header > h2 {
+  font-family: "Yeseva One", serif;
+  font-size: 46px;
+  letter-spacing: 0.01em;
+}
+.intro .intro-details {
+  font-family: "Forum", sans-serif;
+  font-size: 20px;
+  color: #f7efd4;
+  width: 800px;
+  height: 400px;
+  border: 2px solid #ffa500;
+  padding: 20px;
+}
+.intro .intro-details > p {
+  margin-bottom: 14px;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.woff2") format("woff2"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.woff") format("woff"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.ttf") format("truetype"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.svg#BebasNeue") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/forum/forum-v16-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/forum/forum-v16-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/forum/forum-v16-latin-regular.woff2") format("woff2"), url(".././assets/fonts/forum/forum-v16-latin-regular.woff") format("woff"), url(".././assets/fonts/forum/forum-v16-latin-regular.ttf") format("truetype"), url(".././assets/fonts/forum/forum-v16-latin-regular.svg#Forum") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.woff2") format("woff2"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.woff") format("woff"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.ttf") format("truetype"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.svg#YesevaOne") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.woff2") format("woff2"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.woff") format("woff"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.ttf") format("truetype"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.svg#BebasNeue") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/forum/forum-v16-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/forum/forum-v16-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/forum/forum-v16-latin-regular.woff2") format("woff2"), url(".././assets/fonts/forum/forum-v16-latin-regular.woff") format("woff"), url(".././assets/fonts/forum/forum-v16-latin-regular.ttf") format("truetype"), url(".././assets/fonts/forum/forum-v16-latin-regular.svg#Forum") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.woff2") format("woff2"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.woff") format("woff"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.ttf") format("truetype"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.svg#YesevaOne") format("svg"); /* Legacy iOS */
+}
+.skills .skills-header {
+  margin-left: 260px;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 30px;
+  color: #163D57;
+}
+.skills .skills-header > p {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+}
+.skills .skills-header > h2 {
+  font-family: "Yeseva One", serif;
+  font-size: 46px;
+  letter-spacing: 0.01em;
+}
+.skills .skills-boxes {
+  background-color: #ffa500;
+  width: 60vw;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.skills .skills-boxes .skills-row-1,
+.skills .skills-boxes .skills-row-2,
+.skills .skills-boxes .skills-row-3 {
+  display: flex;
+  align-items: center;
+}
+.skills .skills-boxes .skills-row-1 .skill,
+.skills .skills-boxes .skills-row-2 .skill,
+.skills .skills-boxes .skills-row-3 .skill {
+  background-color: #163D57;
+  color: #f7efd4;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  padding: 10px 15px 6px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 22px;
+  border-radius: 4px;
+}
+.skills .skills-boxes .skills-row-1,
+.skills .skills-boxes .skills-row-3 {
+  justify-content: space-between;
+}
+.skills .skills-boxes .skills-row-2 {
+  justify-content: space-around;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.woff2") format("woff2"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.woff") format("woff"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.ttf") format("truetype"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.svg#BebasNeue") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/forum/forum-v16-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/forum/forum-v16-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/forum/forum-v16-latin-regular.woff2") format("woff2"), url(".././assets/fonts/forum/forum-v16-latin-regular.woff") format("woff"), url(".././assets/fonts/forum/forum-v16-latin-regular.ttf") format("truetype"), url(".././assets/fonts/forum/forum-v16-latin-regular.svg#Forum") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.woff2") format("woff2"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.woff") format("woff"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.ttf") format("truetype"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.svg#YesevaOne") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.woff2") format("woff2"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.woff") format("woff"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.ttf") format("truetype"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.svg#BebasNeue") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/forum/forum-v16-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/forum/forum-v16-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/forum/forum-v16-latin-regular.woff2") format("woff2"), url(".././assets/fonts/forum/forum-v16-latin-regular.woff") format("woff"), url(".././assets/fonts/forum/forum-v16-latin-regular.ttf") format("truetype"), url(".././assets/fonts/forum/forum-v16-latin-regular.svg#Forum") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.woff2") format("woff2"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.woff") format("woff"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.ttf") format("truetype"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.svg#YesevaOne") format("svg"); /* Legacy iOS */
+}
+.projects {
+  background-color: #163D57;
+  margin: 0 115px;
+  border-radius: 5px;
+}
+.projects .projects-header {
+  margin-top: 40px;
+  margin-left: 145px;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 30px;
+  color: #f7efd4;
+}
+.projects .projects-header > p {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+}
+.projects .projects-header > h2 {
+  font-family: "Yeseva One", serif;
+  font-size: 46px;
+  letter-spacing: 0.01em;
+}
+.projects .projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40vh;
+  margin: 100px 40px 40px;
+}
+
+.project-container {
+  display: flex;
+  align-items: center;
+}
+.project-container > img {
+  box-shadow: 22px 24px 0px 0px #163D57, 24px 22px 0px 0px #ffa500, 24px 26px 0px 0px #ffa500, 20px 26px 0px 0px #ffa500;
+}
+.project-container .project-card {
+  margin-left: 80px;
+}
+.project-container .project-card > h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 26px;
+  padding: 8px 0px;
+  margin-left: 15px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  text-align: center;
+  border: 1px solid #ffa500;
+  color: #ffa500;
+  width: 180px;
+}
+.project-container .project-card .card-container {
+  background-color: #f7efd4;
+  margin-top: -2px;
+  height: 260px;
+  width: 500px;
+  border-radius: 2px;
+  color: #163D57;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+.project-container .project-card .card-container .card-description {
+  font-family: "Forum", sans-serif;
+  font-size: 20px;
+  height: 50%;
+}
+.project-container .project-card .card-container .break {
+  border-bottom: 1px solid black;
+  margin: 0 20px;
+}
+.project-container .project-card .card-container .card-tools {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+}
+.project-container .project-card .card-container .card-links {
+  align-self: flex-end;
+}
+.project-container .project-card .card-container .card-links > a {
+  color: black;
+  text-decoration: none;
+  margin: 0 20px;
+  font-family: "Forum", sans-serif;
+  font-size: 20px;
+}
+.project-container .project-card .card-container .card-links > a > img {
+  width: 12px;
+  margin-left: 5px;
+}
+
+.more-projects {
+  height: 300px;
+  color: white;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.woff2") format("woff2"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.woff") format("woff"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.ttf") format("truetype"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.svg#BebasNeue") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/forum/forum-v16-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/forum/forum-v16-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/forum/forum-v16-latin-regular.woff2") format("woff2"), url(".././assets/fonts/forum/forum-v16-latin-regular.woff") format("woff"), url(".././assets/fonts/forum/forum-v16-latin-regular.ttf") format("truetype"), url(".././assets/fonts/forum/forum-v16-latin-regular.svg#Forum") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.woff2") format("woff2"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.woff") format("woff"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.ttf") format("truetype"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.svg#YesevaOne") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.woff2") format("woff2"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.woff") format("woff"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.ttf") format("truetype"), url(".././assets/fonts/bebas-neue/bebas-neue-v9-latin-regular.svg#BebasNeue") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/forum/forum-v16-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/forum/forum-v16-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/forum/forum-v16-latin-regular.woff2") format("woff2"), url(".././assets/fonts/forum/forum-v16-latin-regular.woff") format("woff"), url(".././assets/fonts/forum/forum-v16-latin-regular.ttf") format("truetype"), url(".././assets/fonts/forum/forum-v16-latin-regular.svg#Forum") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.woff2") format("woff2"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.woff") format("woff"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.ttf") format("truetype"), url(".././assets/fonts/yeseva-one/yeseva-one-v20-latin-regular.svg#YesevaOne") format("svg"); /* Legacy iOS */
+}
+.contact {
+  background-color: #f7efd4;
+}
+.contact .contact-header {
+  margin-left: 260px;
+  padding-top: 40px;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 30px;
+  color: #163D57;
+}
+.contact .contact-header > p {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+}
+.contact .contact-header > h2 {
+  font-family: "Yeseva One", serif;
+  font-size: 46px;
+  letter-spacing: 0.01em;
+}
+.contact .contact-details {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  margin: 60px 120px 60px;
+}
+
+.details {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.details > p {
+  font-family: "Forum", sans-serif;
+  color: #163D57;
+  font-size: 20px;
+}
+.details > p > a {
+  font-family: "Yeseva One", serif;
+  text-decoration: none;
+  font-size: 18px;
+}
+.details .details-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+}
+.email-form .form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+}
+.email-form .form-inputs > input,
+.email-form .form-inputs > textarea {
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #163D57;
+  border-radius: 2px;
+  font-family: "Forum", sans-serif;
+  font-size: 20px;
+  color: #163D57;
+}
+.email-form .form-inputs .name-input,
+.email-form .form-inputs .email-input {
+  height: 38px;
+  padding: 5px 10px 3px;
+}
+.email-form .form-inputs .message-input {
+  resize: none;
+  height: 140px;
+  padding: 8px;
+}
+.email-form .send-input {
+  align-self: flex-end;
+  margin-top: 20px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-family: "Forum", sans-serif;
+  font-size: 20px;
+}
+.email-form .send-input > img {
+  width: 12px;
+  margin-left: 5px;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
+  cursor: default;
+}/*# sourceMappingURL=Main.css.map */
