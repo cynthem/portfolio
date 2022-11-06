@@ -12,7 +12,7 @@
         display: flex;
         justify-content: center;
         gap: 120px;
-        margin: 100px 120px 60px;
+        margin: 60px 120px 60px;
     }
 }
 
@@ -20,7 +20,7 @@
     width: 460px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 80px;
     > p {
         font-family: $font-forum;
         color: $color-navy;
@@ -30,6 +30,12 @@
             text-decoration: none;
             font-size: 18px;
         }
+    }
+    .details-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
     }
 }
 
