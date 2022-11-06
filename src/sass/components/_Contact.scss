@@ -17,6 +17,9 @@
 }
 
 .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     > p {
         font-family: $font-forum;
         color: $color-navy;
