@@ -22,7 +22,6 @@
 .app {
   position: relative;
   background-color: #f7efd4;
-  z-index: -2;
 }
 .app .footer {
   z-index: 1;
@@ -63,7 +62,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 2;
+  z-index: 5;
 }
 .left-panel .link-list {
   padding-left: 30px;
@@ -145,7 +144,6 @@
   background-color: #163D57;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  z-index: -1;
 }
 
 .heading {
@@ -619,4 +617,4 @@ body {
   overscroll-behavior-x: none;
   overscroll-behavior-y: none;
   cursor: default;
-}/*# sourceMappingURL=Main.css.map */
+}/*# sourceMappingURL=main.css.map */
