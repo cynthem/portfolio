@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    //z-index: 2;
+    z-index: 2;
     .link-list {
         padding-left: 30px;
         > li {
@@ -21,6 +21,7 @@
                 font-size: 20px;
                 padding-left: 8px;
                 color: black;
+                cursor: pointer;
             }
         }
         > li::marker {
