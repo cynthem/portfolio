@@ -2,7 +2,7 @@
 @import '../helpers/mixins';
 
 .contact {
-    background-color: $color-orange;
+    background-color: $color-beige;
     .contact-header {
         margin-left: 260px;
         padding-top: 40px;
@@ -11,12 +11,13 @@
     .contact-details {
         display: flex;
         justify-content: center;
-        gap: 200px;
+        gap: 120px;
         margin: 100px 120px 60px;
     }
 }
 
 .details {
+    width: 460px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
