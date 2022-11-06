@@ -601,6 +601,7 @@
   border: none;
   font-family: "Forum", sans-serif;
   font-size: 20px;
+  cursor: pointer;
 }
 .email-form .send-input > img {
   width: 12px;
