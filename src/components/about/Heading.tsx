@@ -22,8 +22,8 @@ function Heading() {
                     <Pace getPace={(char) => (char === " " ? 100 : 40)}>
                         <p>{"Hello! I am a"}</p>
                     </Pace>
-                    <Pause ms={500} />
-                    <Pace getPace={(char) => (char === " " ? 400 : 100)}>
+                    <Pause ms={300} />
+                    <Pace getPace={(char) => (char === " " ? 200 : 70)}>
                         <h2>{"Front-end Developer"}</h2>
                     </Pace>
                 </WindupChildren>
