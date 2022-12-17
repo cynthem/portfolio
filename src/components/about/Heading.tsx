@@ -1,5 +1,6 @@
 import React from 'react';
 import selfie from '../../assets/images/placeholder-selfie.jpeg';
+import { WindupChildren, Pace, Pause } from "windups";
 
 function Heading() {
     return (
@@ -17,8 +18,15 @@ function Heading() {
                 />
             </div>
             <div className='job-title'>
-                <p>Hello! I am a</p>
-                <h2>Front-end Developer</h2>
+                <WindupChildren>
+                    <Pace getPace={(char) => (char === " " ? 100 : 40)}>
+                        <p>{"Hello! I am a"}</p>
+                    </Pace>
+                    <Pause ms={500} />
+                    <Pace getPace={(char) => (char === " " ? 400 : 100)}>
+                        <h2>{"Front-end Developer"}</h2>
+                    </Pace>
+                </WindupChildren>
             </div>
         </div>
         /*  <div className='image-title'>
@@ -35,21 +43,6 @@ function Heading() {
                             src={selfie}
                         />
                 </motion.div>
-                <div className='title-text'>
-                    <WindupChildren>
-                        <Pace getPace={(char) => (char === " " ? 100 : 40)}>
-                            <p>
-                                {"Hello! I am a"}
-                            </p>
-                        </Pace>
-                        <Pause ms={500} />
-                        <Pace getPace={(char) => (char === " " ? 400 : 100)}>
-                            <h2>
-                                {"Front-end Developer"}
-                            </h2>
-                        </Pace>
-                    </WindupChildren>
-                </div>
             </div>*/
     );
 }
