@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import { useInView } from "framer-motion"
 import LeftPanel from './components/LeftPanel';
 import About from './components/about/About';
 import Skills from './components/Skills';
@@ -8,11 +9,7 @@ import Footer from './components/Footer';
 import './sass/main.scss';
 
 export const App: React.FC = () => {
-  const [inView, setInView] = useState<Number | undefined>(0);
-
-  function handleView(view: Number) {
-    setInView(view);
-  }
+  
 
   return (
     <div className='app'>
