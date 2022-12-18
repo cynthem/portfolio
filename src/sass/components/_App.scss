@@ -3,6 +3,13 @@
 .app {
     position: relative;
     background-color: $color-beige;
+
+    .pages {
+        display: flex;
+        flex-direction: column;
+        gap: 40vh; 
+    }
+
     .footer {
         z-index: 1;
         background-color: $color-orange;
