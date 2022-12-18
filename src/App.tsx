@@ -1,6 +1,4 @@
-import React, { useEffect } from "react";
-import { useAnimation, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import React from "react";
 import LeftPanel from './components/LeftPanel';
 import About from './components/about/About';
 import Skills from './components/Skills';
