@@ -4,7 +4,10 @@ import { motion } from "framer-motion"
 
 function LeftPanel() {
     return (
-        <motion.div>
+        <motion.div 
+            animate={{ x: ['-100px', '0px'] }}
+            transition={{ x: { duration: 1 } }}
+        >
             <div className='left-panel'>
                 <ul className='link-list'>
                     <li><a href="#about">About</a></li>
