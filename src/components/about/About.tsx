@@ -5,14 +5,12 @@ import { motion } from "framer-motion"
 
 function About() {
     return (
-        <motion.div>
-            <div className='about'>
-                <div className='about-background'>
-                    <Heading />
-                    <Intro />
-                </div>
+        <div className='about'>
+            <div className='about-background'>
+                <Heading />
+                <Intro />
             </div>
-        </motion.div>
+        </div>
     )
 }
 
