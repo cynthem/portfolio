@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import { useInView } from 'react-intersection-observer';
 import LeftPanel from './components/LeftPanel';
 import About from './components/about/About';
 import Skills from './components/Skills';
