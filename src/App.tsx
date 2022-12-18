@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LeftPanel from './components/LeftPanel';
 import About from './components/about/About';
 import Skills from './components/Skills';
@@ -17,17 +16,16 @@ export const App: React.FC = () => {
 
   return (
     <div className='app'>
-      <LeftPanel 
-        //inView={inView}
-        //handleView={handleView}
-      />
-      <div className='pages'>
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-      </div>
-      
+        <LeftPanel 
+          //inView={inView}
+          //handleView={handleView}
+        />
+        <div className='pages'>
+            <About />
+            <Skills />
+            <Projects />
+            <Contact />
+        </div>
       <Footer />
     </div>
   );
