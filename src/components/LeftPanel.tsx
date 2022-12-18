@@ -6,7 +6,10 @@ function LeftPanel() {
     return (
         <motion.div 
             animate={{ x: ['-100px', '0px'] }}
-            transition={{ x: { duration: 1 } }}
+            transition={{ 
+                delay: 0.5,
+                x: { duration: 1 } 
+            }}
         >
             <div className='left-panel'>
                 <ul className='link-list'>
