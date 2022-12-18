@@ -1,5 +1,6 @@
-import React, { useState, useRef } from 'react';
-import { useInView } from "framer-motion"
+import React, { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import LeftPanel from './components/LeftPanel';
 import About from './components/about/About';
 import Skills from './components/Skills';
@@ -9,7 +10,6 @@ import Footer from './components/Footer';
 import './sass/main.scss';
 
 export const App: React.FC = () => {
-  
 
   return (
     <div className='app'>
