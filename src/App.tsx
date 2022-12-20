@@ -7,7 +7,7 @@ import Contact from './components/contact/Contact';
 import Footer from './components/Footer';
 import './sass/main.scss';
 
-export const App: React.FC = () => {
+export function App() {
   const [currentPage, setCurrentPage] = useState("home");
   const [scrollView, setScrollView] = useState(0);
   const inView = createRef<HTMLElement>();
@@ -43,8 +43,7 @@ export const App: React.FC = () => {
   return (
     <div className='app' ref={inView as React.RefObject<HTMLDivElement>}>
         <LeftPanel 
-          //inView={inView}
-          //handleView={handleView}
+          scrollView={scrollView}
         />
         <div className='pages'>
             <About />

@@ -2,7 +2,7 @@ import React from 'react';
 import views from '../util/pageViews';
 import { motion } from "framer-motion"
 
-function LeftPanel() {
+function LeftPanel({scrollView}) {
     return (
         <div className='left-panel'>
             <ul className='link-list'>
