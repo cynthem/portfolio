@@ -11,6 +11,7 @@ function LeftPanel({ scrollView, currentPage, setCurrentPage }: Props) {
     useEffect(() => {
         if (scrollView > 10) {
             setCurrentPage("about");
+            console.log('about time')
         } else if (scrollView > 20) {
             setCurrentPage("skills");
         } else if (scrollView > 30) {
@@ -25,12 +26,9 @@ function LeftPanel({ scrollView, currentPage, setCurrentPage }: Props) {
     return (
         <div className='left-panel'>
             <ul className='link-list'>
-                <motion.li
-                    //className={`${currentPage === "about" && "active"}`}
-                >
-                    About
+                <motion.li>About
                     <motion.div
-                        
+                        className={`${currentPage === "about" && "about-nav"}`}
                     >
                     </motion.div>
                 </motion.li>

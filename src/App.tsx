@@ -1,4 +1,4 @@
-import React, { useState, useEffect, createRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import LeftPanel from './components/LeftPanel';
 import About from './components/about/About';
 import Skills from './components/Skills';
@@ -10,11 +10,12 @@ import './sass/main.scss';
 export function App() {
   const [currentPage, setCurrentPage] = useState("home");
   const [scrollView, setScrollView] = useState(0);
-  const inView = createRef<HTMLElement>();
+  const inView = useRef<HTMLDivElement>(null);
 
   const scrollWatcher = () => {
+    console.log('hi');
     if (!inView.current) return;
-
+    
     const element = inView.current;
     const scrollLocation = (element as HTMLElement).scrollTop;
     const totalHeight = (element as HTMLElement).scrollHeight - (element as HTMLElement).clientHeight;
@@ -28,16 +29,20 @@ export function App() {
     }
 
     setScrollView((scrollLocation / totalHeight) * 100);
+    console.log('success')
   }
 
   useEffect(() => {
-    const element = inView.current;
-    (element as HTMLElement).addEventListener('scroll', scrollWatcher);
+    console.log(inView);
+    inView.current?.addEventListener('scroll', scrollWatcher);
 
-    return () => {
-      element &&
-      (element as HTMLElement).removeEventListener('scroll', scrollWatcher);
-    }
+    //const element = inView.current;
+    //(element as HTMLElement).addEventListener('scroll', scrollWatcher);
+   // document.addEventListener('scroll', scrollWatcher);
+    //return () => {
+     // element &&
+     // (element as HTMLElement).removeEventListener('scroll', scrollWatcher);
+   // }
   });
 
   return (
