@@ -26,7 +26,7 @@ function LeftPanel({ scrollView, currentPage, setCurrentPage }: Props) {
     return (
         <div className='left-panel'>
             <ul className='link-list'>
-                <li>About</li>
+                <li className={`underline ${currentPage === "home"}`}>About</li>
                 <li>Skills</li>
                 <li>Projects</li>
                 <li>Contact</li>
