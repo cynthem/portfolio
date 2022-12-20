@@ -13,7 +13,6 @@ export function App() {
   const inView = useRef<HTMLDivElement>(null);
 
   const scrollWatcher = () => {
-    console.log('hi');
     if (!inView.current) return;
     
     const element = inView.current;
@@ -29,20 +28,16 @@ export function App() {
     }
 
     setScrollView((scrollLocation / totalHeight) * 100);
-    console.log('success')
+    console.log(scrollView)
   }
 
   useEffect(() => {
-    console.log(inView);
     inView.current?.addEventListener('scroll', scrollWatcher);
 
-    //const element = inView.current;
-    //(element as HTMLElement).addEventListener('scroll', scrollWatcher);
-   // document.addEventListener('scroll', scrollWatcher);
-    //return () => {
-     // element &&
-     // (element as HTMLElement).removeEventListener('scroll', scrollWatcher);
-   // }
+    return () => {
+      inView.current &&
+      inView.current?.removeEventListener('scroll', scrollWatcher);
+    }
   });
 
   return (
