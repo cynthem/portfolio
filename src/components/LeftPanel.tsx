@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 import views from '../util/pageViews';
 import { motion } from "framer-motion"
 
 interface Props {
     scrollView: number;
     currentPage: string;
+    setCurrentPage:
 }
 
-function LeftPanel(props:Props) {
+function LeftPanel(props: Props) {
     return (
         <div className='left-panel'>
             <ul className='link-list'>
