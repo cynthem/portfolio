@@ -13,6 +13,11 @@
     z-index: 5;
     .link-list {
         padding-left: 30px;
+        > li::marker {
+            content: 'o';
+            font-size: 18px;
+            font-family: $font-forum;
+        }
         > li {
             margin-bottom: 15px;
             font-family: $font-bebas;
@@ -20,11 +25,26 @@
             padding-left: 8px;
             color: black;
             cursor: pointer;
+            .about-nav,
+            .skills-nav,
+            .projects-nav,
+            .contact-nav {
+                width: 40px;
+                height: 3px;
+                background-color: black;
+                border-radius: 4px;
+                margin-bottom: -3px;
+            }
+            .skills-nav {
+               width: 42px;
+            }
+            .projects-nav {
+                width: 59px;
+            }
+            .contact-nav {
+                width: 54px;
+            }
         }
-        > li::marker {
-            content: 'o';
-            font-size: 18px;
-            font-family: $font-forum;
-        }
+        
     }
 }

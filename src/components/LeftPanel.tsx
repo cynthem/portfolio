@@ -1,5 +1,4 @@
 import React, { useEffect, Dispatch, SetStateAction } from 'react';
-import views from '../util/pageViews';
 import { motion } from "framer-motion"
 
 interface Props {
@@ -26,10 +25,42 @@ function LeftPanel({ scrollView, currentPage, setCurrentPage }: Props) {
     return (
         <div className='left-panel'>
             <ul className='link-list'>
-                <li className={`underline ${currentPage === "home"}`}>About</li>
-                <li>Skills</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <motion.li
+                    //className={`${currentPage === "about" && "active"}`}
+                >
+                    About
+                    <motion.div
+                        
+                    >
+                    </motion.div>
+                </motion.li>
+        
+                <motion.li
+                >
+                    Skills
+                    <motion.div
+                        
+                    >
+                    </motion.div>
+                </motion.li>
+
+                <motion.li
+                >
+                    Projects
+                    <motion.div
+                        
+                    >
+                    </motion.div>
+                </motion.li>
+
+                <motion.li
+                >
+                    Contact
+                    <motion.div
+                        
+                    >
+                    </motion.div>
+                </motion.li>
             </ul>
         </div>
     );
