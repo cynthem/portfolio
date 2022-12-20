@@ -44,6 +44,8 @@ export function App() {
     <div className='app' ref={inView as React.RefObject<HTMLDivElement>}>
         <LeftPanel 
           scrollView={scrollView}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
         />
         <div className='pages'>
             <About />

@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 
 interface Props {
     scrollView: number;
+    currentPage: string;
 }
 
 function LeftPanel(props:Props) {
