@@ -15,14 +15,11 @@
         padding-left: 30px;
         > li {
             margin-bottom: 15px;
-            > a {
-                text-decoration: none;
-                font-family: $font-bebas;
-                font-size: 20px;
-                padding-left: 8px;
-                color: black;
-                cursor: pointer;
-            }
+            font-family: $font-bebas;
+            font-size: 20px;
+            padding-left: 8px;
+            color: black;
+            cursor: pointer;
         }
         > li::marker {
             content: 'o';
