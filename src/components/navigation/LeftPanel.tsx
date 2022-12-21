@@ -33,9 +33,22 @@ function LeftPanel({ scrollView, currentPage, setCurrentPage }: Props) {
         }
     }, [scrollView]);
 
+    useEffect(() => {
+        const observer = new MutationObserver(getAnchorPoints);
+        observer.observe(document.getElementById('root')!, {
+            childList: true,
+            subtree: true
+        });
+        window.addEventListener('scroll', handleScroll);
+    }, []);
+
+    const getAnchorPoints = () => {}
+
+    const handleScroll = () => {}
+
     const navList = Object.keys(sections).map((e, i) => 
         <NavItem navName={e} key={`navitem_${i}`} active={e === activeNav ? true : false} currentPage={currentPage} />
-    )
+    );
 
     return (
         <div className='left-panel'>
