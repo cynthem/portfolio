@@ -18,9 +18,19 @@ function NavItem({ navName, active, currentPage }: Props) {
         anchorTarget?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
+    const capitalize = (navString: String) => {
+        return navString.charAt(0).toUpperCase() + navString.slice(1);
+    }
+
     return (
         <li>
-            <a href={`#`}></a>
+            <a href={`#${navName}`}
+                onClick={() => handleClick}
+                className={`underline ${currentPage === `${navName}` && `${navName}-nav`}`}
+                aria-Label={`Scroll to ${navName}`}
+            >
+                {capitalize(navName)}
+            </a>
         </li>
     );
 }
