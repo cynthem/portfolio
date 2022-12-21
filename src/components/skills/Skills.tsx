@@ -1,5 +1,5 @@
 import React from 'react';
-import skillIcons from '../util/skillIcons';
+import skillIcons from '../../util/skillIcons';
 
 function Skills() {
     return (

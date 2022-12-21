@@ -1,4 +1,4 @@
-import React, { useEffect, Dispatch, SetStateAction } from 'react';
+import React, { useState, useEffect, Dispatch, SetStateAction } from 'react';
 import { motion } from "framer-motion"
 
 interface Props {
@@ -8,6 +8,7 @@ interface Props {
 }
 
 function LeftPanel({ scrollView, currentPage, setCurrentPage }: Props) {
+
     useEffect(() => {
         if (scrollView > 93) {
             setCurrentPage("contact");
