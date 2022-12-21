@@ -8,7 +8,16 @@ interface Props {
     setCurrentPage: Dispatch<SetStateAction<string>>;
 }
 
+const navItems = {
+    Top: 0,
+    AboutSection: null,
+    SkillsSection: null, 
+    ProjectsSection: null, 
+    ContactSection: null
+}
+
 function LeftPanel({ scrollView, currentPage, setCurrentPage }: Props) {
+    const [activeNav, setActiveNav] = useState('Top');
 
     useEffect(() => {
         if (scrollView > 93) {
@@ -24,9 +33,14 @@ function LeftPanel({ scrollView, currentPage, setCurrentPage }: Props) {
         }
     }, [scrollView]);
 
+    const navList = Object.keys(sections).map((e, i) => 
+        <NavItem navName={e} key={`navitem_${i}`} active={e === activeNav ? true : false} currentPage={currentPage} />
+    )
+
     return (
         <div className='left-panel'>
             <ul className='link-list'>
+                {navList}
             </ul>
         </div>
     );
