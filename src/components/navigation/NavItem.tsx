@@ -7,7 +7,16 @@ interface Props {
 }
 
 function NavItem({ navName, active, currentPage }: Props) {
-    const [anchorTarget, setAnchorTarget] = useState(null);
+    const [anchorTarget, setAnchorTarget] = useState<HTMLElement | null>(null);
+
+    useEffect(() => {
+        setAnchorTarget(document.getElementById(navName));
+    }, [navName]);
+
+    const handleClick = (e: Event) => {
+        e.preventDefault();
+        anchorTarget?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
 
     return (
         <li>
