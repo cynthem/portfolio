@@ -1,5 +1,6 @@
 import React, { useState, useEffect, Dispatch, SetStateAction } from 'react';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import NavItem from './NavItem';
 
 interface Props {
     scrollView: number;
