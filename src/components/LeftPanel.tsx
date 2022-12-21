@@ -25,39 +25,10 @@ function LeftPanel({ scrollView, currentPage, setCurrentPage }: Props) {
     return (
         <div className='left-panel'>
             <ul className='link-list'>
-                <motion.li>About
-                    <motion.div
-                        className={`${currentPage === "about" && "about-nav"}`}
-                    >
-                    </motion.div>
-                </motion.li>
-        
-                <motion.li
-                >
-                    Skills
-                    <motion.div
-                        
-                    >
-                    </motion.div>
-                </motion.li>
-
-                <motion.li
-                >
-                    Projects
-                    <motion.div
-                        
-                    >
-                    </motion.div>
-                </motion.li>
-
-                <motion.li
-                >
-                    Contact
-                    <motion.div
-                        
-                    >
-                    </motion.div>
-                </motion.li>
+                <li><a href="#about" className={`underline ${currentPage === "about" && "about-nav"}`}>About</a></li>
+                <li><a href="#skills" className={`underline ${currentPage === "skills" && "skills-nav"}`}>Skills</a></li>
+                <li><a href="#projects" className={`underline ${currentPage === "projects" && "projects-nav"}`}>Projects</a></li>
+                <li><a href="#contact" className={`underline ${currentPage === "contact" && "contact-nav"}`}>Contact</a></li>
             </ul>
         </div>
     );

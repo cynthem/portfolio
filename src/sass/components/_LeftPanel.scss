@@ -23,28 +23,66 @@
             font-family: $font-bebas;
             font-size: 20px;
             padding-left: 8px;
-            color: black;
             cursor: pointer;
+            > a {
+                color: black;
+                text-decoration: none;
+                transition: all 0.2s ease;
+            }
+            .underline {
+                display: inline;
+                position: relative;
+                overflow: hidden;
+            }
+            .underline::after {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                right: 0;
+                width: 0;
+                bottom: -5px;
+                background-color: $color-orange;
+                height: 3px;
+                transition: width 0.3s ease-out;
+            }
+            .underline:hover::after,
+            .underline:focus::after,
+            .underline:active::after {
+                left: 0;
+                right: auto;
+                width: 100%;
+            }
             .about-nav,
             .skills-nav,
             .projects-nav,
             .contact-nav {
-                width: 40px;
+                display: inline;
+                position: relative;
+                overflow: hidden;
+            }
+            .about-nav::after,
+            .skills-nav::after,
+            .projects-nav::after,
+            .contact-nav::after {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                left: 0;
+                right: auto;
+                width: 42px;
+                bottom: -5px;
                 height: 3px;
-                background-color: black;
-                border-radius: 4px;
-                margin-bottom: -3px;
+                transition: width 0.3s ease-out;
             }
-            .skills-nav {
-               width: 42px;
+            .skills-nav::after {
+                width: 44px;
             }
-            .projects-nav {
-                width: 59px;
+            .projects-nav::after {
+                width: 60px;
             }
-            .contact-nav {
+            .contact-nav::after {
                 width: 54px;
             }
         }
-        
     }
 }
