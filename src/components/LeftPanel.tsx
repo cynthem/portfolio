@@ -9,15 +9,14 @@ interface Props {
 
 function LeftPanel({ scrollView, currentPage, setCurrentPage }: Props) {
     useEffect(() => {
-        if (scrollView > 10) {
-            setCurrentPage("about");
-            console.log('about time')
+        if (scrollView > 93) {
+            setCurrentPage("contact");
+        } else if (scrollView > 35) {
+            setCurrentPage("projects");
         } else if (scrollView > 20) {
             setCurrentPage("skills");
-        } else if (scrollView > 30) {
-            setCurrentPage("projects");
-        } else if (scrollView > 40) {
-            setCurrentPage("contact");
+        } else if (scrollView > 4) {
+            setCurrentPage("about");
         } else {
             setCurrentPage("home");
         }
