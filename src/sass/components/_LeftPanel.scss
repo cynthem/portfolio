@@ -29,6 +29,9 @@
                 text-decoration: none;
                 transition: all 0.2s ease;
             }
+            > a:hover {
+                color: $color-orange;
+            }
             .underline {
                 display: inline;
                 position: relative;
@@ -44,13 +47,6 @@
                 background-color: $color-orange;
                 height: 3px;
                 transition: width 0.3s ease-out;
-            }
-            .underline:hover::after,
-            .underline:focus::after,
-            .underline:active::after {
-                left: 0;
-                right: auto;
-                width: 100%;
             }
             .about-nav,
             .skills-nav,
@@ -78,11 +74,14 @@
                 width: 44px;
             }
             .projects-nav::after {
-                width: 60px;
+                width: 61px;
             }
             .contact-nav::after {
-                width: 54px;
+                width: 56px;
             }
+        }
+        > li:active {
+            transform: scale(0.9);
         }
     }
 }
