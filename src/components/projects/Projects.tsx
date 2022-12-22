@@ -15,9 +15,9 @@ function Projects({ scrollView }: Props) {
     useEffect(() => {
         if (scrollView < 35) {
             setInView(false);
-        } else if (scrollView >= 35 && scrollView <= 94) {
+        } else if (scrollView >= 35 && scrollView <= 95) {
             setInView(true);
-        } else if (scrollView > 94) {
+        } else if (scrollView > 95) {
             setInView(false);
         }
     }, [scrollView]);
@@ -45,7 +45,7 @@ function Projects({ scrollView }: Props) {
     
     const projectsOutView = <motion.div 
             className='projects-container'
-            animate={{ scale: 0.8 }}
+            animate={{ scale: 0.6 }}
         >
             <div className='projects-header'>
                 <p className='number'>03.</p>
