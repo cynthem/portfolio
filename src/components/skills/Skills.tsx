@@ -18,25 +18,6 @@ function Skills({ scrollView }: Props) {
             setInView(false);
         }
     }, [scrollView]);
-
-    const headerInView = <motion.div 
-            className='skills-header' 
-            id='skills'
-            animate={{ scale: 1 }}
-        >
-            <p className='number'>02.</p>
-            <h2>Skills</h2>
-        </motion.div>
-    
-    const headerOutView = <motion.div 
-            className='skills-header' 
-            id='skills'
-            style={{ originX: 0, originY: 1 }}
-            animate={{ scale: 0.6 }}
-        >
-            <p className='number'>02.</p>
-            <h2>Skills</h2>
-        </motion.div>
     
     const rowOne = <div className='skills-row-1'>
             <div className='skill'>
@@ -120,30 +101,38 @@ function Skills({ scrollView }: Props) {
         </div>
     
     const skillsInView = <motion.div 
-            className='skills-boxes'
+            className='skills-container'
             animate={{ scale: 1 }}
         >
-            {rowOne}
-            {rowTwo}
-            {rowThree}
+            <div className='skills-header'>
+                <p className='number'>02.</p>
+                <h2>Skills</h2>
+            </div>
+            <div className='skills-boxes'>
+                {rowOne}
+                {rowTwo}
+                {rowThree}
+            </div>
         </motion.div>
     
     const skillsOutView = <motion.div 
-            className='skills-boxes'
-            style={{ originX: 0, originY: 1 }}
+            className='skills-container'
             animate={{ scale: 0.6 }}
         >
-            {rowOne}
-            {rowTwo}
-            {rowThree}
+            <div className='skills-header'>
+                <p className='number'>02.</p>
+                <h2>Skills</h2>
+            </div>
+            <div className='skills-boxes'>
+                {rowOne}
+                {rowTwo}
+                {rowThree}
+            </div>
         </motion.div>
 
     return (
-        <div className='skills'>
-            <div className='skills-container'>
-                {inView ? headerInView : headerOutView}
-                {inView ? skillsInView : skillsOutView}
-            </div>
+        <div className='skills' id='skills'>
+            {inView ? skillsInView : skillsOutView}
         </div>
     );
 }
