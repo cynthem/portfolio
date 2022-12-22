@@ -22,25 +22,51 @@ function Projects({ scrollView }: Props) {
         }
     }, [scrollView]);
 
+    const projectsInView = <motion.div 
+            className='projects-container'
+            animate={{ scale: 1 }}
+        >
+            <div className='projects-header'>
+                <p className='number'>03.</p>
+                <h2>Projects</h2>
+            </div>
+            <div className='projects-list'>
+                {projectPreviews.map((project) => {
+                    return (
+                        <Project 
+                            key={uniqid()} 
+                            project={project}
+                        />
+                    )
+                })}
+            </div>
+            <MoreProjects />
+        </motion.div>
+    
+    const projectsOutView = <motion.div 
+            className='projects-container'
+            animate={{ scale: 0.8 }}
+        >
+            <div className='projects-header'>
+                <p className='number'>03.</p>
+                <h2>Projects</h2>
+            </div>
+            <div className='projects-list'>
+                {projectPreviews.map((project) => {
+                    return (
+                        <Project 
+                            key={uniqid()} 
+                            project={project}
+                        />
+                    )
+                })}
+            </div>
+            <MoreProjects />
+        </motion.div>
+
     return (
         <div className='projects' id='projects'>
-            <div className='projects-container'>
-                <div className='projects-header'>
-                    <p className='number'>03.</p>
-                    <h2>Projects</h2>
-                </div>
-                <div className='projects-list'>
-                    {projectPreviews.map((project) => {
-                        return (
-                            <Project 
-                                key={uniqid()} 
-                                project={project}
-                            />
-                        )
-                    })}
-                </div>
-                <MoreProjects />
-            </div>
+            {inView ? projectsInView : projectsOutView}
         </div>
     )
 }
