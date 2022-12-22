@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import arrowIcon from '../../assets/images/arrow_icon.png';
 
 function EmailForm() {
