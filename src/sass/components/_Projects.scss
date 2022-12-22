@@ -5,15 +5,17 @@
     background-color: $color-navy;
     margin: 0 115px;
     border-radius: 5px;
-    .projects-header {
-        margin-left: 145px;
-        @include section-header($color-beige);
-    }
-    .projects-list {
-        display: flex;
-        flex-direction: column;
-        gap: 40vh;
-        margin: 100px 40px 40px;
+    .projects-container {
+        .projects-header {
+            margin-left: 145px;
+            @include section-header($color-beige);
+        }
+        .projects-list {
+            display: flex;
+            flex-direction: column;
+            gap: 40vh;
+            margin: 100px 40px 40px;
+        }
     }
 }
 
