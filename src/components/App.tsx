@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
-import LeftPanel from './components/navigation/LeftPanel';
-import About from './components/about/About';
-import Skills from './components/skills/Skills';
-import Projects from './components/projects/Projects';
-import Contact from './components/contact/Contact';
-import Footer from './components/contact/Footer';
+import LeftPanel from './navigation/LeftPanel';
+import About from './about/About';
+import Skills from './skills/Skills';
+import Projects from './projects/Projects';
+import Contact from './contact/Contact';
+import Footer from './contact/Footer';
 import './sass/main.scss';
 
 export function App() {
