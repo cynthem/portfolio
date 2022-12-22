@@ -16,6 +16,9 @@ function Heading() {
                     className='selfie-img'
                     alt="Selfie"
                     src={selfie}
+                    initial={{ y: 24, x: 24 }}
+                    animate={{ y: 0, x: 0 }}
+                    transition={{ duration: 1 }}
                 >
                 </motion.img>
             </div>
