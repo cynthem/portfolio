@@ -21,6 +21,7 @@ function About({ scrollView }: Props) {
     const aboutInView = <motion.div
             className='about-background'
             animate={{ scale: 1 }}
+            transition={{ duration: 0.8 }}
         >
             <Heading />
             <Intro />
@@ -30,6 +31,7 @@ function About({ scrollView }: Props) {
             className='about-background'
             style={{ originX: 1 }}
             animate={{ scale: 0.8 }}
+            transition={{ duration: 0.8 }}
         >
             <Heading />
             <Intro />
