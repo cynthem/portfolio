@@ -24,6 +24,7 @@
         font-family: $font-forum;
         color: $color-navy;
         font-size: 20px;
+        line-height: 1.5;
         > a {
             font-family: $font-yeseva;
             text-decoration: none;
@@ -35,6 +36,12 @@
         align-items: center;
         justify-content: center;
         gap: 20px;
+        > a:hover {
+            transform: scale(1.1);
+        }
+        > a:active {
+            transform: scale(0.9);
+        }
     }
 }
 
@@ -85,5 +92,13 @@
             width: 12px;
             margin-left: 5px;
         }
+    }
+    .send-input:hover {
+        color: $color-orange;
+        font-weight: 700;
+        transform: scale(1.1);
+    }
+    .send-input:active {
+        transform: scale(0.9);
     }
 }
