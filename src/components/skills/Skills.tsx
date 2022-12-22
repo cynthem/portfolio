@@ -117,7 +117,7 @@ function Skills({ scrollView }: Props) {
     
     const skillsOutView = <motion.div 
             className='skills-container'
-            animate={{ scale: 0.6 }}
+            animate={{ scale: 0 }}
         >
             <div className='skills-header'>
                 <p className='number'>02.</p>
