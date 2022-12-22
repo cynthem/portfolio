@@ -2,8 +2,8 @@ import React from 'react';
 
 function Intro() {
     return (
-        <div className='intro'>
-            <div className='about-header' id='about'>
+        <div className='intro' id='about'>
+            <div className='about-header'>
                 <p className='number'>01.</p>
                 <h2>About</h2>
             </div>
