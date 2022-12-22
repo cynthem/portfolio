@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Heading from './Heading';
 import Intro from './Intro';
 
@@ -7,12 +7,15 @@ interface Props {
 }
 
 function About({ scrollView }: Props) {
+    const [inView, setInView] = useState(true);
 
     useEffect(() => {
-        if (scrollView > 20) {
-
-        } else {}
-    });
+        if (scrollView < 20) {
+            setInView(true);
+        } else {
+            setInView(false);
+        }
+    }, [scrollView]);
 
     return (
         <div className='about'>
