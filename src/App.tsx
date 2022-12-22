@@ -54,7 +54,9 @@ export function App() {
             <Skills 
               scrollView={scrollView}
             />
-            <Projects />
+            <Projects 
+              scrollView={scrollView}
+            />
             <Contact />
         </div>
       <Footer />
