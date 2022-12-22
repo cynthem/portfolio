@@ -30,6 +30,12 @@
             text-decoration: none;
             font-size: 18px;
         }
+        > a:hover {
+            color: $color-orange;
+        }
+        > a:active {
+            color: $color-navy;
+        }
     }
     .details-links {
         display: flex;
