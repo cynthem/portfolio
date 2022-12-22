@@ -5,7 +5,6 @@
     background-color: $color-beige;
     .contact-header {
         margin-left: 260px;
-        padding-top: 40px;
         @include section-header($color-navy);
     }
     .contact-details {
