@@ -20,9 +20,25 @@
         text-align: center;
         color: $color-navy;
         font-family: $font-yeseva;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         > p {
+            > img {
+                width: 20px;
+                padding-right: 2px;
+                padding-left: 1px;
+            }
             > a {
                 text-decoration: none;
+                padding-left: 4px;
+                color: $color-navy;
+            }
+            > a:hover {
+                color: $color-beige;
+            }
+            > a:active {
+                color: red;
             }
         }
     }
