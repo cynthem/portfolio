@@ -19,5 +19,11 @@
         height: 50px;
         text-align: center;
         color: $color-navy;
+        font-family: $font-yeseva;
+        > p {
+            > a {
+                text-decoration: none;
+            }
+        }
     }
 }
