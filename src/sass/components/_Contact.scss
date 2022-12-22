@@ -66,6 +66,11 @@
             height: 140px;
             padding: 8px;
         }
+        .name-input:hover::-webkit-input-placeholder,
+        .email-input:hover::-webkit-input-placeholder,
+        .message-input:hover::-webkit-input-placeholder {
+            color: $color-orange;
+        }
     }
     .send-input {
         align-self: flex-end;
