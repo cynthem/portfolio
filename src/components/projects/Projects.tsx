@@ -1,13 +1,13 @@
 import React from 'react';
+import uniqid from 'uniqid';
 import Project from './Project';
 import MoreProjects from './MoreProjects';
 import projectPreviews from '../../util/projectPreviews';
-import uniqid from 'uniqid';
 
 function Projects() {
     return (
-        <div className='projects'>
-            <div className='projects-header' id='projects'>
+        <div className='projects' id='projects'>
+            <div className='projects-header'>
                 <p className='number'>03.</p>
                 <h2>Projects</h2>
             </div>
