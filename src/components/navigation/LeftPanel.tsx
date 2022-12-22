@@ -1,5 +1,4 @@
 import React, { useState, useEffect, Dispatch, SetStateAction } from 'react';
-import { motion } from "framer-motion";
 import NavItem from './NavItem';
 
 interface Props {
@@ -69,7 +68,12 @@ function LeftPanel({ scrollView, currentPage, setCurrentPage }: Props) {
     }
 
     const navList = Object.keys(navItems).map((e, i) => 
-        <NavItem navName={e} key={`navitem_${i}`} active={e === activeNav ? true : false} currentPage={currentPage} />
+        <NavItem 
+            navName={e} 
+            key={`navitem_${i}`} 
+            active={e === activeNav ? true : false} 
+            currentPage={currentPage} 
+        />
     );
 
     return (
