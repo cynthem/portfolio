@@ -6,16 +6,7 @@ import resumeIcon from '../../assets/images/contact-icons/resume_icon.svg';
 function Details() {
     return (
         <div className='details'>
-            <p>Info details and resume link 
-                <a 
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    resume
-                </a> 
-                . More content to display what this would look like with a few sentences instead of just one short one for styling purposes.
-            </p>
+            <p>I'm currently open to new opportunities! Don't hesitate to reach out if you're interested in working together, have any questions, or just want to drop me a line.</p>
             <div className='details-links'>
                 <a 
                     href="https://github.com/doozles411"
