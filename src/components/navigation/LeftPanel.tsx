@@ -9,11 +9,10 @@ interface Props {
 }
 
 const navItems: { [key: string]: number | null } = {
-        Top: 0,
-        AboutSection: null,
-        SkillsSection: null, 
-        ProjectsSection: null, 
-        ContactSection: null
+        about: 4,
+        skills: null, 
+        projects: null, 
+        contact: null
 }
 
 function LeftPanel({ scrollView, currentPage, setCurrentPage }: Props) {
@@ -35,7 +34,7 @@ function LeftPanel({ scrollView, currentPage, setCurrentPage }: Props) {
 
     useEffect(() => {
         const observer = new MutationObserver(getAnchorPoints);
-        observer.observe(document.getElementById('root')!, {
+        observer.observe(document.getElementById('app')!, {
             childList: true,
             subtree: true
         });
@@ -59,7 +58,7 @@ function LeftPanel({ scrollView, currentPage, setCurrentPage }: Props) {
         const currentPosition = window.scrollY;
         let currentSection = null;
         for (const section in navItems) {
-            currentSection = navItems[section]! >= currentPosition ? section : currentSection;
+            currentSection = navItems[section]! <= currentPosition ? section : currentSection;
             if (currentSection !== section) {
                 break;
             }
