@@ -1,7 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import skillIcons from '../../util/skillIcons';
 
-function Skills() {
+interface Props {
+    scrollView: number;
+}
+
+function Skills({ scrollView }: Props) {
+    const [inView, setInView] = useState(false);
+
+    useEffect(() => {
+        if (scrollView < 19) {
+            setInView(false);
+        } else if (scrollView >= 19 && scrollView <= 35) {
+            setInView(true);
+        } else if (scrollView > 35) {
+            setInView(false);
+        }
+    }, [scrollView]);
+
     return (
         <div className='skills'>
             <div className='skills-header' id='skills'>
