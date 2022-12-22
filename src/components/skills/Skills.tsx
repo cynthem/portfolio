@@ -103,6 +103,7 @@ function Skills({ scrollView }: Props) {
     const skillsInView = <motion.div 
             className='skills-container'
             animate={{ scale: 1 }}
+            transition={{ duration: 0.8 }}
         >
             <div className='skills-header'>
                 <p className='number'>02.</p>
@@ -118,6 +119,7 @@ function Skills({ scrollView }: Props) {
     const skillsOutView = <motion.div 
             className='skills-container'
             animate={{ scale: 0 }}
+            transition={{ duration: 0.8 }}
         >
             <div className='skills-header'>
                 <p className='number'>02.</p>

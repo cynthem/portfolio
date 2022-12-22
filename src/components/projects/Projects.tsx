@@ -25,6 +25,7 @@ function Projects({ scrollView }: Props) {
     const projectsInView = <motion.div 
             className='projects-container'
             animate={{ scale: 1 }}
+            transition={{ duration: 0.8 }}
         >
             <div className='projects-header'>
                 <p className='number'>03.</p>
@@ -46,6 +47,7 @@ function Projects({ scrollView }: Props) {
     const projectsOutView = <motion.div 
             className='projects-container'
             animate={{ scale: 0.6 }}
+            transition={{ duration: 0.8 }}
         >
             <div className='projects-header'>
                 <p className='number'>03.</p>
