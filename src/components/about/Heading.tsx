@@ -1,6 +1,7 @@
 import React from 'react';
-import selfie from '../../assets/images/placeholder-selfie.jpeg';
+import { motion } from 'framer-motion';
 import { WindupChildren, Pace, Pause } from "windups";
+import selfie from '../../assets/images/placeholder-selfie.jpeg';
 
 function Heading() {
     return (
@@ -11,11 +12,12 @@ function Heading() {
             </div>
             <div className='selfie'>
                 <div className='selfie-outline'></div>
-                <img 
+                <motion.img
                     className='selfie-img'
                     alt="Selfie"
                     src={selfie}
-                />
+                >
+                </motion.img>
             </div>
             <div className='job-title'>
                 <WindupChildren>
@@ -29,21 +31,6 @@ function Heading() {
                 </WindupChildren>
             </div>
         </div>
-        /*  <div className='image-title'>
-                <div className='image-outline'></div>
-                <motion.div
-                    initial={{ y: 100 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1 }}
-                    animate={{ y: 0 }}
-                >
-                        <img 
-                            className='selfie-img'
-                            alt="Selfie"
-                            src={selfie}
-                        />
-                </motion.div>
-            </div>*/
     );
 }
 
