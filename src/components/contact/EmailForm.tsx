@@ -3,35 +3,33 @@ import emailjs from '@emailjs/browser';
 import arrowIcon from '../../assets/images/arrow_icon.png';
 
 function EmailForm() {
-    const form = useRef();
+    const form = useRef<HTMLFormElement>();
 
     const sendEmail = (e: React.FormEvent) => {
         e.preventDefault();
-        disableSendButton();
         const sendBtn = document.querySelector('.send-input');
+        sendBtn!.textContent= 'Sending...';
         emailjs
             .sendForm(
-                process.env.REACT_APP_SERVICE_ID,
-                process.env.REACT_APP_TEMPLATE_ID,
-                form.current,
-                process.env.REACT_APP_USER_ID
+                'service_a67k0id',
+                'template_gloqn3c',
+                form.current!,
+                'd-khxRMXEB7gBIMrd'
             )
             .then(
                 (result) => {
                     sendBtn!.textContent = 'Thanks for the message!';
                 },
                 (error) => {
-                    sendBtn!.textContent = 'There was an error sending your message. Please refresh the page and try again.';
+                    sendBtn!.textContent = 'There was an error sending your message. Please try again.';
                 }
             );
     }
 
-    const disableSendButton = () => {}
-
     return (
         <form 
             className='email-form'
-            ref={form}
+            ref={form as React.RefObject<HTMLFormElement>}
             onSubmit={sendEmail}
         >
             <div className='form-inputs'>
