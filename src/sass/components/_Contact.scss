@@ -25,18 +25,6 @@
         color: $color-navy;
         font-size: 20px;
         line-height: 1.5;
-        > a {
-            font-family: $font-yeseva;
-            text-decoration: none;
-            font-size: 18px;
-            padding-left: 4px;
-        }
-        > a:hover {
-            color: $color-orange;
-        }
-        > a:active {
-            color: $color-navy;
-        }
     }
     .details-links {
         display: flex;
