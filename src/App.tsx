@@ -48,7 +48,9 @@ export function App() {
           setCurrentPage={setCurrentPage}
         />
         <div className='pages'>
-            <About />
+            <About 
+              scrollView={scrollView}
+            />
             <Skills />
             <Projects />
             <Contact />

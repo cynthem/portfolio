@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Heading from './Heading';
 import Intro from './Intro';
 
-function About() {
+interface Props {
+    scrollView: number;
+}
+
+function About({ scrollView }: Props) {
+
+    useEffect(() => {
+        if (scrollView > 20) {
+
+        } else {}
+    });
+
     return (
         <div className='about'>
             <div className='about-background'>
@@ -10,7 +21,7 @@ function About() {
                 <Intro />
             </div>
         </div>
-    )
+    );
 }
 
 export default About;
