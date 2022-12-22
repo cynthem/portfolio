@@ -28,7 +28,7 @@ export function App() {
     }
 
     setScrollView((scrollLocation / totalHeight) * 100);
-    console.log(scrollView)
+    console.log(scrollView);
   }
 
   useEffect(() => {
@@ -51,7 +51,9 @@ export function App() {
             <About 
               scrollView={scrollView}
             />
-            <Skills />
+            <Skills 
+              scrollView={scrollView}
+            />
             <Projects />
             <Contact />
         </div>
