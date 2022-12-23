@@ -1,6 +1,7 @@
 import projectImage from '../assets/images/projectPlaceholder.jpg';
 import todoingImg from '../assets/images/project-imgs/todoing.jpg';
 import battleshipImg from '../assets/images/project-imgs/battleship.jpg';
+import chilloutcoImg from '../assets/images/project-imgs/chilloutco.jpg';
 
 const projectPreviews = [
     {
@@ -21,7 +22,7 @@ const projectPreviews = [
     },
     {
         name: "ChillOut Co.",
-        image: projectImage,
+        image: chilloutcoImg,
         siteLink: "https://doozles411.github.io/shopping-cart/",
         gitHubLink: "https://github.com/doozles411/shopping-cart",
         description: "A faux shopping app that uses React Router and features a shopping page with products to add to your cart. Completed as part of The Odin Project's Full Stack JavaScript curriculum.",
