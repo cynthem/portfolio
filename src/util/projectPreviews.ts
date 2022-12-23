@@ -1,5 +1,5 @@
 import projectImage from '../assets/images/projectPlaceholder.jpg';
-import todoingImg from '../assets/images/project-imgs/todoing.png';
+import todoingImg from '../assets/images/project-imgs/todoing.jpg';
 
 const projectPreviews = [
     {
