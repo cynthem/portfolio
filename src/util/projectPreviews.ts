@@ -1,9 +1,10 @@
 import projectImage from '../assets/images/projectPlaceholder.jpg';
+import todoingImg from '../assets/images/project-imgs/todoing.png';
 
 const projectPreviews = [
     {
         name: "To-Doing",
-        image: projectImage,
+        image: todoingImg,
         siteLink: "https://doozles411.github.io/todo-list-II/",
         gitHubLink: "https://github.com/doozles411/todo-list-II",
         description: "A to-do list tracking app that stores data locally and allows users to add, delete, edit, and organize to-do tasks and projects. Completed as part of The Odin Project's Full Stack JavaScript curriculum to demonstrate OOP principles and use of local storage.",
