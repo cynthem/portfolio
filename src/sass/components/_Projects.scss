@@ -105,23 +105,33 @@
             display: flex;
             position: relative;
             .more-background {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 280px;
-                height: 200px;
-                background-color: $color-orange;
+                //background-color: $color-orange;
+                
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 > img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 280px;
+                    height: 200px;
                     width: 250px;
+                    box-shadow: 
+                    22px 24px 0px 0px $color-navy,
+                    24px 22px 0px 0px $color-orange,
+                    24px 26px 0px 0px $color-orange,
+                    20px 26px 0px 0px $color-orange;
                 }
             }
             .middle {
                 position: absolute;
                 top: 50px;
                 left: 100px;
+                width: 265px;
+                height: 186px;
+                justify-content: flex-start;
+                align-items: flex-start;
             }
             .bottom {
                 position: absolute;

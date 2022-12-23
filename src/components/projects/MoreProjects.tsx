@@ -9,24 +9,21 @@ function MoreProjects() {
         <div className='more-projects'>
             <div className='more-container'>
                 <div className='more-imgs'>
-                    <div className='more-background top'>
-                        <img 
-                            alt='More projects'
-                            src={weatherImg}
-                        />
-                    </div>
-                    <div className='more-background middle'>
-                        <img 
-                            alt='More projects'
-                            src={etchImg}
-                        />
-                    </div>
-                    <div className='more-background bottom'>
-                        <img 
-                            alt='More projects'
-                            src={signupImg}
-                        />
-                    </div>
+                    <img 
+                        className='top-img'
+                        alt='More projects'
+                        src={weatherImg}
+                    />
+                    <img 
+                        className='mid-img'
+                        alt='More projects'
+                        src={etchImg}
+                    />
+                    <img 
+                        className='bottom-img'
+                        alt='More projects'
+                        src={signupImg}
+                    />
                 </div>
                 <div className='more-link'>
                     <a
