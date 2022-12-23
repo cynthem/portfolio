@@ -1,7 +1,7 @@
-import projectImage from '../assets/images/projectPlaceholder.jpg';
 import todoingImg from '../assets/images/project-imgs/todoing.jpg';
 import battleshipImg from '../assets/images/project-imgs/battleship.jpg';
 import chilloutcoImg from '../assets/images/project-imgs/chilloutco.jpg';
+import cvbuilerImg from '../assets/images/project-imgs/cvapp.jpg';
 
 const projectPreviews = [
     {
@@ -30,7 +30,7 @@ const projectPreviews = [
     },
     {
         name: "CV Creator",
-        image: projectImage,
+        image: cvbuilerImg,
         siteLink: "https://doozles411.github.io/CV-app/",
         gitHubLink: "https://github.com/doozles411/CV-app",
         description: "A resume building app that provides a template, guides users through CV creation, and produces a printable document. Completed as part of The Odin Project's Full Stack JavaScript curriculum.",
