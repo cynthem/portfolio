@@ -101,6 +101,8 @@
     padding-bottom: 40vh;
     .more-container {
         display: flex;
+        margin-left: 62px;
+        margin-right: 40px;
         .more-imgs {
             display: flex;
             position: relative;
@@ -108,14 +110,22 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 280px;
                 height: 200px;
                 width: 250px;
-                box-shadow: 
-                22px 24px 0px 0px $color-navy,
-                24px 22px 0px 0px $color-orange,
-                24px 26px 0px 0px $color-orange,
-                20px 26px 0px 0px $color-orange;
+                box-shadow: -22px -22px $color-orange;
+                box-shadow: 22px 22px $color-orange;
+            }
+            .mid-img {
+                position: absolute;
+                top: 50px;
+                left: 100px;
+                box-shadow: 22px 22px $color-orange;
+            }
+            .bottom-img {
+                position: absolute;
+                top: 100px;
+                left: 200px;
+                box-shadow: 22px 22px $color-orange;
             }
         }
         .more-link {
