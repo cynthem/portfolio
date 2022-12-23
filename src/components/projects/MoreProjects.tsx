@@ -17,12 +17,12 @@ function MoreProjects() {
                     <img 
                         className='mid-img'
                         alt='More projects'
-                        src={etchImg}
+                        src={signupImg}
                     />
                     <img 
                         className='bottom-img'
                         alt='More projects'
-                        src={signupImg}
+                        src={etchImg}
                     />
                 </div>
                 <div className='more-link'>
