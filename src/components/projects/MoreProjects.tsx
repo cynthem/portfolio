@@ -9,19 +9,19 @@ function MoreProjects() {
         <div className='more-projects'>
             <div className='more-container'>
                 <div className='more-imgs'>
-                    <div className='more-background'>
+                    <div className='more-background top'>
                         <img 
                             alt='More projects'
                             src={weatherImg}
                         />
                     </div>
-                    <div className='more-background'>
+                    <div className='more-background middle'>
                         <img 
                             alt='More projects'
                             src={etchImg}
                         />
                     </div>
-                    <div className='more-background'>
+                    <div className='more-background bottom'>
                         <img 
                             alt='More projects'
                             src={signupImg}
