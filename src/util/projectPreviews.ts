@@ -6,7 +6,7 @@ const projectPreviews = [
         image: projectImage,
         siteLink: "https://doozles411.github.io/todo-list-II/",
         gitHubLink: "https://github.com/doozles411/todo-list-II",
-        description: "Description 3",
+        description: "A to-do list tracking app that stores data locally and allows users to add, delete, edit, and organize to-do tasks and projects. Completed as part of The Odin Project's Full Stack JavaScript curriculum to demonstrate OOP principles and use of local storage.",
         tools: "Built with TypeScript and Webpack"
     },
     {
@@ -14,7 +14,7 @@ const projectPreviews = [
         image: projectImage,
         siteLink: "https://doozles411.github.io/battleship-II/",
         gitHubLink: "https://github.com/doozles411/battleship-II",
-        description: "Description 4",
+        description: "An app featuring the classic game Battleship. Users play against a computer AI that uses an algorithm to determine its next play. Completed as part of The Odin Project's Full Stack JavaScript curriculum to demonstrate use of Jest for testing.",
         tools: "Built with jQuery and Webpack"
     },
     {
@@ -22,7 +22,7 @@ const projectPreviews = [
         image: projectImage,
         siteLink: "https://doozles411.github.io/shopping-cart/",
         gitHubLink: "https://github.com/doozles411/shopping-cart",
-        description: "Description 1",
+        description: "A faux shopping app that uses React Router and features a shopping page with products to add to your cart. Completed as part of The Odin Project's Full Stack JavaScript curriculum.",
         tools: "Built with React and React Router"
     },
     {
@@ -30,7 +30,7 @@ const projectPreviews = [
         image: projectImage,
         siteLink: "https://doozles411.github.io/CV-app/",
         gitHubLink: "https://github.com/doozles411/CV-app",
-        description: "Description 2",
+        description: "A resume building app that provides a template, guides users through CV creation, and produces a printable document. Completed as part of The Odin Project's Full Stack JavaScript curriculum.",
         tools: "Built with React"
     }
 ];
