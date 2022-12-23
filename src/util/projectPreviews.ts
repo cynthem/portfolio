@@ -1,5 +1,6 @@
 import projectImage from '../assets/images/projectPlaceholder.jpg';
 import todoingImg from '../assets/images/project-imgs/todoing.jpg';
+import battleshipImg from '../assets/images/project-imgs/battleship.jpg';
 
 const projectPreviews = [
     {
@@ -12,7 +13,7 @@ const projectPreviews = [
     },
     {
         name: "Battleship",
-        image: projectImage,
+        image: battleshipImg,
         siteLink: "https://doozles411.github.io/battleship-II/",
         gitHubLink: "https://github.com/doozles411/battleship-II",
         description: "An app featuring the classic game Battleship. Users play against a computer AI that uses an algorithm to determine its next play. Completed as part of The Odin Project's Full Stack JavaScript curriculum to demonstrate use of Jest for testing.",
