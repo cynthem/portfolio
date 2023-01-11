@@ -37,6 +37,7 @@ function Projects({ scrollView }: Props) {
                         <Project 
                             key={uniqid()} 
                             project={project}
+                            inView={inView}
                         />
                     )
                 })}
@@ -59,6 +60,7 @@ function Projects({ scrollView }: Props) {
                         <Project 
                             key={uniqid()} 
                             project={project}
+                            inView={inView}
                         />
                     )
                 })}
