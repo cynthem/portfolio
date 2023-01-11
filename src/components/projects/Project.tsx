@@ -5,6 +5,11 @@ import arrowIcon from '../../assets/images/arrow_icon.png';
 function Project({ project }: { project: any }) {
     const containerRef = useRef(null);
 
+    const { scrollYProgress } = useScroll({
+        target: containerRef,
+        offset: ['start end', 'end end']
+    });
+
     return (
         <div className='project-container'>
             <div className='project-image' ref={containerRef}>
@@ -12,9 +17,7 @@ function Project({ project }: { project: any }) {
                 <motion.img
                     alt={project.name}
                     src={project.image}
-                    initial={{ y: 24, x: 24 }}
-                    animate={{ y: 0, x: 0 }}
-                    transition={{ duration: 1 }}
+                    style={{ translateY: scrollYProgress }}
                 >
                 </motion.img>
             </div>
