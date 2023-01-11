@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useRef } from 'react';
+import { motion, useScroll } from 'framer-motion';
 import arrowIcon from '../../assets/images/arrow_icon.png';
 
 function Project({ project }: { project: any }) {
