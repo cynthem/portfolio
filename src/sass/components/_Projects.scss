@@ -23,6 +23,7 @@
 .project-container {
     display: flex;
     align-items: center;
+    overflow: hidden;
     .project-image {
         position: relative;
         .project-outline {
@@ -36,6 +37,7 @@
         > img {
             position: relative;
             width: 500px;
+            z-index: 2;
         }
     }
     .project-card {
