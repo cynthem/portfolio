@@ -98,7 +98,7 @@
 
 .more-projects {
     margin-top: 40vh;
-    padding-bottom: 8vh;
+    padding-bottom: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,10 +118,15 @@
         border: 2px solid $color-orange;
         padding: 20px;
         display: flex;
+        align-items: center;
         > h3 {
             font-family: $font-bebas;
             font-size: 26px;
             color: $color-orange;
+        }
+        > img {
+            width: 18px;
+            margin-left: 10px;
         }
     }
 }
