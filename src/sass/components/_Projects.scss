@@ -116,7 +116,7 @@
     }
     .more-projects-link {
         border: 2px solid $color-orange;
-        padding: 20px;
+        padding: 20px 30px;
         display: flex;
         align-items: center;
         > h3 {
@@ -125,7 +125,7 @@
             color: $color-orange;
         }
         > img {
-            width: 18px;
+            width: 19px;
             margin-left: 10px;
         }
     }
