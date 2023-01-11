@@ -53,10 +53,7 @@ function Projects({ scrollView }: Props) {
                 <p className='number'>03.</p>
                 <h2>Projects</h2>
             </div>
-            <motion.div 
-                className='projects-list'
-                
-            >
+            <div className='projects-list'>
                 {projectPreviews.map((project) => {
                     return (
                         <Project 
@@ -65,7 +62,7 @@ function Projects({ scrollView }: Props) {
                         />
                     )
                 })}
-            </motion.div>
+            </div>
             <MoreProjects />
         </motion.div>
 
