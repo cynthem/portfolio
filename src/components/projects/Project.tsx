@@ -2,7 +2,12 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import arrowIcon from '../../assets/images/arrow_icon.png';
 
-function Project({ project }: { project: any }) {
+interface Props {
+    project: any;
+    inView: boolean;
+}
+
+function Project({ project, inView }: Props) {
     const containerRef = useRef(null);
 
     const { scrollYProgress } = useScroll({
