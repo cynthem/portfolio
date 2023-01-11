@@ -1,30 +1,53 @@
-import React, { useRef } from 'react';
-import { motion } from 'framer-motion';
+import React, { 
+    useState, 
+    useEffect, 
+    useRef, 
+    useLayoutEffect
+} from 'react';
+import { 
+    motion,
+    useScroll,
+    useTransform,
+    useSpring
+} from 'framer-motion';
 import arrowIcon from '../../assets/images/arrow_icon.png';
 
 interface Props {
     project: any;
-    inView: boolean;
+    offset?: number;
 }
 
-function Project({ project, inView }: Props) {
-    const containerRef = useRef(null);
+function Project({ project, offset = 50 }: Props) {
+    const ref = useRef<HTMLDivElement>(null);
+    const [elementTop, setElementTop] = useState(0);
+    const [clientHeight, setClientHeight] = useState(0);
+    const { scrollY } = useScroll();
+    const initial = elementTop - clientHeight;
+    const final = elementTop + offset;
+    const yRange = useTransform(scrollY, [initial, final], [offset, -offset]);
+    const y = useSpring(yRange, { stiffness: 400, damping: 90 });
 
-    /*const { scrollYProgress } = useScroll({
-        target: containerRef,
-        offset: ['start end', 'end end']
-    });*/
-
-    //const imageValue = useTransform(scrollYProgress, [0, 1], ['-10%', '100%']);
+    useLayoutEffect(() => {
+        const element = ref.current;
+        const onResize = () => {
+            if (!element) return;
+            setElementTop(
+                element.getBoundingClientRect().top + window.scrollY || window.pageYOffset
+            );
+            setClientHeight(window.innerHeight);
+        };
+        onResize();
+        window.addEventListener("resize", onResize);
+        return () => window.removeEventListener("resize", onResize);
+    }, [ref]);
 
     return (
-        <div className='project-container' ref={containerRef}>
+        <div className='project-container'>
             <div className='project-image'>
                 <div className='project-outline'></div>
                 <motion.img
                     alt={project.name}
                     src={project.image}
-                    //style={{ translateY: imageValue }}
                 >
                 </motion.img>
             </div>
