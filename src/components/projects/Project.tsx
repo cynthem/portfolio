@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import arrowIcon from '../../assets/images/arrow_icon.png';
 
 function Project({ project }: { project: any }) {
@@ -6,10 +7,14 @@ function Project({ project }: { project: any }) {
         <div className='project-container'>
             <div className='project-image'>
                 <div className='project-outline'></div>
-                <img 
+                <motion.img
                     alt={project.name}
                     src={project.image}
-                />
+                    initial={{ y: 24, x: 24 }}
+                    animate={{ y: 0, x: 0 }}
+                    transition={{ duration: 1 }}
+                >
+                </motion.img>
             </div>
             <div className='project-card'>
                 <h3>{project.name}</h3>
