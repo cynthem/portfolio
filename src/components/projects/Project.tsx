@@ -10,7 +10,7 @@ function Project({ project }: { project: any }) {
         offset: ['start end', 'end end']
     });
 
-    const imageValue = useTransform(scrollYProgress, [0, 1], ['-100%', '0%']);
+    const imageValue = useTransform(scrollYProgress, [0, 1], ['-10%', '100%']);
 
     return (
         <div className='project-container' ref={containerRef}>
