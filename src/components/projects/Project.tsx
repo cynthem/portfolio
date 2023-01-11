@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { motion, useScroll } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import arrowIcon from '../../assets/images/arrow_icon.png';
 
 function Project({ project }: { project: any }) {
@@ -10,14 +10,16 @@ function Project({ project }: { project: any }) {
         offset: ['start end', 'end end']
     });
 
+    const imageValue = useTransform(scrollYProgress, [0, 1], ['-100%', '0%']);
+
     return (
-        <div className='project-container'>
-            <div className='project-image' ref={containerRef}>
+        <div className='project-container' ref={containerRef}>
+            <div className='project-image'>
                 <div className='project-outline'></div>
                 <motion.img
                     alt={project.name}
                     src={project.image}
-                    style={{ translateY: scrollYProgress }}
+                    style={{ translateY: imageValue }}
                 >
                 </motion.img>
             </div>
