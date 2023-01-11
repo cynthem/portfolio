@@ -98,14 +98,19 @@
 
 .more-projects {
     margin-top: 40vh;
-    padding-bottom: 30vh;
+    padding-bottom: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .more-projects-background {
         background-color: $color-orange;
-        height: 248px;
-        width: 298px;
+        height: 330px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         > img {
-            height: 200px;
-            width: 250px;
+            width: 90%;
         }
     }
 }
