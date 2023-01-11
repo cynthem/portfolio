@@ -4,10 +4,13 @@ import arrowIcon from '../../assets/images/arrow_icon.png';
 function Project({ project }: { project: any }) {
     return (
         <div className='project-container'>
-            <img 
-                alt={project.name}
-                src={project.image}
-            />
+            <div className='project-image'>
+                <div className='project-outline'></div>
+                <img 
+                    alt={project.name}
+                    src={project.image}
+                />
+            </div>
             <div className='project-card'>
                 <h3>{project.name}</h3>
                 <div className='card-container'>
