@@ -99,18 +99,13 @@
 .more-projects {
     margin-top: 40vh;
     padding-bottom: 30vh;
-    position: relative;
-    .more-projects-outline {
-        height: 200px;
-        width: 250px;
-        outline: 2px solid $color-orange;
-        position: absolute;
-        top: 24px;
-        left: 24px;
-    }
-    > img {
-        position: relative;
-        height: 200px;
-        width: 250px;
+    .more-projects-background {
+        background-color: $color-orange;
+        height: 248px;
+        width: 298px;
+        > img {
+            height: 200px;
+            width: 250px;
+        }
     }
 }
