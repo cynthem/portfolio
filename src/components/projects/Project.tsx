@@ -3,9 +3,11 @@ import { motion, useScroll } from 'framer-motion';
 import arrowIcon from '../../assets/images/arrow_icon.png';
 
 function Project({ project }: { project: any }) {
+    const containerRef = useRef(null);
+
     return (
         <div className='project-container'>
-            <div className='project-image'>
+            <div className='project-image' ref={containerRef}>
                 <div className='project-outline'></div>
                 <motion.img
                     alt={project.name}
