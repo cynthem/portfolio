@@ -1,6 +1,5 @@
 import React, { 
     useState, 
-    useEffect, 
     useRef, 
     useLayoutEffect
 } from 'react';
@@ -18,7 +17,7 @@ interface Props {
 }
 
 function Project({ project, offset = 50 }: Props) {
-    const ref = useRef<HTMLDivElement>(null);
+    const ref = useRef<HTMLImageElement>(null);
     const [elementTop, setElementTop] = useState(0);
     const [clientHeight, setClientHeight] = useState(0);
     const { scrollY } = useScroll();
@@ -48,6 +47,8 @@ function Project({ project, offset = 50 }: Props) {
                 <motion.img
                     alt={project.name}
                     src={project.image}
+                    ref={ref as React.RefObject<HTMLImageElement>}
+                    style={{ y }}
                 >
                 </motion.img>
             </div>

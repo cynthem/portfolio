@@ -55,8 +55,7 @@ function Projects({ scrollView }: Props) {
             </div>
             <motion.div 
                 className='projects-list'
-                ref={ref as React.RefObject<HTMLDivElement>}
-                style={{ y }}
+                
             >
                 {projectPreviews.map((project) => {
                     return (
