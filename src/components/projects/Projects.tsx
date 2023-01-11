@@ -9,8 +9,7 @@ import {
     motion,
     useScroll,
     useTransform,
-    useSpring,
-    useReducedMotion 
+    useSpring
 } from 'framer-motion';
 import uniqid from 'uniqid';
 import Project from './Project';
@@ -28,7 +27,6 @@ function Projects({ scrollView, children, offset = 50 }: Props) {
     const [inView, setInView] = useState(false);
     const [elementTop, setElementTop] = useState(0);
     const [clientHeight, setClientHeight] = useState(0);
-    const prefersReducedMotion = useReducedMotion();
     const { scrollY } = useScroll();
     const initial = elementTop - clientHeight;
     const final = elementTop + offset;
@@ -48,10 +46,6 @@ function Projects({ scrollView, children, offset = 50 }: Props) {
         window.addEventListener("resize", onResize);
         return () => window.removeEventListener("resize", onResize);
     }, [ref]);
-    
-    if (prefersReducedMotion) {
-        return <>{children}</>;
-    }
 
     useEffect(() => {
         if (scrollView < 35) {
