@@ -1,6 +1,6 @@
 import React from 'react';
 import otherProjects from '../../assets/images/project-imgs/otherProj.jpg';
-import arrowIcon from '../../assets/images/arrow_icon.png';
+import arrowIcon from '../../assets/images/icon_arrow_orange.png';
 
 function MoreProjects() {
     return (
