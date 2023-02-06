@@ -16,7 +16,7 @@ interface Props {
     offset?: number;
 }
 
-function Project({ project, offset = 50 }: Props) {
+function Project({ project, offset = 10 }: Props) {
     const ref = useRef<HTMLImageElement>(null);
     const [elementTop, setElementTop] = useState(0);
     const [clientHeight, setClientHeight] = useState(0);
@@ -24,7 +24,7 @@ function Project({ project, offset = 50 }: Props) {
     const initial = elementTop - clientHeight;
     const final = elementTop + offset;
     const yRange = useTransform(scrollY, [initial, final], [offset, -offset]);
-    const y = useSpring(yRange, { stiffness: 400, damping: 90 });
+    const y = useSpring(yRange, { stiffness: 100, damping: 10 });
 
     useLayoutEffect(() => {
         const element = ref.current;
