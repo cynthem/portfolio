@@ -2,84 +2,10 @@
 @import '../helpers/mixins';
 
 .contact {
-    background-color: $color-beige;
-    .contact-header {
-        margin-left: 260px;
-        @include section-header($color-navy);
-    }
-    .contact-details {
-        display: flex;
-        justify-content: center;
-        gap: 120px;
-        margin: 60px 120px 60px;
-    }
 }
 
 .details {
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-    > p {
-        font-family: $font-forum;
-        color: $color-navy;
-        font-size: 20px;
-        line-height: 1.5;
-    }
-    .details-links {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-    }
 }
 
 .email-form {
-    display: flex;
-    flex-direction: column;
-    .form-inputs {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        width: 400px;
-        > input,
-        > textarea {
-            background-color: transparent;
-            outline: none;
-            border: 2px solid $color-navy;
-            border-radius: 2px;
-            font-family: $font-forum;
-            font-size: 20px;
-            color: $color-navy;
-        }
-        .name-input,
-        .email-input {
-            height: 38px;
-            padding: 5px 10px 3px;
-        }
-        .message-input {
-            resize: none;
-            height: 140px;
-            padding: 8px;
-        }
-        .name-input:hover::-webkit-input-placeholder,
-        .email-input:hover::-webkit-input-placeholder,
-        .message-input:hover::-webkit-input-placeholder {
-            color: $color-orange;
-        }
-    }
-    .send-input {
-        align-self: flex-end;
-        margin-top: 20px;
-        background-color: transparent;
-        outline: none;
-        border: none;
-        font-family: $font-forum;
-        font-size: 20px;
-        cursor: pointer;
-        > img {
-            width: 12px;
-            margin-left: 5px;
-        }
-    }
 }

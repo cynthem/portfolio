@@ -1,39 +1,4 @@
 @import '../helpers/variables';
 
 .app {
-    position: relative;
-    background-color: $color-beige; 
-    overflow: scroll;
-    min-height: 100vh;
-    max-height: 100vh;
-
-    .pages {
-        display: flex;
-        flex-direction: column;
-        gap: 25vh; 
-    }
-
-    .footer {
-        z-index: 1;
-        background-color: $color-orange;
-        height: 50px;
-        text-align: center;
-        color: $color-navy;
-        font-family: $font-yeseva;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        > p {
-            > img {
-                width: 20px;
-                padding-right: 2px;
-                padding-left: 1px;
-            }
-            > a {
-                text-decoration: none;
-                padding-left: 4px;
-                color: $color-navy;
-            }
-        }
-    }
 }
