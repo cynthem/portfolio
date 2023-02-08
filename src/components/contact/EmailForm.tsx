@@ -35,7 +35,7 @@ function EmailForm() {
         },
         hover: {
             scale: 1.2,
-            color: 'hsl(39, 100, 50)', 
+            color: '#ffa600', 
             transition: { duration: 0.5 }
         },
         tap: {
