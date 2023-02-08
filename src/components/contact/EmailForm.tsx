@@ -63,6 +63,12 @@ function EmailForm() {
                 type='submit'
                 value='Send'
                 aria-label='Send email'
+                whileHover={{
+                    scale: 1.2,
+                    color: 'hsl(39, 100, 50)', 
+                    transition: { duration: 0.5 }
+                }}
+                whileTap={{ scale: 0.9 }}
             >
                 Send
                 <img alt='Send' src={arrowIcon} />
