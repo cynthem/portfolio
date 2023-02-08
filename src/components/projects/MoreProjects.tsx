@@ -38,10 +38,17 @@ function MoreProjects() {
                 >
                 </motion.img>
             </div>
-            <div className='more-projects-link'>
+            <motion.div 
+                className='more-projects-link'
+                whileHover={{
+                    scale: 1.1, 
+                    transition: { duration: 0.5 }
+                }}
+                whileTap={{ scale: 0.9 }}
+            >
                 <h3>More projects</h3>
                 <img alt="Arrow icon" src={arrowIcon} />
-            </div>
+            </motion.div>
         </div>
     )
 }
