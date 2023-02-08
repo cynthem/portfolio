@@ -1,9 +1,14 @@
 import React, { useState, useRef, useLayoutEffect } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useMotionValue, useTransform } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import otherProjects from '../../assets/images/project-imgs/otherProj.jpg';
 import arrowIcon from '../../assets/images/icon_arrow_orange.png';
 
 function MoreProjects() {
+    const scrollY = useMotionValue(0);
+    const backgroundY = useTransform(scrollY, [0, 1000], [0, 200]);
+    const foregroundY = useTransform(scrollY, [0, 1000], [0, -100]);
+
     /*const ref = useRef<HTMLDivElement>();
 
     const [scrollStart, setScrollStart] = useState(0);
@@ -30,14 +35,18 @@ function MoreProjects() {
 
     return (
         <div className='more-projects' /*ref={ref as React.RefObject<HTMLDivElement>}*/>
-            <div className='more-projects-background'>
+            <motion.div 
+                className='more-projects-background'
+                style={{ y: backgroundY, x: 0 }}
+            >
                 <motion.img 
                     alt='More projects' 
                     src={otherProjects}
                     //style={{ scale }}
+                    style={{ y: foregroundY, x: 0 }}
                 >
                 </motion.img>
-            </div>
+            </motion.div>
             <motion.div 
                 className='more-projects-link'
                 whileHover={{
