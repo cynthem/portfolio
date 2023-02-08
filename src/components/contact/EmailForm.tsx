@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import arrowIcon from '../../assets/images/arrow_icon.png';
 
@@ -57,7 +58,7 @@ function EmailForm() {
                     required
                 />
             </div>
-            <button 
+            <motion.button 
                 className='send-input'
                 type='submit'
                 value='Send'
@@ -65,7 +66,7 @@ function EmailForm() {
             >
                 Send
                 <img alt='Send' src={arrowIcon} />
-            </button>
+            </motion.button>
         </form>
     )
 }
