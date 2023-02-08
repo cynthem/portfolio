@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import heartIcon from '../../assets/images/heart_icon.svg';
 
 function Footer() {
@@ -11,13 +12,18 @@ function Footer() {
                     src={heartIcon}
                 /> 
                 by 
-                <a 
+                <motion.a 
                     href='https://github.com/doozles411' 
                     target="_blank" 
                     rel="noopener noreferrer"
+                    whileHover={{
+                        color: '#fefae9', 
+                        transition: { duration: 0.5 }
+                    }}
+                    whileTap={{ color: "red" }}
                 >
                     CMP
-                </a>
+                </motion.a>
             </p>
         </div>
     );
