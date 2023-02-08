@@ -4,7 +4,7 @@ import otherProjects from '../../assets/images/project-imgs/otherProj.jpg';
 import arrowIcon from '../../assets/images/icon_arrow_orange.png';
 
 function MoreProjects() {
-    const ref = useRef<HTMLDivElement>();
+    /*const ref = useRef<HTMLDivElement>();
 
     const [scrollStart, setScrollStart] = useState(0);
     const [scrollEnd, setScrollEnd] = useState(0);
@@ -26,15 +26,15 @@ function MoreProjects() {
 
         setScrollStart(elementStart);
         setScrollEnd(elementEnd);
-    });
+    });*/
 
     return (
-        <div className='more-projects' ref={ref as React.RefObject<HTMLDivElement>}>
+        <div className='more-projects' /*ref={ref as React.RefObject<HTMLDivElement>}*/>
             <div className='more-projects-background'>
                 <motion.img 
                     alt='More projects' 
                     src={otherProjects}
-                    style={{ scale }}
+                    //style={{ scale }}
                 >
                 </motion.img>
             </div>
