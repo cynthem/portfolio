@@ -27,6 +27,33 @@ function EmailForm() {
             );
     }
 
+    const animateBtn = {
+        rest: {
+            scale: 1,
+            color: 'black',
+            transition: { duration: 0.5 }
+        },
+        hover: {
+            scale: 1.2,
+            color: 'hsl(39, 100, 50)', 
+            transition: { duration: 0.5 }
+        },
+        tap: {
+            scale: 0.9
+        }
+    }
+
+    const animateIcon = {
+        rest: {
+            rotate: 0,
+            transition: { duration: 0.5 }
+        },
+        hover: {
+            rotate: 45,
+            transition: { duration: 0.5 }
+        }
+    }
+
     return (
         <form 
             className='email-form'
@@ -63,15 +90,18 @@ function EmailForm() {
                 type='submit'
                 value='Send'
                 aria-label='Send email'
-                whileHover={{
-                    scale: 1.2,
-                    color: 'hsl(39, 100, 50)', 
-                    transition: { duration: 0.5 }
-                }}
-                whileTap={{ scale: 0.9 }}
+                variants={animateBtn}
+                initial="rest"
+                whileHover="hover"
+                whileTap="tap"
+                animate="rest"
             >
                 Send
-                <img alt='Send' src={arrowIcon} />
+                <motion.img 
+                    alt='Send' 
+                    src={arrowIcon} 
+                    variants={animateIcon}
+                />
             </motion.button>
         </form>
     )
