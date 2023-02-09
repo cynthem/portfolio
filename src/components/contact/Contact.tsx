@@ -15,8 +15,8 @@ function Contact() {
             <div className='contact-details'>
                 <Details />
                 <EmailForm />
+                <Footer />
             </div>
-            <Footer />
         </div>
     );
 }
