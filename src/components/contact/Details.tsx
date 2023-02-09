@@ -7,7 +7,7 @@ import resumeIcon from '../../assets/images/contact-icons/resume_icon.svg';
 function Details() {
     return (
         <div className='details'>
-            <p>I am currently open to new opportunities. Please reach out if you're interested in working together, have any questions for me, or have something else to say!</p>
+            <p>I am currently open to new opportunities. Don't hesitate to reach out if you're interested in working together or have any questions for me.</p>
             <div className='details-links'>
                 <motion.a 
                     href="https://github.com/doozles411"
