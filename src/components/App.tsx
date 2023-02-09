@@ -4,7 +4,6 @@ import About from './about/About';
 import Skills from './skills/Skills';
 import Projects from './projects/Projects';
 import Contact from './contact/Contact';
-import Footer from './contact/Footer';
 import '../sass/main.scss';
 
 export function App() {
@@ -17,7 +16,6 @@ export function App() {
             <Projects />
             <Contact />
         </div>
-      <Footer />
     </div>
   );
 }
