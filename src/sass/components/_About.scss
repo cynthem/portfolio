@@ -2,16 +2,23 @@
 @import '../helpers/mixins';
 
 .about {
-    //height: 1320px;
-    //position: relative;
+    position: relative;
+    .name {
+        display: flex;
+        gap: 15px;
+        position: absolute;
+        top: 100px;
+        left: 5.25vw;
+        font-family: $font-yeseva;
+        font-size: 36px;
+        .last {
+            color: $color-beige;
+        }
+    }
     .about-background {
-        //height: 1280px;
-        //min-height: max-content;
-        //width: 78vw;
-        /*position: absolute;
-        right: 0;
-        top: 40px;*/
+        margin-top: 60px;
         margin-left: 20vw;
+        padding-top: 180px;
         background-color: $color-navy;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
@@ -20,23 +27,10 @@
 
 .heading {
     padding-bottom: 30vh;
-    .name {
-        display: flex;
-        gap: 15px;
-        position: absolute;
-        top: 40px;
-        left: -213px;
-        font-family: $font-yeseva;
-        font-size: 36px;
-        .last {
-            color: $color-beige;
-        }
-    }
     .selfie {
         display: flex;
         align-items: baseline;
         gap: 12vw;
-        margin-top: 180px;
         margin-left: 40px;
         position: relative;
         .selfie-outline {
