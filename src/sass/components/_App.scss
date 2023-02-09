@@ -1,4 +1,14 @@
 @import '../helpers/variables';
 
 .app {
+    //position: relative;
+    background-color: $color-beige; 
+    overflow: scroll;
+    min-height: 100vh;
+    max-height: 100vh;
+    .pages {
+        display: flex;
+        flex-direction: column;
+        gap: 25vh; 
+    }
 }
