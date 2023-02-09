@@ -36,14 +36,29 @@
         gap: 15vw;
         margin-top: 180px;
         margin-left: 40px;
-        //position: relative;
+        position: relative;
         .selfie-outline {
             height: 323px;
             width: 300px;
             outline: 2px solid $color-orange;
-            /*position: absolute;
+            position: absolute;
             top: 24px;
-            left: 24px;*/
+            left: 24px;
+        }
+        .selfie-img {
+            z-index: 4;
+            height: 323px;
+            width: 300px;
+        }
+        .job-title {
+            font-family: $font-forum;
+            font-size: 20px;
+            color: $color-beige;
+            > h2 {
+                //font-family: $font-bebas;
+                font-size: 50px;
+                color: $color-orange;
+            }
         }
     }
 }
