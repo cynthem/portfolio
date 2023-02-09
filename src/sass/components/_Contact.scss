@@ -7,10 +7,100 @@
         margin-left: 260px;
         @include section-header($color-navy);
     }
+    .contact-details {
+        display: grid;
+        grid-template-columns: 52vw 48vw;
+        grid-template-rows: auto 40px;
+        row-gap: 30px;
+        column-gap: 80px;
+    }
 }
 
 .details {
+    width: 500px;
+    justify-self: end;
+    > p {
+        font-family: $font-forum;
+        color: $color-navy;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .details-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
 }
 
 .email-form {
+    width: 400px;
+    justify-self: start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .form-inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 400px;
+        > input,
+        > textarea {
+            background-color: transparent;
+            outline: none;
+            border: 2px solid $color-navy;
+            border-radius: 2px;
+            font-family: $font-forum;
+            font-size: 20px;
+            color: $color-navy;
+            height: 38px;
+            padding: 5px 10px 3px;
+        }
+        .message-input {
+            resize: none;
+            height: 140px;
+            padding: 8px;
+        }
+        .name-input:hover::-webkit-input-placeholder,
+        .email-input:hover::-webkit-input-placeholder,
+        .message-input:hover::-webkit-input-placeholder {
+            color: $color-orange;
+        }
+    }
+    .send-input {
+        align-self: flex-end;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        font-family: $font-forum;
+        font-size: 20px;
+        cursor: pointer;
+        > img {
+            width: 12px;
+            margin-left: 5px;
+        }
+    }
+}
+
+.footer {
+    background-color: $color-orange;
+    grid-column: span 2;
+    z-index: 2;
+    color: $color-navy;
+    font-family: $font-yeseva;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > p {
+        > img {
+            width: 20px;
+            padding-right: 2px;
+            padding-left: 1px;
+        }
+        > a {
+            text-decoration: none;
+            padding-left: 4px;
+            color: $color-navy;
+        }
+    }
 }
