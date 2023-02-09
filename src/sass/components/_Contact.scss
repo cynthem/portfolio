@@ -8,10 +8,11 @@
         @include section-header($color-navy);
     }
     .contact-details {
+        padding-top: 20px;
         display: grid;
         grid-template-columns: 52vw 48vw;
         grid-template-rows: auto 40px;
-        row-gap: 30px;
+        row-gap: 40px;
         column-gap: 80px;
     }
 }
@@ -24,6 +25,7 @@
         color: $color-navy;
         font-size: 20px;
         line-height: 1.5;
+        margin-bottom: 80px;
     }
     .details-links {
         display: flex;
