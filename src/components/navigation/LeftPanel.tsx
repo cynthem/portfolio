@@ -11,7 +11,8 @@ function LeftPanel() {
 
     const navList = Object.keys(navItems).map((e, i) => 
         <NavItem 
-            key={`navitem_${i}`} 
+            navName={e}
+            key={`navitem_${i}`}
         />
     );
 
