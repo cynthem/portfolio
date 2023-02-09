@@ -3,6 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
 import Details from './Details';
 import EmailForm from './EmailForm';
+import Footer from './Footer';
 
 function Contact() {
     return (
@@ -15,6 +16,7 @@ function Contact() {
                 <Details />
                 <EmailForm />
             </div>
+            <Footer />
         </div>
     );
 }
