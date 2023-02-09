@@ -2,6 +2,11 @@
 @import '../helpers/mixins';
 
 .contact {
+    background-color: $color-beige;
+    .contact-header {
+        margin-left: 260px;
+        @include section-header($color-navy);
+    }
 }
 
 .details {
