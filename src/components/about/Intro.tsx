@@ -8,9 +8,8 @@ function Intro() {
                 <h2>About</h2>
             </div>
             <div className='intro-details'>
-                <p>1 details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails</p>
-                <p>2 details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails</p>
-                <p>3 details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails</p>
+                <p>1 details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails</p>
+                <p>2 details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails</p>
             </div>
         </div>
     );
