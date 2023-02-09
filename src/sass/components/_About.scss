@@ -2,9 +2,50 @@
 @import '../helpers/mixins';
 
 .about {
+    height: 1320px;
+    position: relative;
+    .about-background {
+        height: 1280px;
+        width: 78vw;
+        position: absolute;
+        right: 0;
+        top: 40px;
+        background-color: $color-navy;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
 }
 
 .heading {
+    padding-bottom: 30vh;
+    .name {
+        display: flex;
+        gap: 15px;
+        position: absolute;
+        top: 40px;
+        left: -213px;
+        font-family: $font-yeseva;
+        font-size: 36px;
+        .last {
+            color: $color-beige;
+        }
+    }
+    .selfie {
+        display: flex;
+        align-items: baseline;
+        gap: 15vw;
+        margin-top: 180px;
+        margin-left: 40px;
+        //position: relative;
+        .selfie-outline {
+            height: 323px;
+            width: 300px;
+            outline: 2px solid $color-orange;
+            /*position: absolute;
+            top: 24px;
+            left: 24px;*/
+        }
+    }
 }
 
 .intro {

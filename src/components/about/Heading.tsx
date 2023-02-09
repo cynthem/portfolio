@@ -21,17 +21,17 @@ function Heading() {
                     transition={{ duration: 1 }}
                 >
                 </motion.img>
-            </div>
-            <div className='job-title'>
-                <WindupChildren>
-                    <Pace getPace={(char) => (char === " " ? 100 : 40)}>
-                        <p>{"Hello! I am a"}</p>
-                    </Pace>
-                    <Pause ms={300} />
-                    <Pace getPace={(char) => (char === " " ? 200 : 70)}>
-                        <h2>{"Front-end Developer"}</h2>
-                    </Pace>
-                </WindupChildren>
+                <div className='job-title'>
+                    <WindupChildren>
+                        <Pace getPace={(char) => (char === " " ? 100 : 40)}>
+                            <p>{"Hello! I am a"}</p>
+                        </Pace>
+                        <Pause ms={300} />
+                        <Pace getPace={(char) => (char === " " ? 200 : 70)}>
+                            <h2>{"Front-end Developer"}</h2>
+                        </Pace>
+                    </WindupChildren>
+                </div>
             </div>
         </div>
     )
