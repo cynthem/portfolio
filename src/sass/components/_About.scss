@@ -73,12 +73,12 @@
         font-family: $font-forum;
         font-size: 20px;
         color: $color-beige;
-        width: 60vw;
-        height: 400px;
+        width: 50vw;
+        height: 300px;
         border: 2px solid $color-orange;
-        //padding: 20px;
+        padding: 20px;
         > p {
-            //margin-bottom: 14px;
+            margin-bottom: 15px;
         }
     }
 }
