@@ -86,3 +86,28 @@
     }
     }
 }
+
+@media (max-width: 700px) {
+    .left-panel {
+        background-color: black;
+        position: sticky;
+        height: 50px;
+        width: 100vw;
+        .link-list {
+            padding-left: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            > li::marker {
+                content: none;
+            }
+            > li {
+                margin-bottom: 0;
+                padding-left: 0;
+                > a {
+                    color: white;
+                }
+            }
+        }
+    }
+}
