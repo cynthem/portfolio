@@ -9,7 +9,7 @@ const projectPreviews = [
         image: todoingImg,
         siteLink: "https://doozles411.github.io/todo-list-II/",
         gitHubLink: "https://github.com/doozles411/todo-list-II",
-        description: "A to-do list tracking app that stores data locally and allows users to add, delete, edit, and organize to-do tasks and projects. Completed as part of The Odin Project's Full Stack JavaScript curriculum to demonstrate OOP principles and use of local storage.",
+        description: "A to-do list tracking app that stores data locally and allows users to add, delete, edit, and organize to-do tasks and projects. Completed as part of The Odin Project's Full Stack JavaScript curriculum.",
         tools: "Built with TypeScript and Webpack"
     },
     {
@@ -17,7 +17,7 @@ const projectPreviews = [
         image: battleshipImg,
         siteLink: "https://doozles411.github.io/battleship-II/",
         gitHubLink: "https://github.com/doozles411/battleship-II",
-        description: "An app featuring the classic game Battleship. Users play against a computer AI that uses an algorithm to determine its next play. Completed as part of The Odin Project's Full Stack JavaScript curriculum to demonstrate use of Jest for testing.",
+        description: "An app featuring the classic game Battleship. Users play against a computer AI that uses an algorithm to determine its next play. Completed as part of The Odin Project's Full Stack JavaScript curriculum.",
         tools: "Built with jQuery and Webpack"
     },
     {
