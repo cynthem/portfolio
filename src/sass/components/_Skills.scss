@@ -40,3 +40,140 @@
         }
     }
 }
+
+@media (max-width: 1090px) {
+    .skills-container {
+        .skills-boxes {
+            .skills-row-1,
+            .skills-row-2,
+            .skills-row-3 {
+                .skill {
+                    font-size: 18px;
+                    > img {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .skills-container {
+        .skills-boxes {
+            width: 70vw;
+            .skills-row-1,
+            .skills-row-2,
+            .skills-row-3 {
+                .skill {
+                    font-size: 16px;
+                    > img {
+                        width: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .skills-container {
+        .skills-boxes {
+            padding: 30px 20px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .skills-container {
+        .skills-header {
+            margin-left: 0;
+            justify-content: center;
+        }
+        .skills-boxes {
+            .skills-row-1,
+            .skills-row-2,
+            .skills-row-3 {
+                .skill {
+                    padding: 10px 10px 6px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .skills-container {
+        .skills-boxes {
+            width: 86vw;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .skills-container {
+        .skills-boxes {
+            width: 90vw;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .skills-container {
+        .skills-boxes {
+            .skills-row-1,
+            .skills-row-2,
+            .skills-row-3 {
+                .skill {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .skills-container {
+        .skills-boxes {
+            width: 100vw;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .skills-container {
+        .skills-boxes {
+            padding: 30px 10px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .skills-container {
+        .skills-boxes {
+            .skills-row-1,
+            .skills-row-2,
+            .skills-row-3 {
+                .skill {
+                    font-size: 12px;
+                    padding: 10px 5px 6px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    .skills-container {
+        .skills-boxes {
+            padding: 30px 5px;
+            .skills-row-1,
+            .skills-row-2,
+            .skills-row-3 {
+                .skill {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
