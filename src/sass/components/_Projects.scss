@@ -227,6 +227,20 @@
             }
         }    
     }  
+    .more-projects {
+        .more-projects-background {
+            height: 250px;
+            width: 303px;
+        }
+        .more-projects-link {
+            > h3 {
+                font-size: 22px;
+            }
+            > img {
+                width: 16px;
+            }
+        }
+    }
 }
 
 @media (max-width: 900px) {
@@ -281,6 +295,22 @@
             }
         }
     }
+    .more-projects {
+        gap: 5vw;
+        .more-projects-background {
+            height: 200px;
+            width: 242px;
+        }
+        .more-projects-link {
+            padding: 10px 20px;
+            > h3 {
+                font-size: 20px;
+            }
+            > img {
+                width: 14px;
+            }
+        }
+    }
 }
 
 @media (max-width: 700px) {
@@ -332,6 +362,22 @@
             }
         }
     }
+    .more-projects {
+        gap: 7vw;
+        .more-projects-background {
+            height: 250px;
+            width: 303px;
+        }
+        .more-projects-link {
+            padding: 15px 25px;
+            > h3 {
+                font-size: 22px;
+            }
+            > img {
+                width: 16px;
+            }
+        }
+    }
 }
 
 @media (max-width: 650px) {
@@ -370,6 +416,22 @@
                         margin: 0 10px;
                     }
                 }
+            }
+        }
+    }
+    .more-projects {
+        gap: 5vw;
+        .more-projects-background {
+            height: 200px;
+            width: 242px;
+        }
+        .more-projects-link {
+            padding: 10px 20px;
+            > h3 {
+                font-size: 20px;
+            }
+            > img {
+                width: 14px;
             }
         }
     }
@@ -419,6 +481,21 @@
             }
         }
     }
+    .more-projects {
+        .more-projects-background {
+            height: 150px;
+            width: 182px;
+        }
+        .more-projects-link {
+            padding: 10px 15px;
+            > h3 {
+                font-size: 16px;
+            }
+            > img {
+                width: 12px;
+            }
+        }
+    }
 }
 
 @media (max-width: 400px) {
@@ -443,6 +520,21 @@
             margin-left: 20px;
         }      
     } 
+    .more-projects {
+        .more-projects-background {
+            height: 120px;
+            width: 145px;
+        }
+        .more-projects-link {
+            padding: 10px;
+            > h3 {
+                font-size: 14px;
+            }
+            > img {
+                width: 10px;
+            }
+        }
+    }
 }
 
 @media (max-width: 320px) {
