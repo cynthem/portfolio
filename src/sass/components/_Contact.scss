@@ -107,13 +107,13 @@
     }
 }
 
-@media (max-width: 1230px) {
+@media (max-width: $breakpoint-1230) {
     .details {
         width: 400px;
     }
 }
 
-@media (max-width: 1090px) {
+@media (max-width: $breakpoint-1090) {
     .contact {
         .contact-details {
             grid-template-columns: 55vw 45vw;
@@ -127,7 +127,7 @@
     }
 }
 
-@media (max-width: 950px) {
+@media (max-width: $breakpoint-950) {
     .details {
         width: 300px;
         > p {
@@ -141,7 +141,7 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: $breakpoint-800) {
     .contact {
         .contact-header {
             margin-left: 0;
@@ -165,7 +165,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: $breakpoint-500) {
     .details {
         width: 300px;
         > p {
@@ -174,7 +174,7 @@
     }
 }
 
-@media (max-width: 340px) {
+@media (max-width: $breakpoint-340) {
     .details {
         width: 250px;
     }
