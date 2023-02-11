@@ -77,7 +77,7 @@
     }
 }
 
-@media (max-width: 1230px) {
+@media (max-width: $breakpoint-1230) {
     .about {
         .about-background {
             .name {
@@ -98,7 +98,7 @@
     }
 }
 
-@media (max-width: 1090px) {
+@media (max-width: $breakpoint-1090) {
     .heading {
         .selfie {
             gap: 8vw;
@@ -111,7 +111,7 @@
     }
 }
 
-@media (max-width: 950px) {
+@media (max-width: $breakpoint-950) {
     .about {
         .about-background {
             .name {
@@ -135,7 +135,7 @@
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: $breakpoint-850) {
     .about {
         .about-background {
             .name {
@@ -160,7 +160,7 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: $breakpoint-700) {
     .about {
         .about-background {
             margin-top: -10px;
@@ -185,7 +185,7 @@
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: $breakpoint-450) {
     .intro {
         .intro-details {
             width: 90vw;
@@ -193,7 +193,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: $breakpoint-400) {
     .about {
         .about-background {
             .name {
@@ -214,7 +214,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: $breakpoint-320) {
     .about {
         .about-background {
             .name {
