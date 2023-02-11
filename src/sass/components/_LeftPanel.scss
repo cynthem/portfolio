@@ -87,7 +87,7 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: $breakpoint-700) {
     .left-panel {
         background-color: black;
         position: sticky;
