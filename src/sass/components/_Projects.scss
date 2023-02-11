@@ -225,6 +225,11 @@
             > img {
                 width: 232px;
             }
+        } 
+        .project-container {
+            .project-card {
+                margin-left: 60px;
+            }     
         }    
     }  
     .more-projects {
@@ -241,14 +246,6 @@
             }
         }
     }
-}
-
-@media (max-width: 900px) {
-    .project-container {
-        .project-card {
-            margin-left: 60px;
-        }     
-    }  
 }
 
 @media (max-width: 850px) {
