@@ -155,7 +155,7 @@
     }
 }
 
-@media (max-width: 1230px) {
+@media (max-width: $breakpoint-1230) {
     .project-container {
         .project-card {
             > h3 {
@@ -172,7 +172,7 @@
     }
 }
 
-@media (max-width: 1090px) {
+@media (max-width: $breakpoint-1090) {
     .project-container {
         .project-image {
             .project-outline {
@@ -213,7 +213,7 @@
     }   
 }
 
-@media (max-width: 950px) {
+@media (max-width: $breakpoint-950) {
     .project-container {
         .project-image {
             .project-outline {
@@ -248,7 +248,7 @@
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: $breakpoint-850) {
     .projects {
         .projects-container {
             margin: 0 105px;
@@ -261,7 +261,7 @@
     }  
 }
 
-@media (max-width: 800px) {
+@media (max-width: $breakpoint-800) {
     .projects {
         .projects-container {
             .projects-header {
@@ -310,7 +310,7 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: $breakpoint-700) {
     .projects {
         .projects-container {
             margin: 0;
@@ -377,7 +377,7 @@
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: $breakpoint-650) {
     .project-container {
         .project-image {
             .project-outline {
@@ -394,7 +394,7 @@
     }  
 }
 
-@media (max-width: 600px) {
+@media (max-width: $breakpoint-600) {
     .project-container {
         .project-card {
             > h3 {
@@ -434,7 +434,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: $breakpoint-500) {
     .project-container {
         .project-image {
             .project-outline {
@@ -453,7 +453,7 @@
     }  
 }
 
-@media (max-width: 450px) {
+@media (max-width: $breakpoint-450) {
     .project-container {
         .project-card {
             > h3 {
@@ -495,7 +495,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: $breakpoint-400) {
     .project-container {
         .project-image {
             .project-outline {
@@ -511,7 +511,7 @@
     } 
 }
 
-@media (max-width: 340px) {
+@media (max-width: $breakpoint-340) {
     .project-container {
         .project-card {
             margin-left: 20px;
@@ -534,7 +534,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: $breakpoint-320) {
     .project-container {
         .project-card {
             > h3 {
