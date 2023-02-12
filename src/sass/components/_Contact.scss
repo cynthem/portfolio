@@ -108,6 +108,10 @@
     }
 }
 
+
+
+// MOBILE STYLES
+
 @media (max-width: $breakpoint-1230) {
     .details {
         width: 400px;
@@ -117,7 +121,9 @@
 @media (max-width: $breakpoint-1090) {
     .contact {
         .contact-details {
-            //grid-template-columns: 55vw 45vw;
+            .details-top {
+                gap: 30px;
+            }
         }
     }
     .email-form {
@@ -129,48 +135,53 @@
 }
 
 @media (max-width: $breakpoint-950) {
-    .details {
-        width: 300px;
-        > p {
-            margin-bottom: 40px;
-        }
-    }
-    .contact {
-        .contact-details {
-            column-gap: 40px;
-        }
-    }
-}
-
-@media (max-width: $breakpoint-800) {
     .contact {
         .contact-header {
             margin-left: 0;
             justify-content: center;
         }
+    }
+    .details {
+        width: 300px;
+        margin: 0 60px;
+        > p {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-850) {
+    .contact {
         .contact-details {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            .details-top {
+                flex-direction: column;
+                align-items: center;
+                gap: 50px;
+            }
         }
     }
     .details {
         width: 400px;
-        > p {
-            text-align: center;
-        }
+        margin: 0;
     }
-    .footer {
-        height: 40px;
-        width: 100vw;
+    .email-form {
+        width: 400px;
+        .form-inputs {
+            width: 400px;
+        }
     }
 }
 
-@media (max-width: $breakpoint-500) {
+@media (max-width: $breakpoint-450) {
     .details {
         width: 300px;
-        > p {
-            font-size: 18px;
+        margin: 0;
+    }
+    .email-form {
+        width: 300px;
+        .form-inputs {
+            width: 300px;
         }
     }
 }
