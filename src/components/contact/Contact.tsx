@@ -43,8 +43,10 @@ function Contact() {
                 <h2>Contact</h2>
             </motion.div>
             <div className='contact-details'>
-                <Details />
-                <EmailForm />
+                <div className='details-top'>
+                    <Details />
+                    <EmailForm />
+                </div>
                 <Footer />
             </div>
         </div>
