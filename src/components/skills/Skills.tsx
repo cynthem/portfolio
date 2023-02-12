@@ -1,11 +1,41 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from "react-intersection-observer";
 import skillIcons from '../../util/skillIcons';
 
 function Skills() {
+    const animation = useAnimation();    
+    const [ref, inView, entry] = useInView({ threshold: 0.1 });
+
+    useEffect(() => {
+      if (inView) {
+        animation.start("visible");
+      }
+    }, [animation, inView]);
+
+    const animateDetails = {
+        visible: {
+            y: 0,
+            scale: 1,
+            staggerChildren: 0,
+            delayChildren: 0,
+            transition: { duration: 0.8 }
+        },
+        hidden: {
+            y: 100,
+            scale: 0
+        }
+    }
+
     return (
         <div className='skills' id='skills'>
-            <div className='skills-container'>
+            <motion.div 
+                className='skills-container'
+                ref={ref}
+                animate={animation}
+                initial={{scale: 0}}
+                variants={animateDetails}
+            >
                 <div className='skills-header'>
                     <p className='number'>02.</p>
                     <h2>Skills</h2>
@@ -90,7 +120,7 @@ function Skills() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 }
