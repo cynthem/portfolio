@@ -30,7 +30,7 @@ function Heading() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Heading;
