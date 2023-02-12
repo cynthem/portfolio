@@ -9,17 +9,19 @@
     }
     .contact-details {
         padding-top: 20px;
-        display: grid;
-        grid-template-columns: 52vw 48vw;
-        grid-template-rows: auto 40px;
-        row-gap: 40px;
-        //column-gap: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .details-top {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+        }
     }
 }
 
 .details {
     width: 500px;
-    justify-self: end;
     > p {
         font-family: $font-forum;
         color: $color-navy;
@@ -37,7 +39,6 @@
 
 .email-form {
     width: 400px;
-    justify-self: start;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -86,7 +87,7 @@
 
 .footer {
     background-color: $color-orange;
-    grid-column: span 2;
+    height: 40px;
     z-index: 2;
     color: $color-navy;
     font-family: $font-yeseva;
@@ -116,7 +117,7 @@
 @media (max-width: $breakpoint-1090) {
     .contact {
         .contact-details {
-            grid-template-columns: 55vw 45vw;
+            //grid-template-columns: 55vw 45vw;
         }
     }
     .email-form {
