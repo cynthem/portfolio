@@ -140,6 +140,45 @@
     }
 }
 
+
+// MOBILE STYLES
+
+@media (min-width: 1465px) {
+    .project-container {
+        .project-card {
+            margin-left: 10vw;
+        }
+    }
+    .more-projects {
+        gap: 10vw;
+    }
+}
+
+@media (min-width: 1700px) {
+    .projects {
+        .projects-container {
+            .projects-list {
+                margin-left: 8vw;
+            }
+        }
+    }
+}
+
+@media (min-width: 1800px) {
+    .projects {
+        .projects-container {
+            .projects-list {
+                margin-left: 10vw;
+            }
+        }
+    }
+    .project-container {
+        .project-card {
+            margin-left: 12vw;
+        }
+    }
+}
+
 @media (max-width: 1380px) {
     .project-container {
         justify-content: space-evenly;
