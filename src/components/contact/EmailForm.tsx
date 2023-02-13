@@ -1,8 +1,32 @@
-import React, { useEffect } from 'react';
+import React, { useRef } from 'react';
+import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import arrowIcon from '../../assets/images/arrow_icon.png';
 
 function EmailForm() {
+    const form = useRef<HTMLFormElement>();
+
+    const sendEmail = (e: React.FormEvent) => {
+        e.preventDefault();
+        const sendBtn = document.querySelector('.send-input');
+        sendBtn!.textContent= 'Sending...';
+        emailjs
+            .sendForm(
+                'service_a67k0id',
+                'template_gloqn3c',
+                form.current!,
+                'd-khxRMXEB7gBIMrd'
+            )
+            .then(
+                (result) => {
+                    sendBtn!.textContent = 'Thanks for the message!';
+                },
+                (error) => {
+                    sendBtn!.textContent = 'There was an error sending your message. Please try again.';
+                }
+            );
+    }
+    
     return (
         <form className='email-form'>
             <div className='form-inputs'>
