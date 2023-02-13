@@ -43,10 +43,16 @@ function Contact() {
                 <h2>Contact</h2>
             </motion.div>
             <div className='contact-details'>
-                <div className='details-top'>
+                <motion.div 
+                    className='details-top'
+                    ref={ref}
+                    animate={animation}
+                    initial={{opacity: 0}}
+                    variants={animateDetails}
+                >
                     <Details />
                     <EmailForm />
-                </div>
+                </motion.div>
                 <Footer />
             </div>
         </div>
