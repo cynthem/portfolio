@@ -47,6 +47,7 @@
             width: 300px;
         }
         .job-title {
+            height: 66px;
             font-family: $font-forum;
             font-size: 20px;
             color: $color-beige;
@@ -76,6 +77,9 @@
         }
     }
 }
+
+
+// MOBILE STYLES
 
 @media (max-width: $breakpoint-1230) {
     .about {
@@ -172,6 +176,14 @@
             }
         }
     }
+    .heading {
+        .selfie {
+            .job-title {
+                margin-left: 60px;
+                margin-top: 20px;
+            }
+        }
+    }
     .intro {
         margin-left: 0;
         .about-header {
@@ -186,6 +198,14 @@
 }
 
 @media (max-width: $breakpoint-450) {
+    .heading {
+        .selfie {
+            .job-title {
+                margin-left: 60px;
+                margin-top: 40px;
+            }
+        }
+    }
     .intro {
         .intro-details {
             width: 90vw;
@@ -208,7 +228,7 @@
                 width: 200px;
             }
             .job-title {
-                margin-top: 40px;
+                margin-left: -40px; 
             }
         }
     }
