@@ -44,6 +44,14 @@
 
 // MOBILE STYLES
 
+@media (min-height: $breakpoint-900) {
+    .skills-container {
+        .skills-header {
+            padding-bottom: 5vh;
+        }
+    }
+}
+
 @media (min-width: 1550px) {
     .skills-container {
         .skills-boxes {
