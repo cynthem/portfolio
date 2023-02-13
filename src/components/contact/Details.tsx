@@ -32,10 +32,10 @@ function Details() {
     return (
         <motion.div 
             className='details'
-            ref={ref}
-            animate={animation}
-            initial={{opacity: 0}}
-            variants={animateDetails}
+            //ref={ref}
+            //animate={animation}
+            //initial={{opacity: 0}}
+            //variants={animateDetails}
         >
             <p>I am currently open to new opportunities. Don't hesitate to reach out if you're interested in working together or have any questions for me.</p>
             <div className='details-links'>

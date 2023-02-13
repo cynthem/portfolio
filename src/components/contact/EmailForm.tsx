@@ -31,10 +31,10 @@ function EmailForm() {
     return (
         <motion.form 
             className='email-form'
-            ref={ref}
-            animate={animation}
-            initial={{opacity: 0}}
-            variants={animateDetails}
+            //ref={ref}
+            //animate={animation}
+            //initial={{opacity: 0}}
+            //variants={animateDetails}
         >
             <div className='form-inputs'>
                 <input 
