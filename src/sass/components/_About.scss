@@ -47,7 +47,7 @@
             width: 300px;
         }
         .job-title {
-            height: 66px;
+            height: 78px;
             font-family: $font-forum;
             font-size: 20px;
             color: $color-beige;
@@ -154,6 +154,7 @@
             gap: 12vw;
             .job-title {
                 align-self: center;
+                width: 266px;
             }
         }
     }
@@ -249,6 +250,7 @@
                 width: 186px;
             }
             .job-title {
+                width: 234px;
                 > h2 {
                     font-size: 28px;
                 }
