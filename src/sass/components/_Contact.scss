@@ -112,6 +112,25 @@
 
 // MOBILE STYLES
 
+@media (min-height: $breakpoint-900) {
+    .contact {
+        .contact-details {
+            padding-top: 5vh;
+            gap: 5vh;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .contact {
+        .contact-details {
+            .details-top {
+                gap: 10vw;
+            }
+        }
+    }
+}
+
 @media (max-width: $breakpoint-1230) {
     .details {
         width: 400px;
