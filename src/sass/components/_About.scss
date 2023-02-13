@@ -81,6 +81,33 @@
 
 // MOBILE STYLES
 
+@media (min-height: 900px) {
+    .heading {
+        padding-top: 5vh;
+    }
+}
+
+@media (min-width: 1700px) {
+    .heading {
+        .selfie {
+            margin-left: 6vw;
+        }
+    } 
+}
+
+@media (min-width: 1465px) {
+    .intro {
+        .intro-details {
+            font-size: 22px;
+            width: 40vw;
+            padding: 25px 30px;
+            .top-details {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
 @media (max-width: $breakpoint-1230) {
     .about {
         .about-background {
