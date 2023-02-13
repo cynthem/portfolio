@@ -81,7 +81,7 @@
 
 // MOBILE STYLES
 
-@media (min-height: 900px) {
+@media (min-height: $breakpoint-900) {
     .heading {
         padding-top: 5vh;
     }

@@ -41,6 +41,28 @@
     }
 }
 
+
+// MOBILE STYLES
+
+@media (min-width: 1550px) {
+    .skills-container {
+        .skills-boxes {
+            width: 55vw;
+            padding: 50px;
+            gap: 50px;
+        }
+    }
+}
+
+@media (min-width: 1800px) {
+    .skills-container {
+        .skills-boxes {
+            width: 45vw;
+            gap: 60px;
+        }
+    }
+}
+
 @media (max-width: $breakpoint-1090) {
     .skills-container {
         .skills-boxes {
