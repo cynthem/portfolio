@@ -52,7 +52,7 @@ function LeftPanel() {
             navName={e} 
             key={`navitem_${i}`} 
             active={e === activeNav ? true : false} 
-            currentPage={currentPage} 
+            //currentPage={currentPage} 
         />
     );
 
