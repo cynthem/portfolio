@@ -54,7 +54,10 @@ export function App() {
 
     return (
         <div className="app">
-            <LeftPanel />
+            <LeftPanel 
+                navItems={navItems}
+                activeNav={activeNav}
+            />
             <div className="pages">
                 <About />
                 <Skills />
