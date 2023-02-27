@@ -26,7 +26,7 @@ function NavItem({ navName, active }: Props) {
         <li>
             <a 
                 href={`#${navName}`}
-                className={`${navName}-nav`}
+                className={`underline ${active} ${currentPage === `${navName}` && `${navName}-nav`}`}
                 aria-Label={`Scroll to ${navName}`}
                 onClick={(e) => handleClick(e)}
             >
