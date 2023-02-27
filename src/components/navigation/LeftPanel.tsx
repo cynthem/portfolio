@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Dispatch, SetStateAction } from 'react';
+import React, { useState, useEffect } from 'react';
 import NavItem from './NavItem';
 
 function LeftPanel() {
