@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import NavItem from './NavItem';
 
+const navItems: { [key: string]: number | null } = {
+    about: 4,
+    skills: null, 
+    projects: null, 
+    contact: null
+}
+
 function LeftPanel() {
     const [activeNav, setActiveNav] = useState('Top');
 
@@ -38,13 +45,6 @@ function LeftPanel() {
         if (currentSection !== activeNav) {
             setActiveNav(currentSection!);
         }
-    }
-
-    const navItems: { [key: string]: number | null } = {
-        about: 4,
-        skills: null, 
-        projects: null, 
-        contact: null
     }
 
     const navList = Object.keys(navItems).map((e, i) => 

@@ -12,7 +12,12 @@ function NavItem({ navName, active, currentPage }: Props) {
 
     useEffect(() => {
         setAnchorTarget(document.getElementById(navName));
+        asdf();
     }, [navName]);
+
+    const asdf = () => {
+        console.log(anchorTarget);
+    }
 
     const handleClick = (e: React.MouseEvent) => {
         e.preventDefault();
