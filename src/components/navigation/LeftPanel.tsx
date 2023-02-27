@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import NavItem from './NavItem';
 
-function LeftPanel() {
+interface Props {
+    navItems: object;
+    activeNav: string;
+}
+
+function LeftPanel({ navItems, activeNav }: Props) {
 
     const navList = Object.keys(navItems).map((e, i) => 
         <NavItem 
