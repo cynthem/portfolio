@@ -1,19 +1,10 @@
 import React, { useRef } from 'react';
-import { 
-    motion, 
-    useScroll, 
-    useSpring, 
-    useTransform,
-    MotionValue 
-} from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import otherProjects from '../../assets/images/project-imgs/otherProj.jpg';
 import arrowIcon from '../../assets/images/icon_arrow_orange.png';
 
-function useParallax(value: MotionValue<number>, distance: number) {
-    return useTransform(value, [0, 1], [-distance, distance]);
-}
-
 function MoreProjects() {
+
     const animateBtn = {
         rest: {
             scale: 1,
@@ -42,10 +33,7 @@ function MoreProjects() {
     return (
         <div className='more-projects'>
             <div className='more-projects-background'>
-                <img 
-                    alt='More projects' 
-                    src={otherProjects}
-                />
+                <img alt='More projects' src={otherProjects} />
             </div>
             <motion.a 
                 className='more-projects-link'
