@@ -6,11 +6,11 @@ import Projects from './projects/Projects';
 import Contact from './contact/Contact';
 import '../sass/main.scss';
 
-const navItems: { [key: string]: number | null } = {
-  about: null,
-  skills: null, 
-  projects: null, 
-  contact: null
+const navItems = {
+    about: 0,
+    skills: 0,
+    projects: 0,
+    contact: 0
 }
 
 export function App() {
@@ -32,9 +32,8 @@ export function App() {
             window.innerHeight || 0
         );*/
         for (const key in navItems) {
-            navItems[key] = document.getElementById(key)?.getBoundingClientRect().top! + currentScroll;
+            navItems[key as keyof typeof navItems] = document.getElementById(key)?.getBoundingClientRect().top! + currentScroll;
         }
-        console.log(navItems)
         //const bottom = document.body.offsetHeight;
         //handleScroll();
     }
