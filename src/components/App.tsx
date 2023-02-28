@@ -9,6 +9,7 @@ import '../sass/main.scss';
 export function App() {
     const [currentPage, setCurrentPage] = useState("home");
     const [scrollView, setScrollView] = useState(0);
+    const inView = useRef<HTMLDivElement>(null);
     
     const navItems = {
         about: 0,
@@ -17,17 +18,21 @@ export function App() {
         contact: 0
     }
 
-    const scrollLocation = () => {
-        setScrollView(window.scrollY);
-    }
-
-    useEffect(() => {
-        const watchScroll = () => {
-            window.addEventListener('scroll', scrollLocation);
-        }
-        watchScroll();
+    const scrollWatcher = () => {
+        if (!inView.current) return;
+        const scrollLocation = (inView.current as HTMLElement).scrollTop;
+        //const totalHeight = (inView.current as HTMLElement).scrollHeight - (inView.current as HTMLElement).clientHeight;
+        if (scrollLocation === 0 ) return setScrollView(0);
+        //if (scrollLocation > totalHeight) return setScrollView(100);
+        setScrollView(scrollLocation);
+        console.log(scrollView)
+      }
+    
+      useEffect(() => {
+        inView.current?.addEventListener('scroll', scrollWatcher);
         return () => {
-            window.removeEventListener('scroll', scrollLocation);
+            inView.current &&
+            inView.current?.removeEventListener('scroll', scrollWatcher);
         }
     });
 
@@ -44,10 +49,11 @@ export function App() {
         for (const key in navItems) {
             navItems[key as keyof typeof navItems] = document.getElementById(key)?.getBoundingClientRect().top! + currentScroll;
         }
+        //console.log(navItems)
     }
 
     return (
-        <div className="app">
+        <div className="app" ref={inView as React.RefObject<HTMLDivElement>}>
             <LeftPanel 
                 scrollView={scrollView}
                 currentPage={currentPage}
