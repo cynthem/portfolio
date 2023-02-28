@@ -40,6 +40,9 @@ function MoreProjects() {
             </div>
             <motion.a 
                 className='more-projects-link'
+                href="https://github.com/doozles411"
+                target="_blank"
+                rel="noopener noreferrer"
                 variants={animateBtn}
                 initial="rest"
                 whileHover="hover"
