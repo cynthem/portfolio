@@ -6,15 +6,30 @@ import Projects from './projects/Projects';
 import Contact from './contact/Contact';
 import '../sass/main.scss';
 
-const navItems = {
-    about: 0,
-    skills: 0,
-    projects: 0,
-    contact: 0
-}
-
 export function App() {
-    const [activeNav, setActiveNav] = useState("");
+    const [currentPage, setCurrentPage] = useState("home");
+    const [scrollView, setScrollView] = useState(0);
+    
+    const navItems = {
+        about: 0,
+        skills: 0,
+        projects: 0,
+        contact: 0
+    }
+
+    const scrollLocation = () => {
+        setScrollView(window.scrollY);
+    }
+
+    useEffect(() => {
+        const watchScroll = () => {
+            window.addEventListener('scroll', scrollLocation);
+        }
+        watchScroll();
+        return () => {
+            window.removeEventListener('scroll', scrollLocation);
+        }
+    });
 
     useEffect(() => {
         const observer = new MutationObserver(getAnchorPoints);
@@ -22,40 +37,22 @@ export function App() {
             childList: true,
             subtree: true
         });
-        //window.addEventListener('scroll', handleScroll);
     }, []);
 
     const getAnchorPoints = () => {
-        const currentScroll = window.scrollY /*- 100*/;
-        /*const viewportHeight = Math.max(
-            document.documentElement.clientHeight,
-            window.innerHeight || 0
-        );*/
+        const currentScroll = window.scrollY;
         for (const key in navItems) {
             navItems[key as keyof typeof navItems] = document.getElementById(key)?.getBoundingClientRect().top! + currentScroll;
         }
-        //const bottom = document.body.offsetHeight;
-        //handleScroll();
     }
-
-    /*const handleScroll = () => {
-        const currentPosition = window.scrollY;
-        let currentSection = null;
-        for (const section in navItems) {
-            currentSection = navItems[section]! <= currentPosition ? section : currentSection;
-            if (currentSection !== section) break;
-        }
-        if (currentSection !== activeNav) {
-            setActiveNav(currentSection!);
-        }
-    }*/
 
     return (
         <div className="app">
             <LeftPanel 
+                scrollView={scrollView}
+                currentPage={currentPage}
+                setCurrentPage={setCurrentPage}
                 navItems={navItems}
-                activeNav={activeNav}
-                setActiveNav={setActiveNav}
             />
             <div className="pages">
                 <About />
