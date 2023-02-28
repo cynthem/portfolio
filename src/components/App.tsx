@@ -14,7 +14,7 @@ const navItems: { [key: string]: number | null } = {
 }
 
 export function App() {
-    const [activeNav, setActiveNav] = useState('Top');
+    const [activeNav, setActiveNav] = useState("");
 
     useEffect(() => {
         const observer = new MutationObserver(getAnchorPoints);
@@ -22,11 +22,11 @@ export function App() {
             childList: true,
             subtree: true
         });
-        window.addEventListener('scroll', handleScroll);
+        //window.addEventListener('scroll', handleScroll);
     }, []);
 
     const getAnchorPoints = () => {
-        const currentScroll = window.scrollY - 100;
+        const currentScroll = window.scrollY /*- 100*/;
         /*const viewportHeight = Math.max(
             document.documentElement.clientHeight,
             window.innerHeight || 0
@@ -34,29 +34,29 @@ export function App() {
         for (const key in navItems) {
             navItems[key] = document.getElementById(key)?.getBoundingClientRect().top! + currentScroll;
         }
+        console.log(navItems)
         //const bottom = document.body.offsetHeight;
-        handleScroll();
+        //handleScroll();
     }
 
-    const handleScroll = () => {
+    /*const handleScroll = () => {
         const currentPosition = window.scrollY;
         let currentSection = null;
         for (const section in navItems) {
             currentSection = navItems[section]! <= currentPosition ? section : currentSection;
-            if (currentSection !== section) {
-                break;
-            }
+            if (currentSection !== section) break;
         }
         if (currentSection !== activeNav) {
             setActiveNav(currentSection!);
         }
-    }
+    }*/
 
     return (
         <div className="app">
             <LeftPanel 
                 navItems={navItems}
                 activeNav={activeNav}
+                setActiveNav={setActiveNav}
             />
             <div className="pages">
                 <About />
