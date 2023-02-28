@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 interface Props {
     navName: string;
@@ -24,9 +24,7 @@ function NavItem({ navName, active, currentPage }: Props) {
     }
 
     return (
-        <motion.li
-            whileTap={{ scale: 0.9 }}
-        >
+        <motion.li whileTap={{ scale: 0.9 }}>
             <motion.a 
                 href={`#${navName}`}
                 className={`underline ${active} ${currentPage === `${navName}` && `${navName}-nav`}`}
