@@ -15,16 +15,15 @@ interface Props {
 function LeftPanel({ navItems, activeNav, setActiveNav }: Props) {
 
     useEffect(() => {
-        console.log(navItems);
-        /*const currentPosition = window.scrollY;
+        const currentPosition = window.scrollY;
         let currentSection = "";
-        for (const section in navItems) {
-            currentSection = navItems[section]! <= currentPosition ? section : currentSection;
-            if (currentSection !== section) break;
+        for (const key in navItems) {
+            currentSection = navItems[key as keyof typeof navItems]! <= currentPosition ? key : currentSection;
+            if (currentSection !== key) break;
         }
         if (currentSection !== activeNav) {
             setActiveNav(currentSection!);
-        }*/
+        }
     });
 
     const navList = Object.keys(navItems).map((e, i) => 
