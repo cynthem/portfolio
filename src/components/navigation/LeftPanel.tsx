@@ -2,36 +2,39 @@ import React, { useState, useEffect, Dispatch, SetStateAction } from 'react';
 import NavItem from './NavItem';
 
 interface Props {
+    scrollView: number;
+    currentPage: string;
+    setCurrentPage: Dispatch<SetStateAction<string>>;
     navItems: {
         about: number,
         skills: number,
         projects: number,
         contact: number
     };
-    activeNav: string;
-    setActiveNav: Dispatch<SetStateAction<string>>;
 }
 
-function LeftPanel({ navItems, activeNav, setActiveNav }: Props) {
+function LeftPanel({ scrollView, currentPage, setCurrentPage, navItems }: Props) {
 
     useEffect(() => {
-        const currentPosition = window.scrollY;
-        let currentSection = "";
-        for (const key in navItems) {
-            currentSection = navItems[key as keyof typeof navItems]! <= currentPosition ? key : currentSection;
-            if (currentSection !== key) break;
+        if (scrollView > navItems["contact"]) {
+            setCurrentPage("contact");
+        } else if (scrollView > navItems["projects"]) {
+            setCurrentPage("projects");
+        } else if (scrollView > navItems["skills"]) {
+            setCurrentPage("skills");
+        } else if (scrollView > navItems["about"]) {
+            setCurrentPage("about");
+        } else {
+            setCurrentPage("home");
         }
-        if (currentSection !== activeNav) {
-            setActiveNav(currentSection!);
-        }
-    });
+    }, [scrollView]);
 
     const navList = Object.keys(navItems).map((e, i) => 
         <NavItem 
             navName={e} 
             key={`navitem_${i}`} 
-            active={e === activeNav ? true : false} 
-            currentPage={activeNav} 
+            active={e === currentPage ? true : false} 
+            currentPage={currentPage} 
         />
     );
 
