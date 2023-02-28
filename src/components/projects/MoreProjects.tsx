@@ -1,9 +1,11 @@
 import React, { useRef } from 'react';
+import { ParallaxProvider, useParallax } from 'react-scroll-parallax';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import otherProjects from '../../assets/images/project-imgs/otherProj.jpg';
 import arrowIcon from '../../assets/images/icon_arrow_orange.png';
 
 function MoreProjects() {
+    const { ref } = useParallax<HTMLImageElement>({ speed: 2 });
 
     const animateBtn = {
         rest: {
@@ -31,9 +33,12 @@ function MoreProjects() {
     }
 
     return (
+        
         <div className='more-projects'>
             <div className='more-projects-background'>
-                <img alt='More projects' src={otherProjects} />
+            <ParallaxProvider>
+                <img ref={ref} alt='More projects' src={otherProjects} />
+                </ParallaxProvider>
             </div>
             <motion.a 
                 className='more-projects-link'

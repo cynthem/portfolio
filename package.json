@@ -48,10 +48,6 @@
     "framer-motion": "^7.10.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-intersection-observer": "^9.4.1",
-    "react-router-dom": "^6.5.0",
-    "react-scroll-parallax": "^3.3.2",
-    "react-scrollspy": "^3.4.3",
     "uniqid": "^5.4.0",
     "windups": "^1.2.1"
   }
