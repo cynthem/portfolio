@@ -34,12 +34,15 @@ function MoreProjects() {
     return (
         <div className='more-projects'>
             <ParallaxProvider>
-            <div className='more-projects-container'>
-                <div className='more-projects-background'></div>
-                <Parallax translateY={[ '-50%', '50%' ]} className='parallax-img'>
-                    <img alt='More projects' src={otherProjects} />
-                </Parallax>
-            </div>
+                <div className='more-projects-container'>
+                    <div className='more-projects-background'></div>
+                    <Parallax 
+                        className='parallax-img'
+                        translateY={[ '-50%', '50%' ]} 
+                    >
+                        <img alt='More projects' src={otherProjects} />
+                    </Parallax>
+                </div>
             </ParallaxProvider>
             <motion.a 
                 className='more-projects-link'
