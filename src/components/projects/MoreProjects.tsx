@@ -38,7 +38,7 @@ function MoreProjects() {
                     <div className='more-projects-background'></div>
                     <Parallax 
                         className='parallax-img'
-                        translateY={[ '-50%', '50%' ]} 
+                        translateY={[ '-10%', '10%' ]} 
                     >
                         <img alt='More projects' src={otherProjects} />
                     </Parallax>
