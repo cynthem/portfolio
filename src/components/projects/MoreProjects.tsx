@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import otherProjects from '../../assets/images/project-imgs/otherProj.jpg';
 import arrowIcon from '../../assets/images/icon_arrow_orange.png';
 
