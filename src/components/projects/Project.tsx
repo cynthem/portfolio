@@ -36,14 +36,19 @@ function Project({ project }: Props) {
 
     return (
         <div className='project-container'>
-            <div className='project-image'>
-                <div className='project-outline'></div>
-                <img
-                    alt={project.name}
-                    src={project.image}
-                >
-                </img>
-            </div>
+            <ParallaxProvider>
+                <div className='project-image'>
+                    <div className='project-outline'></div>
+                    <Parallax
+                        className='project-parallax'
+                    >
+                        <img
+                            alt={project.name}
+                            src={project.image}
+                        />
+                    </Parallax>
+                </div>
+            </ParallaxProvider>
             <div className='project-card'>
                 <h3>{project.name}</h3>
                 <div className='card-container'>
