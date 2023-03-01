@@ -41,6 +41,7 @@ function Project({ project }: Props) {
                     <div className='project-outline'></div>
                     <Parallax
                         className='project-parallax'
+                        translateY={[ '-10%', '10%' ]}
                     >
                         <img
                             alt={project.name}
