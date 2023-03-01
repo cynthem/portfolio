@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Parallax, Background } from 'react-parallax';
+import { Parallax } from 'react-parallax';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import otherProjects from '../../assets/images/project-imgs/otherProj.jpg';
 import arrowIcon from '../../assets/images/icon_arrow_orange.png';
@@ -35,7 +35,9 @@ function MoreProjects() {
         <div className='more-projects'>
             <div className='more-projects-container'>
                 <div className='more-projects-background'></div>
-                <img alt='More projects' src={otherProjects} />
+                <Parallax translateY={[ '-50%', '50%' ]}>
+                    <img alt='More projects' src={otherProjects} />
+                </Parallax>
             </div>
             <motion.a 
                 className='more-projects-link'
