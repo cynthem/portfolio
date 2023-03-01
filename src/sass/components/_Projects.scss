@@ -111,15 +111,15 @@
     justify-content: center;
     align-items: center;
     gap: 6vw;
-    .more-projects-background {
-        background-color: $color-orange;
-        height: 330px;
-        width: 400px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .more-projects-container {
+        .more-projects-background {
+            background-color: $color-orange;
+            height: 330px;
+            width: 400px;
+        }
         > img {
-            width: 90%;
+            height: 297px;
+            width: 360px;
         }
     }
     .more-projects-link {
