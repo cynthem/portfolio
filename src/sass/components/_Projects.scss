@@ -113,22 +113,20 @@
     gap: 6vw;
     .more-projects-container {
         height: 400px;
-        width: 400px;
+        width: 430px;
         position: relative;
         .more-projects-background {
             background-color: $color-orange;
             height: 320px;
             width: 395px;
             position: absolute;
-            bottom: 0;
-            right: 5%;
+            bottom: 40px;
+            right: 0;
         }
         .parallax-img {
-            display: none;
             > img {
-                width: 85%;
+                width: 375px;
             }
-            //position: relative;
         }
     }
     .more-projects-link {
