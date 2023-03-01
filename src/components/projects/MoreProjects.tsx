@@ -32,9 +32,9 @@ function MoreProjects() {
     }
 
     return (
-        
         <div className='more-projects'>
-            <div className='more-projects-background'>
+            <div className='more-projects-container'>
+                <div className='more-projects-background'></div>
                 <img alt='More projects' src={otherProjects} />
             </div>
             <motion.a 
