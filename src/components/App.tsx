@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LeftPanel from './navigation/LeftPanel';
 import About from './about/About';
 import Skills from './skills/Skills';
@@ -46,22 +45,18 @@ export function App() {
 
     return (
         <div className="app" ref={inView as React.RefObject<HTMLDivElement>}>
-            <BrowserRouter>
-                <LeftPanel 
-                    scrollView={scrollView}
-                    currentPage={currentPage}
-                    setCurrentPage={setCurrentPage}
-                    navItems={navItems}
-                />
-                <div className="pages">
-                    <Routes>
-                        <About />
-                        <Skills />
-                        <Projects />
-                        <Contact />
-                    </Routes>
-                </div>
-            </BrowserRouter>
+            <LeftPanel 
+                scrollView={scrollView}
+                currentPage={currentPage}
+                setCurrentPage={setCurrentPage}
+                navItems={navItems}
+            />
+            <div className="pages">
+                    <About />
+                    <Skills />
+                    <Projects />
+                    <Contact />
+            </div>
         </div>
     );
 }
