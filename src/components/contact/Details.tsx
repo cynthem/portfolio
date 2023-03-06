@@ -1,11 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Resume from './Resume';
 import gitHubIcon from '../../assets/images/contact-icons/github_icon.svg';
 import linkedInIcon from '../../assets/images/contact-icons/linkedin_icon.svg';
 import resumeIcon from '../../assets/images/contact-icons/resume_icon.svg';
 
 function Details() {
+    const handleClick = (e: Event) => {
+        setResumeShown(current => !current);
+    }
+    
     return (
         <div className='details'>
             <p>I am currently open to new opportunities. Don't hesitate to reach out if you're interested in working together or have any questions for me.</p>
@@ -43,6 +46,7 @@ function Details() {
                         transition: { duration: 0.5 }
                     }}
                     whileTap={{ scale: 0.9 }}
+                    onClick={(e) => handleClick}
                 >
                     <img alt="Resume" src={resumeIcon} />
                 </motion.button>    

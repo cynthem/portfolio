@@ -4,6 +4,7 @@ import About from './about/About';
 import Skills from './skills/Skills';
 import Projects from './projects/Projects';
 import Contact from './contact/Contact';
+import Resume from './contact/Resume';
 import '../sass/main.scss';
 
 const navItems = {
@@ -14,6 +15,7 @@ const navItems = {
 }
 
 export function App() {
+    const [resumeShown, setResumeShown] = useState(false);
     const [currentPage, setCurrentPage] = useState("home");
     const [scrollView, setScrollView] = useState(0);
     const inView = useRef<HTMLDivElement>(null);
@@ -55,8 +57,11 @@ export function App() {
                     <About />
                     <Skills />
                     <Projects />
-                    <Contact />
+                    <Contact 
+                        setResumeShown={setResumeShown}
+                    />
             </div>
+            {resumeShown && <Resume />}
         </div>
     );
 }
