@@ -36,6 +36,9 @@
         > button {
             align-self: flex-end;
             @include button();
+            margin-top: 10px;
+            margin-right: 10px;
+            font-family: $font-yeseva;
         }
         .resume-content {
             align-self: center;
