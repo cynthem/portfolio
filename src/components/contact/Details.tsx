@@ -34,10 +34,10 @@ function Details() {
                 >
                     <img alt="LinkedIn" src={linkedInIcon} />
                 </motion.a>
-                <motion.a 
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <motion.button 
+                    //href="#"
+                    //target="_blank"
+                    //rel="noopener noreferrer"
                     whileHover={{
                         scale: 1.2,
                         transition: { duration: 0.5 }
@@ -45,7 +45,7 @@ function Details() {
                     whileTap={{ scale: 0.9 }}
                 >
                     <img alt="Resume" src={resumeIcon} />
-                </motion.a>    
+                </motion.button>    
             </div>
         </div>
     );
