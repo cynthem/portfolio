@@ -45,6 +45,11 @@ export function App() {
         }
     }, []);
 
+    const handleClick = (e: Event) => {
+        setResumeShown(current => !current);
+        console.log('clicked')
+    }
+
     return (
         <div className="app" ref={inView as React.RefObject<HTMLDivElement>}>
             <LeftPanel 
@@ -58,6 +63,7 @@ export function App() {
                     <Skills />
                     <Projects />
                     <Contact 
+                        onClick={handleClick}
                         setResumeShown={setResumeShown}
                     />
                     {resumeShown && <Resume />}
