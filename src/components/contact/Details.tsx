@@ -5,7 +5,7 @@ import linkedInIcon from '../../assets/images/contact-icons/linkedin_icon.svg';
 import resumeIcon from '../../assets/images/contact-icons/resume_icon.svg';
 
 interface Props {
-    handleClick: (e: Event) => void;
+    handleClick: () => void;
 }
 
 function Details({ handleClick }: Props) {
@@ -46,7 +46,7 @@ function Details({ handleClick }: Props) {
                         transition: { duration: 0.5 }
                     }}
                     whileTap={{ scale: 0.9 }}
-                    onClick={(e) => handleClick}
+                    onClick={() => handleClick}
                 >
                     <img alt="Resume" src={resumeIcon} />
                 </motion.button>    

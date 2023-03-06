@@ -6,7 +6,7 @@ import EmailForm from './EmailForm';
 import Footer from './Footer';
 
 interface Props {
-    handleClick: (e: Event) => void;
+    handleClick: () => void;
 }
 
 function Contact({ handleClick }: Props) {
