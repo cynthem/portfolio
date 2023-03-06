@@ -7,7 +7,7 @@ import Footer from './Footer';
 
 interface Props {
     setResumeShown: Dispatch<SetStateAction<boolean>>;
-    handleClick?: React.MouseEventHandler;
+    handleClick: (e: Event) => void;
 }
 
 function Contact({ setResumeShown, handleClick }: Props) {

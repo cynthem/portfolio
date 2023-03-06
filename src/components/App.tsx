@@ -63,7 +63,7 @@ export function App() {
                     <Skills />
                     <Projects />
                     <Contact 
-                        onClick={handleClick}
+                        handleClick={handleClick}
                         setResumeShown={setResumeShown}
                     />
                     {resumeShown && <Resume />}

@@ -6,9 +6,10 @@ import resumeIcon from '../../assets/images/contact-icons/resume_icon.svg';
 
 interface Props {
     setResumeShown: Dispatch<SetStateAction<boolean>>;
+    handleClick?: React.MouseEventHandler;
 }
 
-function Details({ setResumeShown }: Props) {
+function Details({ setResumeShown, handleClick }: Props) {
 
     
 
