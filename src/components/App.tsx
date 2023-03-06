@@ -45,7 +45,7 @@ export function App() {
         }
     }, []);
 
-    const handleClick = (e: Event) => {
+    const handleClick = () => {
         setResumeShown(current => !current);
         console.log('clicked')
     }
