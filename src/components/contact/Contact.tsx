@@ -6,11 +6,10 @@ import EmailForm from './EmailForm';
 import Footer from './Footer';
 
 interface Props {
-    setResumeShown: Dispatch<SetStateAction<boolean>>;
     handleClick: (e: Event) => void;
 }
 
-function Contact({ setResumeShown, handleClick }: Props) {
+function Contact({ handleClick }: Props) {
     const animation = useAnimation();    
     const [ref, inView, entry] = useInView({ threshold: 0.1 });
 
@@ -56,7 +55,6 @@ function Contact({ setResumeShown, handleClick }: Props) {
                     variants={animateDetails}
                 >
                     <Details 
-                        setResumeShown={setResumeShown}
                         handleClick={handleClick}
                     />
                     <EmailForm />
