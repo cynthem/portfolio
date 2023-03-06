@@ -1,4 +1,5 @@
 @import '../helpers/variables';
+@import '../helpers/mixins';
 
 .app {
     background-color: $color-beige; 
@@ -34,9 +35,7 @@
         flex-direction: column;
         > button {
             align-self: flex-end;
-            border: none;
-            outline: none;
-            background-color: $color-beige;
+            @include button();
         }
         .resume-content {
             align-self: center;
