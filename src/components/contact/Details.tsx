@@ -9,9 +9,10 @@ interface Props {
 }
 
 function Details({ setResumeShown }: Props) {
-    
+
     const handleClick = (e: Event) => {
         setResumeShown(current => !current);
+        console.log('clicked')
     }
 
     return (

@@ -60,8 +60,8 @@ export function App() {
                     <Contact 
                         setResumeShown={setResumeShown}
                     />
+                    {resumeShown && <Resume />}
             </div>
-            {resumeShown && <Resume />}
         </div>
     );
 }
