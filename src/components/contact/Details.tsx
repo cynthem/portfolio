@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import gitHubIcon from '../../assets/images/contact-icons/github_icon.svg';
 import linkedInIcon from '../../assets/images/contact-icons/linkedin_icon.svg';
@@ -38,15 +38,12 @@ function Details({ handleClick }: Props) {
                     <img alt="LinkedIn" src={linkedInIcon} />
                 </motion.a>
                 <motion.button 
-                    //href="#"
-                    //target="_blank"
-                    //rel="noopener noreferrer"
                     whileHover={{
                         scale: 1.2,
                         transition: { duration: 0.5 }
                     }}
                     whileTap={{ scale: 0.9 }}
-                    onClick={() => handleClick}
+                    onClick={handleClick}
                 >
                     <img alt="Resume" src={resumeIcon} />
                 </motion.button>    
