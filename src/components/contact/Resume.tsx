@@ -1,6 +1,10 @@
 import React from 'react';
 
-function Resume() {
+interface Props {
+    resumeShown: boolean;
+}
+
+function Resume({ resumeShown }: Props) {
     return (
         <div className='resume'>
             resume content placeholder

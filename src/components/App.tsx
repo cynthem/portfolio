@@ -64,10 +64,11 @@ export function App() {
                     <Projects />
                     <Contact 
                         handleClick={handleClick}
-                        setResumeShown={setResumeShown}
                     />
-                    {resumeShown && <Resume />}
             </div>
+            <Resume 
+                resumeShown={resumeShown}
+            />
         </div>
     );
 }
