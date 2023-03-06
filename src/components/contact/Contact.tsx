@@ -1,11 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Dispatch, SetStateAction } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
 import Details from './Details';
 import EmailForm from './EmailForm';
 import Footer from './Footer';
 
-function Contact() {
+interface Props {
+    setResumeShown: Dispatch<SetStateAction<boolean>>;
+}
+
+function Contact({ setResumeShown }: Props) {
     const animation = useAnimation();    
     const [ref, inView, entry] = useInView({ threshold: 0.1 });
 
@@ -50,7 +54,9 @@ function Contact() {
                     initial={{opacity: 0}}
                     variants={animateDetails}
                 >
-                    <Details />
+                    <Details 
+                        setResumeShown={setResumeShown}
+                    />
                     <EmailForm />
                 </motion.div>
                 <Footer />
