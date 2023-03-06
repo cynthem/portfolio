@@ -5,6 +5,7 @@
     overflow: scroll;
     min-height: 100vh;
     max-height: 100vh;
+    position: relative;
     .pages {
         display: flex;
         flex-direction: column;
@@ -14,10 +15,19 @@
 
 .resume-not-shown {
     visibility: hidden;
+    position: fixed;
+    bottom: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
 }
 
 .resume-shown {
     visibility: visible;
+    z-index: 6;
+    position: fixed;
+    bottom: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
 }
 
 @supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
