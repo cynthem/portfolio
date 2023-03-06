@@ -47,11 +47,10 @@ export function App() {
 
     const handleClick = () => {
         setResumeShown(current => !current);
-        console.log('clicked')
     }
 
     return (
-        <div className="app" ref={inView as React.RefObject<HTMLDivElement>}>
+        <div className={resumeShown ? 'app-with-resume' : 'app'} ref={inView as React.RefObject<HTMLDivElement>}>
             <LeftPanel 
                 scrollView={scrollView}
                 currentPage={currentPage}
