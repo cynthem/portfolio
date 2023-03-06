@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 import { motion } from 'framer-motion';
 import gitHubIcon from '../../assets/images/contact-icons/github_icon.svg';
 import linkedInIcon from '../../assets/images/contact-icons/linkedin_icon.svg';
 import resumeIcon from '../../assets/images/contact-icons/resume_icon.svg';
 
-function Details() {
+interface Props {
+    setResumeShown: Dispatch<SetStateAction<boolean>>;
+}
+
+function Details({ setResumeShown }: Props) {
+    
     const handleClick = (e: Event) => {
         setResumeShown(current => !current);
     }
-    
+
     return (
         <div className='details'>
             <p>I am currently open to new opportunities. Don't hesitate to reach out if you're interested in working together or have any questions for me.</p>
