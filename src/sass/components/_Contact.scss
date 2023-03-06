@@ -35,11 +35,7 @@
         justify-content: center;
         gap: 20px;
         > button {
-            border: none;
-            outline: none;
-            background-color: $color-beige;
-            cursor: pointer;
-            padding: 0;
+            @include button();
         }
     }
 }
@@ -79,12 +75,9 @@
     }
     .send-input {
         align-self: flex-end;
-        background-color: transparent;
-        outline: none;
-        border: none;
+        @include button();
         font-family: $font-forum;
         font-size: 20px;
-        cursor: pointer;
         > img {
             width: 12px;
             margin-left: 5px;
