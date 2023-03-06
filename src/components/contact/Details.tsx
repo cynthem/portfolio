@@ -5,11 +5,10 @@ import linkedInIcon from '../../assets/images/contact-icons/linkedin_icon.svg';
 import resumeIcon from '../../assets/images/contact-icons/resume_icon.svg';
 
 interface Props {
-    setResumeShown: Dispatch<SetStateAction<boolean>>;
     handleClick: (e: Event) => void;
 }
 
-function Details({ setResumeShown, handleClick }: Props) {
+function Details({ handleClick }: Props) {
     return (
         <div className='details'>
             <p>I am currently open to new opportunities. Don't hesitate to reach out if you're interested in working together or have any questions for me.</p>
