@@ -13,25 +13,28 @@
     }
 }
 
-.resume-not-shown {
-    visibility: hidden;
-    position: fixed;
-    bottom: 0;
-    -webkit-transition: all .3s;
-    transition: all .3s;
-}
-
-.resume-shown {
-    visibility: visible;
+.resume {
     z-index: 6;
     position: fixed;
     bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
     -webkit-transition: all .3s;
     transition: all .3s;
 }
 
+.not-shown {
+    visibility: hidden;
+}
+
+.shown {
+    visibility: visible;
+    
+}
+
 @supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
-    .resume-shown {
+    .shown {
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         background-color: rgba(0, 0, 0, 0.3);

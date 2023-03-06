@@ -66,6 +66,7 @@ export function App() {
                     />
             </div>
             <Resume 
+                handleClick={handleClick}
                 resumeShown={resumeShown}
             />
         </div>
