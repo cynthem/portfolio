@@ -18,3 +18,10 @@
         letter-spacing: 0.01em;
     }
 }
+
+@mixin button () {
+    border: none;
+    outline: none;
+    background-color: $color-beige;
+    padding: 0;
+}

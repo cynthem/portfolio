@@ -21,13 +21,26 @@
     height: 100vh;
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.4);
+    overflow: scroll;
+    padding: 50px 0;
     -webkit-transition: all .3s;
     transition: all .3s;
     .resume-container {
+        margin: 0 auto;
         background-color: $color-beige;
-        overflow: scroll;
-        width: 60vw;
+        width: 50vw;
         aspect-ratio: 8.5 / 11;
+        display: flex;
+        flex-direction: column;
+        > button {
+            align-self: flex-end;
+            border: none;
+            outline: none;
+            background-color: $color-beige;
+        }
+        .resume-content {
+            align-self: center;
+        }
     }
 }
 
