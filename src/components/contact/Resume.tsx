@@ -21,7 +21,7 @@ function Resume({ handleClick, resumeShown }: Props) {
                     Close
                 </motion.button>
                 <div className='resume-content'>
-                    here is some content
+                    content will go here
                 </div>
             </div>
         </div>
