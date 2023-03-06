@@ -7,9 +7,10 @@ import Footer from './Footer';
 
 interface Props {
     setResumeShown: Dispatch<SetStateAction<boolean>>;
+    handleClick?: React.MouseEventHandler;
 }
 
-function Contact({ setResumeShown }: Props) {
+function Contact({ setResumeShown, handleClick }: Props) {
     const animation = useAnimation();    
     const [ref, inView, entry] = useInView({ threshold: 0.1 });
 
@@ -56,6 +57,7 @@ function Contact({ setResumeShown }: Props) {
                 >
                     <Details 
                         setResumeShown={setResumeShown}
+                        handleClick={handleClick}
                     />
                     <EmailForm />
                 </motion.div>
