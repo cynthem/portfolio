@@ -6,7 +6,7 @@ interface Props {
 
 function Resume({ resumeShown }: Props) {
     return (
-        <div className='resume'>
+        <div className={resumeShown ? 'resume-shown' : 'resume-not-shown'}>
             resume content placeholder
         </div>
     );
