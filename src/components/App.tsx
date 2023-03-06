@@ -50,7 +50,7 @@ export function App() {
     }
 
     return (
-        <div className={resumeShown ? 'app-with-resume' : 'app'} ref={inView as React.RefObject<HTMLDivElement>}>
+        <div className='app' ref={inView as React.RefObject<HTMLDivElement>}>
             <LeftPanel 
                 scrollView={scrollView}
                 currentPage={currentPage}
