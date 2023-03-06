@@ -19,13 +19,21 @@
     bottom: 0;
     width: 100vw;
     height: 100vh;
+    opacity: 1;
     background-color: rgba(0, 0, 0, 0.4);
     -webkit-transition: all .3s;
     transition: all .3s;
+    .resume-container {
+        background-color: $color-beige;
+        overflow: scroll;
+        width: 60vw;
+        aspect-ratio: 8.5 / 11;
+    }
 }
 
 .not-shown {
     visibility: hidden;
+    opacity: 0;
 }
 
 .shown {

@@ -9,12 +9,10 @@ function Resume({ handleClick, resumeShown }: Props) {
     return (
         <div className={`resume ${resumeShown ? 'shown' : 'not-shown'}`}>
             <div className='resume-container'>
-                here is some content
-                <button
-                    onClick={handleClick}
-                >
-                    Exit
-                </button>
+                <button onClick={handleClick}>Close</button>
+                <div className='resume-content'>
+                    here is some content
+                </div>
             </div>
         </div>
     );
