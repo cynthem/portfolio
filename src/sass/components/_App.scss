@@ -63,3 +63,57 @@
         background-color: rgba(0, 0, 0, 0.3);
     }
 }
+
+
+// MOBILE STYLES
+
+@media (max-width: $breakpoint-1090) {
+    .resume {
+        .resume-container {
+            width: 60vw;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-950) {
+    .resume {
+        .resume-container {
+            width: 70vw;
+            > button {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-800) {
+    .resume {
+        .resume-container {
+            width: 80vw;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-800) {
+    .resume {
+        .resume-container {
+            width: 80vw;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-700) {
+    .resume {
+        .resume-container {
+            width: 90vw;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-600) {
+    .resume {
+        .resume-container {
+            width: 96vw;
+        }
+    }
+}
