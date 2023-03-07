@@ -11,7 +11,7 @@ interface Props {
 function Details({ handleClick }: Props) {
     return (
         <div className='details'>
-            <p>I am currently open to new opportunities. Don't hesitate to reach out if you're interested in working together or have any questions for me.</p>
+            <p>Have a question or want to work together? Reach out through any of the methods included here or by emailing <a href="mailto:cynthia.phelps807@gmail.com">cynthia.phelps807@gmail.com</a>.</p>
             <div className='details-links'>
                 <motion.a 
                     href="https://github.com/doozles411"
