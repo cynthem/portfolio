@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
 
 interface Props {
     navName: string;
@@ -25,15 +24,14 @@ function NavItem({ navName, active, currentPage }: Props) {
 
     return (
         <li className='link-item'>
-            <motion.a 
+            <a 
                 href={`#${navName}`}
                 className={`underline ${active} ${currentPage === `${navName}` && `${navName}-nav`}`}
                 aria-Label={`Scroll to ${navName}`}
                 onClick={(e) => onClick(e)}
-                //whileHover={{ color: '#ffa600' }}
             >
                 {capitalize(navName)}
-            </motion.a>
+            </a>
         </li>
     );
 }
