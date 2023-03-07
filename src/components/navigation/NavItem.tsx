@@ -24,10 +24,7 @@ function NavItem({ navName, active, currentPage }: Props) {
     }
 
     return (
-        <motion.li 
-            className='link-item'
-            whileTap={{ scale: 0.9 }}
-        >
+        <li className='link-item'>
             <motion.a 
                 href={`#${navName}`}
                 className={`underline ${active} ${currentPage === `${navName}` && `${navName}-nav`}`}
@@ -37,7 +34,7 @@ function NavItem({ navName, active, currentPage }: Props) {
             >
                 {capitalize(navName)}
             </motion.a>
-        </motion.li>
+        </li>
     );
 }
 

@@ -13,21 +13,17 @@
     z-index: 5;
     .link-list {
         padding-left: 25px;
-        > li::marker {
+        .link-item::marker {
             content: 'o';
             font-size: 18px;
             font-family: $font-forum;
         }
-        > li {
+        .link-item {
             margin-bottom: 15px;
             font-family: $font-bebas;
             font-size: 20px;
             padding-left: 8px;
             cursor: pointer;
-            > a {
-                //color: black;
-                //text-decoration: none;
-            }
             .underline {
                 display: inline;
                 position: relative;
@@ -78,6 +74,9 @@
                 width: 56px;
             }
         }
+        .link-item:active {
+            transform: scale(0.9);
+        }
     }
 }
 
@@ -92,15 +91,12 @@
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            > li::marker {
+            .link-item::marker {
                 content: none;
             }
-            > li {
+            .link-item {
                 margin-bottom: 0;
                 padding-left: 0;
-                > a {
-                    //color: white;
-                }
                 .underline {
                     color: white;
                 }
