@@ -25,13 +25,15 @@
             padding-left: 8px;
             cursor: pointer;
             > a {
-                color: black;
-                text-decoration: none;
+                //color: black;
+                //text-decoration: none;
             }
             .underline {
                 display: inline;
                 position: relative;
                 overflow: hidden;
+                color: black;
+                text-decoration: none;
             }
             .underline::after {
                 content: "";
@@ -97,6 +99,9 @@
                 margin-bottom: 0;
                 padding-left: 0;
                 > a {
+                    //color: white;
+                }
+                .underline {
                     color: white;
                 }
             }
