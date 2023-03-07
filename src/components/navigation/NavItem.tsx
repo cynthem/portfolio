@@ -14,7 +14,7 @@ function NavItem({ navName, active, currentPage }: Props) {
         setAnchorTarget(document.getElementById(navName));
     }, [navName]);
 
-    const handleClick = (e: React.MouseEvent) => {
+    const onClick = (e: React.MouseEvent) => {
         e.preventDefault();
         anchorTarget?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
@@ -29,7 +29,7 @@ function NavItem({ navName, active, currentPage }: Props) {
                 href={`#${navName}`}
                 className={`underline ${active} ${currentPage === `${navName}` && `${navName}-nav`}`}
                 aria-Label={`Scroll to ${navName}`}
-                onClick={(e) => handleClick(e)}
+                onClick={(e) => onClick(e)}
                 whileHover={{ color: '#ffa600' }}
             >
                 {capitalize(navName)}
