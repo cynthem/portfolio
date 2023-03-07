@@ -25,6 +25,7 @@ function NavItem({ navName, active, currentPage }: Props) {
 
     return (
         <motion.li 
+            className='link-item'
             whileTap={{ scale: 0.9 }}
         >
             <motion.a 
