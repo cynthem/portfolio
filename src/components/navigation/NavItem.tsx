@@ -30,7 +30,7 @@ function NavItem({ navName, active, currentPage }: Props) {
                 className={`underline ${active} ${currentPage === `${navName}` && `${navName}-nav`}`}
                 aria-Label={`Scroll to ${navName}`}
                 onClick={(e) => onClick(e)}
-                whileHover={{ color: '#ffa600' }}
+                //whileHover={{ color: '#ffa600' }}
             >
                 {capitalize(navName)}
             </motion.a>
