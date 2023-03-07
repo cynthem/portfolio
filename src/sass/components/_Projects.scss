@@ -274,11 +274,9 @@
                 }
             }
         } 
-        .project-container {
-            .project-card {
-                margin-left: 60px;
-            }     
-        }    
+        .project-card {
+            margin-left: 60px;
+        }      
     }  
     .more-projects {
         .more-projects-container {
@@ -338,7 +336,7 @@
                 width: 80px;
             }
             .card-container {
-                width: 200px;
+                width: 210px;
                 font-size: 14px;
                 padding: 15px 10px;
                 .card-tools {
@@ -399,7 +397,6 @@
             }
         }
         .project-card {
-            margin-left: 40px;
             > h3 {
                 font-size: 18px;
                 width: 100px;
@@ -422,9 +419,6 @@
                     > a {
                         font-size: 16px;
                         margin: 0 20px;
-                        > img {
-                            width: 10px;
-                        }
                     }
                 }
             }
@@ -446,45 +440,52 @@
 
 @media (max-width: $breakpoint-650) {
     .project-container {
+        flex-direction: column;
+        gap: 50px;
         .project-image {
             .project-outline {
-                height: 160px;
-                width: 232px;
+                height: 276px;
+                width: 400px;
             }
             .project-parallax {
                 > img {
-                    width: 232px;
+                    width: 400px;
                 }
             }
-        }  
+        } 
         .project-card {
-            margin-left: 50px;
+            margin-left: 0px;
+            > h3 {
+                margin: 0 auto;
+                font-size: 20px;
+                width: 120px;
+            }
+            .card-container {
+                height: 220px;
+                width: 400px;
+                font-size: 18px;
+                line-height: 1.2;
+                .card-description {
+                    padding-top: 5px;
+                    height: 55%;
+                }
+                .card-tools {
+                    font-size: 16px;
+                }
+                .card-links {
+                    > a {
+                        font-size: 16px;
+                        > img {
+                            width: 10px;
+                        }
+                    }
+                }
+            }
         }      
     }  
 }
 
 @media (max-width: $breakpoint-600) {
-    .project-container {
-        .project-card {
-            > h3 {
-                font-size: 16px;
-                width: 80px;
-            }
-            .card-container {
-                width: 200px;
-                font-size: 14px;
-                padding: 15px 10px;
-                .card-tools {
-                    font-size: 14px;
-                }
-                .card-links {
-                    > a {
-                        margin: 0 10px;
-                    }
-                }
-            }
-        }
-    }
     .more-projects {
         gap: 3vw;
         .more-projects-link {
@@ -500,24 +501,6 @@
 }
 
 @media (max-width: $breakpoint-500) {
-    .project-container {
-        .project-image {
-            .project-outline {
-                height: 120px;
-                width: 174px;
-                top: 16px;
-                left: 16px;
-            }
-            .project-parallax {
-                > img {
-                    width: 174px;
-                }
-            }
-        }  
-        .project-card {
-            margin-left: 35px;
-        }      
-    }  
     .more-projects {
         .more-projects-container {
             width: 280px;
@@ -533,28 +516,35 @@
 
 @media (max-width: $breakpoint-450) {
     .project-container {
+        .project-image {
+            .project-outline {
+                height: 200px;
+                width: 290px;
+                left: 16px;
+            }
+            .project-parallax {
+                > img {
+                    width: 290px;
+                }
+            }
+        } 
         .project-card {
             > h3 {
-                font-size: 14px;
-                padding: 5px 0px;
+                font-size: 18px;
+                width: 100px;
             }
             .card-container {
-                width: 150px;
-                font-size: 12px;
-                padding: 10px;
-                .card-tools {
-                    font-size: 10px;
-                }
-                .card-links {
-                    > a {
-                        font-size: 14px;
-                        > img {
-                            width: 8px;
-                        }
-                    }
+                height: 200px;
+                width: 290px;
+                font-size: 16px;
+                line-height: 1.1;
+                padding: 15px 20px;
+                .card-description {
+                    padding-top: 0;
+                    height: 58%;
                 }
             }
-        }
+        }      
     }
     .more-projects {
         flex-direction: column;
@@ -565,56 +555,30 @@
     }
 }
 
-@media (max-width: $breakpoint-400) {
+@media (max-width: $breakpoint-340) {
     .project-container {
         .project-image {
             .project-outline {
-                height: 100px;
-                width: 145px;
-                top: 10px;
-                left: 10px;
+                height: 172px;
+                width: 250px;
+                left: 12px;
             }
             .project-parallax {
                 > img {
-                    width: 145px;
+                    width: 250px;
                 }
             }
-        }     
-    } 
-}
-
-@media (max-width: $breakpoint-340) {
-    .project-container {
+        } 
         .project-card {
-            margin-left: 20px;
+            .card-container {
+                height: 240px;
+                width: 250px;
+            }
         }      
-    } 
+    }
 }
 
 @media (max-width: $breakpoint-320) {
-    .project-container {
-        .project-card {
-            > h3 {
-                font-size: 12px;
-            }
-            .card-container {
-                width: 110px;
-                font-size: 10px;
-                .card-tools {
-                    font-size: 8px;
-                }
-                .card-links {
-                    > a {
-                        margin: 0 5px;
-                        font-size: 10px;
-                        > img {
-                            width: 6px;
-                        }
-                    }
-                }
-            }
-        }
-    }
     .more-projects {
         gap: 2vh;
         .more-projects-container {
