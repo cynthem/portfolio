@@ -1,6 +1,6 @@
 # <div align="center">Personal Portfolio</div>
 
-## link coming soon
+## <div align="center">[link coming soon](https://github.com/doozles411/portfolio)</div>
 
 ## Description
 
