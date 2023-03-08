@@ -1,4 +1,4 @@
-# <center>Personal Portfolio</center>
+# <div align="center">Personal Portfolio</div>
 
 ## link coming soon
 
