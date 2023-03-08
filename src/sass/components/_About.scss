@@ -186,8 +186,13 @@
         }
     }
     .intro {
+        margin-left: 0px;
+        .about-header {
+            margin-left: 80px;
+        }
         .intro-details {
-            font-size: 18px;
+            width: 65vw;
+            margin: 0 auto;
         }
     }
 }
@@ -213,14 +218,13 @@
         }
     }
     .intro {
-        margin-left: 0;
         .about-header {
             margin-left: 0;
             justify-content: center;
         }
         .intro-details {
             width: 90vw;
-            margin: 0 auto;
+            font-size: 18px;
         }
     }
 }
@@ -236,7 +240,7 @@
     }
     .intro {
         .intro-details {
-            font-size: 16px;
+            padding: 16px 18px;
         }
     }
 }
@@ -262,7 +266,7 @@
     }
     .intro {
         .intro-details {
-            padding: 16px 18px;
+            font-size: 16px;
         }
     }
 }
@@ -287,11 +291,6 @@
                     font-size: 28px;
                 }
             }
-        }
-    }
-    .intro {
-        .intro-details {
-            font-size: 14px;
         }
     }
 }
