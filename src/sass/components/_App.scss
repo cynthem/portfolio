@@ -34,15 +34,17 @@
         display: flex;
         flex-direction: column;
         .resume-buttons {
-            
-        }
-        > button {
-            align-self: flex-end;
-            @include button();
-            margin-top: 10px;
-            margin-right: 10px;
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 10px 0px;
             font-family: $font-yeseva;
             font-size: 16px;
+            .print-btn {
+
+            }
+            .close-btn {
+                @include button();
+            }
         }
         .resume-content {
             align-self: center;

@@ -12,16 +12,28 @@ function Resume({ handleClick, resumeShown }: Props) {
         window.print();
     }
 
+    const download = () => {
+        window.open('../src/assets/images/heart_icon.svg');
+    }
+
     return (
         <div className={`resume ${resumeShown ? 'shown' : 'not-shown'}`}>
             <div className='resume-container'>
                 <div className='resume-buttons'>
-                    <button
-                        className='print-btn'
-                        onClick={() => print}
-                    >
-                        Print
-                    </button>
+                    <div className='left-buttons'>
+                        <button
+                            className='download-btn'
+                            onClick={download}
+                        >
+                            Download
+                        </button>
+                        <button
+                            className='print-btn'
+                            onClick={print}
+                        >
+                            Print
+                        </button>
+                    </div>
                     <motion.button 
                         className='close-btn'
                         onClick={handleClick}
