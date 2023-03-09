@@ -7,19 +7,31 @@ interface Props {
 }
 
 function Resume({ handleClick, resumeShown }: Props) {
+
+    const print = () => {
+        window.print();
+    }
+
     return (
         <div className={`resume ${resumeShown ? 'shown' : 'not-shown'}`}>
             <div className='resume-container'>
-                <motion.button 
-                    onClick={handleClick}
-                    whileHover={{
-                        color: '#ffa600',
-                        transition: { duration: 0.5 }
-                    }}
-                    whileTap={{ scale: 0.9 }}
-                >
-                    Close
-                </motion.button>
+                <div className='resume-buttons'>
+                    <button
+                        onClick={() => print}
+                    >
+                        Print
+                    </button>
+                    <motion.button 
+                        onClick={handleClick}
+                        whileHover={{
+                            color: '#ffa600',
+                            transition: { duration: 0.5 }
+                        }}
+                        whileTap={{ scale: 0.9 }}
+                    >
+                        Close
+                    </motion.button>
+                </div>
                 <div className='resume-content'>
                     <div className='resume-top'>
                         <div className='resume-top-name'>
