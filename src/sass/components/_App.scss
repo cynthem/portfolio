@@ -46,9 +46,16 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            font-family: $font-forum;
+            padding: 20px 30px;
             .resume-top {
                 .resume-top-name {
-                    > h1 {}
+                    text-align: center;
+                    > h1 {
+                        font-family: $font-yeseva;
+                        font-size: 50px;
+                        margin-bottom: 20px;
+                    }
                     > p {}
                 }
                 .resume-top-divider {}
