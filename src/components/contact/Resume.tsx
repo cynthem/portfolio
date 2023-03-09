@@ -22,24 +22,100 @@ function Resume({ handleClick, resumeShown }: Props) {
                 </motion.button>
                 <div className='resume-content'>
                     <div className='resume-top'>
-                        <div className='resume-top-name'></div>
-                        <div className='resume-top-contact'></div>
+                        <div className='resume-top-name'>
+                            <h1>Cindy Phelps</h1>
+                            <p>Front-end Developer</p>
+                            <p>Seattle, WA - cynthia.phelps807@gmail.com</p>
+                        </div>
                         <div className='resume-top-divider'></div>
-                        <div className='resume-top-profile'></div>
+                        <div className='resume-top-profile'>
+                            details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails
+                        </div>
                     </div>
                     <div className='resume-experience'>
-                        <div className='resume-experience-title'></div>
-                        <div className='resume-experience-1'></div>
-                        <div className='resume-experience-2'></div>
-                        <div className='resume-experience-3'></div>
+                        <div className='resume-experience-title'>
+                            <h2>EXPERIENCE</h2>
+                        </div>
+                        <div className='resume-experience-1'>
+                            <div className='experience-details'>
+                                <div className='details-left'>
+                                    <h3>Moderation Team Lead</h3>
+                                    <p>RealSelf</p>
+                                </div>
+                                <div className='details-right'>
+                                    <p>Seattle, WA</p>
+                                    <p>March 2019 - Sept. 2021</p>
+                                </div>
+                            </div>
+                            <ul className='experience-duties'>
+                                <li>details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails</li>
+                                <li>details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails</li>
+                                <li>details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails</li>
+                            </ul>
+                        </div>
+                        <div className='resume-experience-2'>
+                            <div className='experience-details'>
+                                <div className='details-left'>
+                                    <h3>Moderation Team Lead</h3>
+                                    <p>RealSelf</p>
+                                </div>
+                                <div className='details-right'>
+                                    <p>Seattle, WA</p>
+                                    <p>March 2019 - Sept. 2021</p>
+                                </div>
+                            </div>
+                            <ul className='experience-duties'>
+                                <li>details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails</li>
+                                <li>details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails</li>
+                                <li>details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails</li>
+                            </ul>
+                        </div>
+                        <div className='resume-experience-3'>
+                            <div className='experience-details'>
+                                <div className='details-left'>
+                                    <h3>Moderation Team Lead</h3>
+                                    <p>RealSelf</p>
+                                </div>
+                                <div className='details-right'>
+                                    <p>Seattle, WA</p>
+                                    <p>March 2019 - Sept. 2021</p>
+                                </div>
+                            </div>
+                            <ul className='experience-duties'>
+                                <li>details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails</li>
+                                <li>details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails</li>
+                                <li>details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails</li>
+                            </ul>
+                        </div>
                     </div>
                     <div className='resume-education'>
-                        <div className='resume-education-title'></div>
-                        <div className='resume-education-school'></div>
+                        <div className='resume-education-title'>
+                            <h2>EDUCATION</h2>
+                        </div>
+                        <div className='resume-education-school'>
+                            <h3>Seattle University</h3>
+                            <p>Bachelor of Science in Psychology</p>
+                            <p>Sept. 2004 to June 2008</p>
+                        </div>
                     </div>
                     <div className='resume-skills'>
-                        <div className='resume-skills-title'></div>
-                        <div className='resume-skills-list'></div>
+                        <div className='resume-skills-title'>
+                            <h2>SKILLS</h2>
+                        </div>
+                        <div className='resume-skills-list'>
+                            <ul className='skills-left'>
+                                <li>JavaScript</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>React</li>
+                            </ul>
+                            <ul className='skills-right'>
+                                <li>jQuery</li>
+                                <li>TypeScript</li>
+                                <li>CSS Preprocessors</li>
+                                <li>Jest</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
