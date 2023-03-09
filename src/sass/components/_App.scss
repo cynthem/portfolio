@@ -80,12 +80,23 @@
                 }
                 .resume-experience-item {
                     .experience-details {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
                         .details-left {
-                            > h3 {}
-                            > p {}
+                            > h3 {
+                                font-family: $font-yeseva;
+                                margin-bottom: 6px;
+                            }
+                            > p {
+                                font-size: 18px;
+                            }
                         }
                         .details-right {
-                            > p {}
+                            > p {
+                                margin-bottom: 4px;
+                                text-align: right;
+                            }
                         }
                     }
                     .experience-duties {
@@ -118,7 +129,7 @@
                     .education-right {
                         > p {
                             text-align: right;
-                            margin-bottom: 6px;
+                            margin-bottom: 4px;
                         }
                     }
                 }
