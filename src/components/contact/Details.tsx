@@ -4,11 +4,7 @@ import gitHubIcon from '../../assets/images/contact-icons/github_icon.svg';
 import linkedInIcon from '../../assets/images/contact-icons/linkedin_icon.svg';
 import resumeIcon from '../../assets/images/contact-icons/resume_icon.svg';
 
-interface Props {
-    handleClick: () => void;
-}
-
-function Details({ handleClick }: Props) {
+function Details() {
     return (
         <div className='details'>
             <p>Have a question or want to work together? Reach out through any of the methods included here or by emailing <a href="mailto:cynthia.phelps807@gmail.com">cynthia.phelps807@gmail.com</a>.</p>
@@ -46,7 +42,6 @@ function Details({ handleClick }: Props) {
                         transition: { duration: 0.5 }
                     }}
                     whileTap={{ scale: 0.9 }}
-                    onClick={handleClick}
                 >
                     <img alt="Resume" src={resumeIcon} />
                 </motion.a>    
