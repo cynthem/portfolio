@@ -37,7 +37,10 @@ function Details({ handleClick }: Props) {
                 >
                     <img alt="LinkedIn" src={linkedInIcon} />
                 </motion.a>
-                <motion.button 
+                <motion.a 
+                    href='https://drive.google.com/file/d/1iLk_NT4k7Yi175M4vHUYz8eoK0-HnLiy/view'
+                    target="_blank"
+                    rel="noopener noreferrer"
                     whileHover={{
                         scale: 1.2,
                         transition: { duration: 0.5 }
@@ -46,7 +49,7 @@ function Details({ handleClick }: Props) {
                     onClick={handleClick}
                 >
                     <img alt="Resume" src={resumeIcon} />
-                </motion.button>    
+                </motion.a>    
             </div>
         </div>
     );

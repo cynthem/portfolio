@@ -39,8 +39,8 @@
             margin: 10px 10px 0px;
             font-family: $font-yeseva;
             font-size: 16px;
-            .print-btn {
-
+            .left-buttons {
+                display: flex;
             }
             .close-btn {
                 @include button();
