@@ -5,11 +5,7 @@ import Details from './Details';
 import EmailForm from './EmailForm';
 import Footer from './Footer';
 
-interface Props {
-    handleClick: () => void;
-}
-
-function Contact({ handleClick }: Props) {
+function Contact() {
     const animation = useAnimation();    
     const [ref, inView, entry] = useInView({ threshold: 0.1 });
 
@@ -54,9 +50,7 @@ function Contact({ handleClick }: Props) {
                     initial={{opacity: 0}}
                     variants={animateDetails}
                 >
-                    <Details 
-                        handleClick={handleClick}
-                    />
+                    <Details />
                     <EmailForm />
                 </motion.div>
                 <Footer />
