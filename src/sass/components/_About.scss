@@ -181,7 +181,9 @@
             gap: 12vw;
             .job-title {
                 align-self: center;
-                width: 300px;
+                > h2 {
+                    width: 300px;
+                }
             }
         }
     }
