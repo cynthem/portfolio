@@ -92,9 +92,14 @@ function Resume({ handleClick, resumeShown }: Props) {
                             <h2>EDUCATION</h2>
                         </div>
                         <div className='resume-education-school'>
-                            <h3>Seattle University</h3>
-                            <p>Bachelor of Science in Psychology</p>
-                            <p>Sept. 2004 to June 2008</p>
+                            <div className='education-left'>
+                                <h3>Seattle University</h3>
+                                <p>Bachelor of Science in Psychology</p>
+                            </div>
+                            <div className='education-right'>
+                                <p>Seattle, WA</p>
+                                <p>Sept. 2004 to June 2008</p>
+                            </div>
                         </div>
                     </div>
                     <div className='resume-skills'>
