@@ -21,7 +21,26 @@ function Resume({ handleClick, resumeShown }: Props) {
                     Close
                 </motion.button>
                 <div className='resume-content'>
-                    content will go here
+                    <div className='resume-top'>
+                        <div className='resume-top-name'></div>
+                        <div className='resume-top-contact'></div>
+                        <div className='resume-top-divider'></div>
+                        <div className='resume-top-profile'></div>
+                    </div>
+                    <div className='resume-experience'>
+                        <div className='resume-experience-title'></div>
+                        <div className='resume-experience-1'></div>
+                        <div className='resume-experience-2'></div>
+                        <div className='resume-experience-3'></div>
+                    </div>
+                    <div className='resume-education'>
+                        <div className='resume-education-title'></div>
+                        <div className='resume-education-school'></div>
+                    </div>
+                    <div className='resume-skills'>
+                        <div className='resume-skills-title'></div>
+                        <div className='resume-skills-list'></div>
+                    </div>
                 </div>
             </div>
         </div>
