@@ -4,7 +4,6 @@ import About from './about/About';
 import Skills from './skills/Skills';
 import Projects from './projects/Projects';
 import Contact from './contact/Contact';
-import Resume from './contact/Resume';
 import '../sass/main.scss';
 
 const navItems = {
@@ -15,7 +14,6 @@ const navItems = {
 }
 
 export function App() {
-    const [resumeShown, setResumeShown] = useState(false);
     const [currentPage, setCurrentPage] = useState("home");
     const [scrollView, setScrollView] = useState(0);
     const inView = useRef<HTMLDivElement>(null);
@@ -45,10 +43,6 @@ export function App() {
         }
     }, []);
 
-    const handleClick = () => {
-        setResumeShown(current => !current);
-    }
-
     return (
         <div className='app' ref={inView as React.RefObject<HTMLDivElement>}>
             <LeftPanel 
@@ -61,14 +55,8 @@ export function App() {
                     <About />
                     <Skills />
                     <Projects />
-                    <Contact 
-                        handleClick={handleClick}
-                    />
+                    <Contact />
             </div>
-            <Resume 
-                handleClick={handleClick}
-                resumeShown={resumeShown}
-            />
         </div>
     );
 }
