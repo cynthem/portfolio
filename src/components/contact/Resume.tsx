@@ -25,7 +25,7 @@ function Resume({ handleClick, resumeShown }: Props) {
                         <div className='resume-top-name'>
                             <h1>Cindy Phelps</h1>
                             <p>Front-end Developer</p>
-                            <p>Seattle, WA - cynthia.phelps807@gmail.com</p>
+                            <p>cynthia.phelps807@gmail.com</p>
                         </div>
                         <div className='resume-top-divider'></div>
                         <div className='resume-top-profile'>

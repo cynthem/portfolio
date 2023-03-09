@@ -56,7 +56,9 @@
                         font-size: 50px;
                         margin-bottom: 20px;
                     }
-                    > p {}
+                    > p:first-child {
+                        font-weight: bold;
+                    }
                 }
                 .resume-top-divider {}
                 .resume-top-profile {}
