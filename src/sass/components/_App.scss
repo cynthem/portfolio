@@ -65,14 +65,19 @@
                     } 
                 }
                 .resume-top-divider {
-                    border-top: 1px solid black;
-                    margin-top: 10px;
+                    border-top: 1px solid $color-navy;
+                    margin: 15px 0px;
                 }
-                .resume-top-profile {}
+                .resume-top-profile {
+                    //margin: 5px 0px;
+                }
             }
             .resume-experience {
                 .resume-experience-title {
-                    > h2 {}
+                    @include resume-title();
+                    > h2 {
+                        
+                    }
                 }
                 .resume-experience-item {
                     .experience-details {

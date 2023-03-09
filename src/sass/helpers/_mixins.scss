@@ -26,3 +26,16 @@
     padding: 0;
     cursor: pointer;
 }
+
+@mixin resume-section-border () {
+    border-top: 2px solid $color-navy;
+    border-bottom: 1px solid $color-navy;
+    margin: 15px 0px;
+}
+
+@mixin resume-section-header () {
+    font-family: $font-bebas;
+    margin: 4px 0px;
+    text-align: center;
+    color: $color-navy;
+}
