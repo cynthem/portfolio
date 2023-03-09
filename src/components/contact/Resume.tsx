@@ -82,8 +82,8 @@ function Resume({ handleClick, resumeShown }: Props) {
                                 </div>
                             </div>
                             <ul className='experience-duties'>
-                                <li>details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails</li>
-                                <li>details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails</li>
+                                <li>details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails</li>
+                                <li>details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails</li>
                             </ul>
                         </div>
                     </div>
