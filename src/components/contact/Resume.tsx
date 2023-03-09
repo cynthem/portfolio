@@ -98,7 +98,7 @@ function Resume({ handleClick, resumeShown }: Props) {
                             </div>
                             <div className='education-right'>
                                 <p>Seattle, WA</p>
-                                <p>Sept. 2004 to June 2008</p>
+                                <p>Sept. 2004 - June 2008</p>
                             </div>
                         </div>
                     </div>
