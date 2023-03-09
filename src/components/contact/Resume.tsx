@@ -107,16 +107,19 @@ function Resume({ handleClick, resumeShown }: Props) {
                             <h2>SKILLS</h2>
                         </div>
                         <div className='resume-skills-list'>
-                            <ul className='skills-left'>
+                            <ul>
                                 <li>JavaScript</li>
                                 <li>HTML</li>
                                 <li>CSS</li>
-                                <li>React</li>
                             </ul>
-                            <ul className='skills-right'>
+                            <ul>
+                                <li>React</li>
                                 <li>jQuery</li>
                                 <li>TypeScript</li>
+                            </ul>
+                            <ul>
                                 <li>CSS Preprocessors</li>
+                                <li>Git</li>
                                 <li>Jest</li>
                             </ul>
                         </div>

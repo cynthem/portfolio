@@ -49,6 +49,7 @@
             font-family: $font-forum;
             padding: 20px 30px;
             .resume-top {
+                margin-bottom: 10px;
                 .resume-top-name {
                     text-align: center;
                     > h1 {
@@ -79,6 +80,7 @@
                     }
                 }
                 .resume-experience-item {
+                    margin-bottom: 30px;
                     .experience-details {
                         display: flex;
                         justify-content: space-between;
@@ -100,11 +102,14 @@
                         }
                     }
                     .experience-duties {
-                        > li {}
+                        > li {
+                            margin-bottom: 5px;
+                        }
                     }
                 }
             }
             .resume-education {
+                margin-top: -10px;
                 .resume-education-title {
                     @include resume-section-border();
                     > h2 {
