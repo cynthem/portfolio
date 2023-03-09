@@ -17,11 +17,13 @@ function Resume({ handleClick, resumeShown }: Props) {
             <div className='resume-container'>
                 <div className='resume-buttons'>
                     <button
+                        className='print-btn'
                         onClick={() => print}
                     >
                         Print
                     </button>
                     <motion.button 
+                        className='close-btn'
                         onClick={handleClick}
                         whileHover={{
                             color: '#ffa600',
