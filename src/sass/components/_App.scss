@@ -74,9 +74,9 @@
             }
             .resume-experience {
                 .resume-experience-title {
-                    @include resume-title();
+                    @include resume-section-border();
                     > h2 {
-                        
+                        @include resume-section-header();
                     }
                 }
                 .resume-experience-item {
@@ -96,7 +96,10 @@
             }
             .resume-education {
                 .resume-education-title {
-                    > h2 {}
+                    @include resume-section-border();
+                    > h2 {
+                        @include resume-section-header();
+                    }
                 }
                 .resume-eduation-school {
                     > h3 {}
@@ -105,14 +108,19 @@
             }
             .resume-skills {
                 .resume-skills-title {
-                    > h2 {}
+                    @include resume-section-border();
+                    > h2 {
+                        @include resume-section-header();
+                    }
                 }
                 .resume-skills-list {
-                    .skills-left {
-                        > li {}
-                    }
-                    .skills-right {
-                        > li {}
+                    display: flex;
+                    justify-content: space-evenly;
+                    font-family: $font-forum;
+                    > ul {
+                        > li {
+                            margin-bottom: 4px;
+                        }
                     }
                 }
             }
