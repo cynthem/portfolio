@@ -36,7 +36,7 @@ function Resume({ handleClick, resumeShown }: Props) {
                         <div className='resume-experience-title'>
                             <h2>EXPERIENCE</h2>
                         </div>
-                        <div className='resume-experience-1'>
+                        <div className='resume-experience-item'>
                             <div className='experience-details'>
                                 <div className='details-left'>
                                     <h3>Moderation Team Lead</h3>
@@ -53,7 +53,7 @@ function Resume({ handleClick, resumeShown }: Props) {
                                 <li>details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails</li>
                             </ul>
                         </div>
-                        <div className='resume-experience-2'>
+                        <div className='resume-experience-item'>
                             <div className='experience-details'>
                                 <div className='details-left'>
                                     <h3>Moderation Team Lead</h3>
@@ -70,7 +70,7 @@ function Resume({ handleClick, resumeShown }: Props) {
                                 <li>details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails details schmetails</li>
                             </ul>
                         </div>
-                        <div className='resume-experience-3'>
+                        <div className='resume-experience-item'>
                             <div className='experience-details'>
                                 <div className='details-left'>
                                     <h3>Moderation Team Lead</h3>

@@ -43,6 +43,58 @@
         }
         .resume-content {
             align-self: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .resume-top {
+                .resume-top-name {
+                    > h1 {}
+                    > p {}
+                }
+                .resume-top-divider {}
+                .resume-top-profile {}
+            }
+            .resume-experience {
+                .resume-experience-title {
+                    > h2 {}
+                }
+                .resume-experience-item {
+                    .experience-details {
+                        .details-left {
+                            > h3 {}
+                            > p {}
+                        }
+                        .details-right {
+                            > p {}
+                        }
+                    }
+                    .experience-duties {
+                        > li {}
+                    }
+                }
+            }
+            .resume-education {
+                .resume-education-title {
+                    > h2 {}
+                }
+                .resume-eduation-school {
+                    > h3 {}
+                    > p {}
+                }
+            }
+            .resume-skills {
+                .resume-skills-title {
+                    > h2 {}
+                }
+                .resume-skills-list {
+                    .skills-left {
+                        > li {}
+                    }
+                    .skills-right {
+                        > li {}
+                    }
+                }
+            }
         }
     }
 }
