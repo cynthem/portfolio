@@ -1,6 +1,6 @@
 # <div align="center">Personal Portfolio</div>
 
-## <div align="center">[link coming soon](https://github.com/doozles411/portfolio)</div>
+## <div align="center">[link coming soon](https://github.com/cynthem/portfolio)</div>
 
 ## Description
 A portfolio app that highlights some of my work and provides more information about me. This web page was built with React and TypeScript, styled with Sass, bundled with Webpack, and deployed on Netlify.

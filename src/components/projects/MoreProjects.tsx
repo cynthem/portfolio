@@ -46,7 +46,7 @@ function MoreProjects() {
             </ParallaxProvider>
             <motion.a 
                 className='more-projects-link'
-                href="https://github.com/doozles411"
+                href="https://github.com/cynthem"
                 target="_blank"
                 rel="noopener noreferrer"
                 variants={animateBtn}

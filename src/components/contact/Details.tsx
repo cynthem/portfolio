@@ -10,7 +10,7 @@ function Details() {
             <p>Have a question or want to work together? Reach out through any of the methods included here or by emailing <a href="mailto:cynthia.phelps807@gmail.com">cynthia.phelps807@gmail.com</a>.</p>
             <div className='details-links'>
                 <motion.a 
-                    href="https://github.com/doozles411"
+                    href="https://github.com/cynthem"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{

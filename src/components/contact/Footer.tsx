@@ -13,7 +13,7 @@ function Footer() {
                 /> 
                 by 
                 <motion.a 
-                    href='https://github.com/doozles411' 
+                    href='https://github.com/cynthem' 
                     target="_blank" 
                     rel="noopener noreferrer"
                     whileHover={{

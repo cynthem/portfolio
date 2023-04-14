@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/doozles411/portfolio.git"
+    "url": "git+https://github.com/cynthem/portfolio.git"
   },
   "keywords": [
     "portfolio"
@@ -20,9 +20,9 @@
   "author": "CMP",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/doozles411/portfolio/issues"
+    "url": "https://github.com/cynthem/portfolio/issues"
   },
-  "homepage": "https://github.com/doozles411/portfolio",
+  "homepage": "https://github.com/cynthem/portfolio",
   "devDependencies": {
     "@babel/core": "^7.20.2",
     "@babel/preset-env": "^7.20.2",
