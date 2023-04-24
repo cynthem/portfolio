@@ -22,7 +22,7 @@ function Details() {
                     <img alt="GitHub" src={gitHubIcon} />
                 </motion.a>
                 <motion.a 
-                    href="#"
+                    href="https://www.linkedin.com/in/cindy-m-phelps"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{
@@ -34,7 +34,7 @@ function Details() {
                     <img alt="LinkedIn" src={linkedInIcon} />
                 </motion.a>
                 <motion.a 
-                    href='https://drive.google.com/file/d/1iLk_NT4k7Yi175M4vHUYz8eoK0-HnLiy/view'
+                    href='https://drive.google.com/file/d/1KtCARhORoAaq_-sKteEnL_mRKcIlZ3Ya/view?usp=share_link'
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{
