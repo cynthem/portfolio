@@ -3,7 +3,7 @@
 ## <div align="center">[link](https://www.cphelps.com)</div>
 
 ## Description
-A portfolio app that highlights some of my work and provides more information about me. This web page was built with React and TypeScript, styled with Sass, bundled with Webpack, and deployed on Netlify.
+An app that provides more information about me and highlights some of my work. This web page was built with React and TypeScript, styled with Sass, bundled with Webpack, and deployed on Netlify.
 
 ## Technologies Used
 - React
