@@ -1,6 +1,6 @@
 # <div align="center">Personal Portfolio</div>
 
-## <div align="center">[link](https://www.cphelps.com)</div>
+## <div align="center">[www.cphelps.com](https://www.cphelps.com)</div>
 
 ## Description
 An app that provides more information about me and highlights some of my work. This web page was built with React and TypeScript, styled with Sass, bundled with Webpack, and deployed on Netlify.
