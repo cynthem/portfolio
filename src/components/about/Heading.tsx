@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { WindupChildren, Pace, Pause } from "windups";
-import selfie from '../../assets/images/placeholder-selfie.jpeg';
+import selfie from '../../assets/images/selfie.jpg';
 
 function Heading() {
     return (
