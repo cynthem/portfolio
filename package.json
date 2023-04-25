@@ -38,7 +38,6 @@
     "css-minimizer-webpack-plugin": "^5.0.0",
     "file-loader": "^6.2.0",
     "gh-pages": "^5.0.0",
-    "mini-css-extract-plugin": "^2.7.5",
     "regenerator-runtime": "^0.13.10",
     "sass": "^1.56.0",
     "sass-loader": "^13.1.0",
