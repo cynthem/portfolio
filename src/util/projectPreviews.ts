@@ -17,7 +17,7 @@ const projectPreviews = [
         image: battleshipImg,
         siteLink: "https://cynthem.github.io/battleship-II/",
         gitHubLink: "https://github.com/cynthem/battleship-II",
-        description: "An app featuring the classic game Battleship. Users play against a computer AI that uses an algorithm to determine its next play. Completed as part of The Odin Project's Full Stack JavaScript curriculum.",
+        description: "An app featuring the classic game Battleship. Users play against an AI that uses an algorithm to determine its next play. Completed as part of The Odin Project's Full Stack JavaScript curriculum.",
         tools: "Built with jQuery and Webpack"
     },
     {
