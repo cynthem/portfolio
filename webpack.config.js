@@ -9,7 +9,7 @@ module.exports = {
     assetModuleFilename: 'assets/[hash][ext][query]'
   },
   plugins: [
-    
+    new CssMinimizerPlugin()
   ],
   module: {
     rules: [
