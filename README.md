@@ -1,6 +1,6 @@
 # <div align="center">Personal Portfolio</div>
 
-## <div align="center">[link coming soon](https://github.com/cynthem/portfolio)</div>
+## <div align="center">[link](https://www.cphelps.com)</div>
 
 ## Description
 A portfolio app that highlights some of my work and provides more information about me. This web page was built with React and TypeScript, styled with Sass, bundled with Webpack, and deployed on Netlify.
@@ -26,6 +26,3 @@ A portfolio app that highlights some of my work and provides more information ab
 ## Room for Improvement
 - Optimize performance (faster page load time), accessibility, and SEO
 - Multi-lingual support
-
-## Screenshots
-...coming soon...
