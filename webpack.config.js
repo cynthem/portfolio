@@ -1,4 +1,5 @@
 const path = require('path');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
   entry: './src/index.tsx',
@@ -7,11 +8,9 @@ module.exports = {
     filename: 'bundle.js',
     assetModuleFilename: 'assets/[hash][ext][query]'
   },
-  devServer: {
-    static: {       
-      directory: path.resolve(__dirname, './dist')
-    }
-  },
+  plugins: [
+    
+  ],
   module: {
     rules: [
       {
@@ -22,12 +21,8 @@ module.exports = {
         }
       },
       {
-        test: /\.s[ac]ss$/i,
-        use: [
-          "style-loader",
-          "css-loader",
-          "sass-loader",
-        ],
+        test: /.s?css$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       { 
         test: /\\.(png|jp(e*)g|svg|gif)$/, 
@@ -38,6 +33,12 @@ module.exports = {
         type: 'asset/resource',
       }
     ]
+  },
+  optimization: {
+    minimizer: [
+      `...`,
+      new CssMinimizerPlugin(),
+    ],
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js', '.scss']
