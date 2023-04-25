@@ -10,6 +10,7 @@ module.exports = {
     assetModuleFilename: 'assets/[hash][ext][query]'
   },
   plugins: [
+    new MiniCssExtractPlugin(),
     new CssMinimizerPlugin()
   ],
   module: {
