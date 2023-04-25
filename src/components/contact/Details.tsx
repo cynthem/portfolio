@@ -7,7 +7,7 @@ import resumeIcon from '../../assets/images/contact-icons/resume_icon.svg';
 function Details() {
     return (
         <div className='details'>
-            <p>Reach me through any of the methods included here or by emailing: <a href="mailto:cynthia.phelps807@gmail.com">cynthia.phelps807@gmail.com</a>.</p>
+            <p>Want to chat? Interested in working together? Have any questions? Reach me through any of the methods listed here or by email: <a href="mailto:cynthia.phelps807@gmail.com">cynthia.phelps807@gmail.com</a>.</p>
             <div className='details-links'>
                 <motion.a 
                     href="https://github.com/cynthem"
