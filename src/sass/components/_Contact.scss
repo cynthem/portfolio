@@ -35,8 +35,10 @@
         justify-content: center;
         gap: 20px;
         .linkedin-icon {
-            height: 55px;
-            width: 55px;
+            > img {
+                height: 55px;
+                width: 55px;
+            }
         }
     }
 }
