@@ -19,7 +19,10 @@ function Details() {
                     }}
                     whileTap={{ scale: 0.9 }}
                 >
-                    <img alt="GitHub" src={gitHubIcon} />
+                    <img 
+                        alt="GitHub" 
+                        src={gitHubIcon} 
+                    />
                 </motion.a>
                 <motion.a 
                     href="https://www.linkedin.com/in/cindy-m-phelps"
@@ -31,7 +34,11 @@ function Details() {
                     }}
                     whileTap={{ scale: 0.9 }}
                 >
-                    <img alt="LinkedIn" src={linkedInIcon} />
+                    <img 
+                        alt="LinkedIn" 
+                        src={linkedInIcon} 
+                        className='linkedin-icon'
+                    />
                 </motion.a>
                 <motion.a 
                     href='https://drive.google.com/file/d/1KtCARhORoAaq_-sKteEnL_mRKcIlZ3Ya/view?usp=share_link'
@@ -43,7 +50,10 @@ function Details() {
                     }}
                     whileTap={{ scale: 0.9 }}
                 >
-                    <img alt="Resume" src={resumeIcon} />
+                    <img 
+                        alt="Resume" 
+                        src={resumeIcon} 
+                    />
                 </motion.a>    
             </div>
         </div>
