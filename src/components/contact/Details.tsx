@@ -25,6 +25,7 @@ function Details() {
                     />
                 </motion.a>
                 <motion.a 
+                    className='linkedin-icon'
                     href="https://www.linkedin.com/in/cindy-m-phelps"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -37,7 +38,6 @@ function Details() {
                     <img 
                         alt="LinkedIn" 
                         src={linkedInIcon} 
-                        className='linkedin-icon'
                     />
                 </motion.a>
                 <motion.a 
