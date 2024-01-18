@@ -41,7 +41,7 @@ function Details() {
                     />
                 </motion.a>
                 <motion.a 
-                    href='https://drive.google.com/file/d/1KtCARhORoAaq_-sKteEnL_mRKcIlZ3Ya/view?usp=share_link'
+                    href='https://drive.google.com/file/d/1gB2zIe8wARYNYEp4CKBuOUhch-V96Z6X/view?usp=sharing'
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{
