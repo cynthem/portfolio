@@ -16,6 +16,8 @@ import sass from '../assets/images/skill-icons/icon_sass.svg';
 import styled from '../assets/images/skill-icons/icon_styledComponents.svg';
 import typescript from '../assets/images/skill-icons/icon_typescript.svg'
 import webpack from '../assets/images/skill-icons/icon_webpack.svg';
+import next from '../assets/images/skill-icons/icon_next.svg';
+import mongodb from '../assets/images/skill-icons/icon_mongodb.png';
 
 const skillIcons = [
     bootstrap,
@@ -35,7 +37,9 @@ const skillIcons = [
     sass,
     styled,
     typescript,
-    webpack
+    webpack,
+    next,
+    mongodb
 ];
 
 export default skillIcons;
