@@ -102,7 +102,7 @@ function Skills() {
                             <img alt="Bootstrap" src={skillIcons[0]} />
                             <p>Bootstrap</p>
                         </div>
-                        <div className='skill styled'>
+                        <div className='skill' id='styled'>
                             <img alt="Styled Components" src={skillIcons[15]} />
                             <p>Styled</p>
                             <p>Components</p>
