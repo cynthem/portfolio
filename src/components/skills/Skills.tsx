@@ -104,7 +104,7 @@ function Skills() {
                         </div>
                         <div className='skill'>
                             <img alt="Styled Components" src={skillIcons[15]} />
-                            <p>Styled</p>
+                            <p className='styled-top'>Styled</p>
                             <p>Components</p>
                         </div>
                         <div className='skill'>
